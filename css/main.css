@@ -1,0 +1,11 @@
+@import url(./normalize.css);
+@import url(./colors.css);
+@import url(./fonts.css);
+@import url(./var.css);
+
+html,
+body {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  color: var(--black);
+}
