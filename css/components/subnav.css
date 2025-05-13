@@ -1,0 +1,43 @@
+:root {
+  --height-subnav: 56px;
+}
+
+.main .subnav {
+  background-color: var(--bg-grey);
+  color: var(--grey-1);
+}
+
+.main .subnav .container {
+  height: var(--height-subnav);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main .subnav span.city {
+  font-size: ;
+}
+
+.main .subnav a {
+  text-decoration: none;
+}
+
+.main .subnav .mail a {
+  /*  */
+}
+
+.main .subnav .phone a {
+  /*  */
+}
+
+.main .subnav .order-call {
+  height: 40px;
+}
+
+.main .subnav .city-selector {
+  position: relative;
+}
+
+.main .subnav .cities {
+  position: absolute;
+}

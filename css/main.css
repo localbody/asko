@@ -2,10 +2,25 @@
 @import url(./colors.css);
 @import url(./fonts.css);
 @import url(./var.css);
+@import url(./components/subnav.css);
 
 html,
 body {
   font-family: 'Montserrat';
   font-weight: 400;
   color: var(--black);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: var(--desktop-width);
+  margin: 0 auto;
 }
