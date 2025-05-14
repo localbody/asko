@@ -14,12 +14,13 @@
   align-items: center;
 }
 
-.main .subnav span.city {
-  font-size: ;
+.main .subnav span.city-selected {
+  /*  */
 }
 
 .main .subnav a {
   text-decoration: none;
+  color: var(--grey-1);
 }
 
 .main .subnav .mail a {
@@ -32,12 +33,116 @@
 
 .main .subnav .order-call {
   height: 40px;
+  color: ;
 }
 
 .main .subnav .city-selector {
   position: relative;
+  cursor: pointer;
+}
+
+.main .subnav .city-selected,
+.main .subnav .address,
+.main .subnav .mail,
+.main .subnav .phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.main .subnav .city-selected::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-image: url(../../images/icons/location.svg);
+}
+
+.main .subnav .city-selected::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url(../../images/icons/chevron.svg);
 }
 
 .main .subnav .cities {
   position: absolute;
+  padding: 8px;
+  background-color: var(--bg-grey);
+}
+
+.main .subnav .cities .city {
+  padding: 8px 16px;
+  white-space: nowrap;
+}
+
+.main .subnav .cities .city:hover {
+  color: var(--orange);
+  background-color: var(--grey-4);
+  border-radius: 8px;
+}
+
+.main .subnav .address::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-image: url(../../images/icons/location.svg);
+}
+
+.main .subnav .mail::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-image: url(../../images/icons/sms.svg);
+}
+
+.main .subnav .phone::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-image: url(../../images/icons/sms.svg);
+}
+
+.main .subnav .mail a {
+  color: var(--black);
+}
+
+.main .subnav .phone a {
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--black);
+}
+
+.main .subnav .order-call {
+  font-size: 10px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 1px solid var(--grey-1);
+  color: var(--grey-1);
+}
+
+.main .subnav .messengers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.main .subnav .messengers a {
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main .subnav .messengers .whatsapp {
+  background-image: url(../../images/icons/whatsapp--grey.svg);
+}
+
+.main .subnav .messengers .telegram {
+  background-image: url(../../images/icons/telegram--grey.svg);
 }

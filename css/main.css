@@ -2,7 +2,10 @@
 @import url(./colors.css);
 @import url(./fonts.css);
 @import url(./var.css);
+@import url(./icons.css);
 @import url(./components/subnav.css);
+@import url(./components/header-top.css);
+@import url(./components/header.css);
 
 html,
 body {
@@ -21,6 +24,12 @@ li {
 }
 
 .container {
+  width: 100%;
   max-width: var(--desktop-width);
+  height: 100%;
   margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
 }

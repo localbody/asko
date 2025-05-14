@@ -1,0 +1,58 @@
+:root {
+  --height-header-top: 88px;
+}
+
+.header-top {
+  height: var(--height-header-top);
+}
+
+.header-top .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-top .logo {
+  width: 157px;
+  height: 44px;
+}
+
+.header-top nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 56px;
+}
+
+.header-top nav ul a {
+  color: var(--black);
+}
+
+.header-top .search {
+  width: 24px;
+  height: 24px;
+  background-image: url(../../images/icons/search--grey.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+}
+
+.header-top .send-request {
+  background-color: transparent;
+  border: 1px solid var(--orange);
+  border-radius: 6px;
+  color: var(--orange);
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 24px;
+  padding: 16px 56px;
+}
+
+.header-top .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
