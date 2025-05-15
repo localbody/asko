@@ -1,5 +1,49 @@
 .main .header {
   height: 822px;
+  position: relative;
+  display: grid;
+  align-items: center;
   background-image: url(../../images/header.png);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: 156px;
+  padding-right: 927px;
+}
+
+.main .header .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 29%,
+    rgba(102, 102, 102, 0) 100%
+  );
+  opacity: 0.6;
+}
+
+.main .header .wrapper {
+  position: relative;
+}
+
+.main .header h2 {
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.main .header .frames {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 24px;
+}
+
+.main .header .frame .title {
+  color: var(--white);
+  white-space: nowrap;
+}
+
+.main .header .frame .description {
+  color: var(--white);
 }

@@ -26,6 +26,7 @@
 
 .header-top nav ul a {
   color: var(--black);
+  text-decoration: none;
 }
 
 .header-top .search {

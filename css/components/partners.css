@@ -1,0 +1,29 @@
+.main .partners {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 46px;
+  height: 157px;
+}
+
+.main .partners .slider--prev,
+.main .partners .slider--next {
+  width: 46px;
+  height: 46px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+}
+
+.main .partners .slider--prev {
+  background-image: url(../../images/icons/arrow-right.svg);
+  transform: rotate(180deg);
+}
+
+.main .partners .slider--next {
+  background-image: url(../../images/icons/arrow-right.svg);
+}
+
+.main .partners .slide {
+  height: 77px;
+}
