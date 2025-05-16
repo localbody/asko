@@ -16,11 +16,11 @@
   display: grid;
   grid-template-rows: 289px 1fr;
   border-bottom: 2px solid transparent;
+  transition: 0.3s all ease;
 }
 
 .main .products .product:hover {
   border-bottom-color: var(--orange);
-  transition: 0.3s all ease;
 }
 
 .main .products .product .wrapper {
@@ -35,11 +35,11 @@
   line-height: 28px;
   font-weight: 500;
   color: var(--black);
+  transition: 0.3s all ease;
 }
 
 .main .products .product:hover .title {
   color: var(--orange);
-  transition: 0.3s all ease;
 }
 
 .main .products .product .more {
@@ -49,11 +49,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: 0.3s all ease;
 }
 
 .main .products .product:hover .more {
   color: var(--orange);
-  transition: 0.3s all ease;
 }
 
 .main .products .product .more::after {
@@ -64,9 +64,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  transition: 0.3s all ease;
 }
 
 .main .products .product:hover .more::after {
   background-image: url(../../images/icons/arrow-right--orange.svg);
-  transition: 0.3s all ease;
 }
