@@ -1,0 +1,43 @@
+.main .certificates {
+  display: flex;
+  gap: 9px;
+  justify-content: space-between;
+}
+
+.main .certificates .image {
+  padding: 9px;
+  background-color: var(--grey-4);
+}
+
+.main .certificate {
+  position: relative;
+}
+
+.main .certificate::after {
+  content: '';
+  width: 45px;
+  height: 2px;
+  background-color: var(--grey-1);
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  transition: 0.3s all ease;
+}
+
+.main .certificate:hover::after {
+  background-color: var(--orange);
+}
+
+.main .certificate .wrapper {
+  padding: 12px 20px;
+  display: grid;
+  gap: 8px;
+}
+.main .certificate .title {
+  color: var(--grey-1);
+}
+
+.main .certificate .line1,
+.main .certificate .line2 {
+  color: var(--black);
+}

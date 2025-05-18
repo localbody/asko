@@ -1,0 +1,48 @@
+.main .about-company {
+  display: flex;
+  gap: 160px;
+}
+
+.main .about-company .column {
+  width: 50%;
+}
+
+.main .about-company .column--items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 24px;
+  row-gap: 40px;
+}
+
+.main .about-company .column-item {
+  display: flex;
+  gap: 16px;
+}
+
+.main .about-company .circle {
+  width: 52px;
+  height: 52px;
+  background-position: center;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-color: var(--orange);
+  border-radius: 100%;
+  flex-shrink: 0;
+}
+
+.main .about-company .circle--location {
+  background-image: url(../../images/icons/location--white.svg);
+}
+
+.main .about-company .circle--star {
+  background-image: url(../../images/icons/star--white.svg);
+}
+
+.main .about-company .circle--color-swatch {
+  background-image: url(../../images/icons/color-swatch--white.svg);
+}
+
+.main .about-company .circle--medal {
+  background-image: url(../../images/icons/medal--white.svg);
+}

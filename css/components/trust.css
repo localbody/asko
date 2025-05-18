@@ -1,0 +1,6 @@
+.main .trust {
+  display: flex;
+  column-gap: 46px;
+  row-gap: 8px;
+  flex-wrap: wrap;
+}

@@ -9,6 +9,12 @@
 @import url(./components/partners.css);
 @import url(./components/products.css);
 @import url(./components/common.css);
+@import url(./components/about-company.css);
+@import url(./components/cards.css);
+@import url(./components/certificates.css);
+@import url(./components/accordion.css);
+@import url(./components/contact.css);
+@import url(./components/footer.css);
 
 :root {
   --desktop-width: 1608px;
@@ -53,4 +59,9 @@ button {
   cursor: pointer;
   border: none;
   background-color: transparent;
+}
+
+.main {
+  display: grid;
+  gap: 40px;
 }
