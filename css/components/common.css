@@ -101,6 +101,10 @@
   font-weight: 700;
 }
 
+.text--uppercase {
+  text-transform: uppercase;
+}
+
 .button {
   padding: 16px 56px;
   font-size: 12px;

@@ -3,3 +3,136 @@
   padding-top: 80px;
   padding-bottom: 32px;
 }
+
+.main .footer ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.main .footer ul li:first-child {
+  color: var(--grey-1);
+  margin-bottom: 12px;
+}
+
+.main .footer .button--calculator {
+  width: min-content;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  padding: 8px 20px;
+  background-color: var(--orange);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  align-self: flex-start;
+  justify-self: flex-end;
+}
+
+.main .footer .button--calculator::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url('../../images/icons/add.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+}
+
+.main .footer .messengers .viber,
+.main .footer .messengers .telegram,
+.main .footer .messengers .whatsapp {
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+}
+
+.main .footer .messengers .viber {
+  background-image: url(../../images/icons/viber.svg);
+}
+.main .footer .messengers .telegram {
+  background-image: url(../../images/icons/telegram.svg);
+}
+.main .footer .messengers .whatsapp {
+  background-image: url(../../images/icons/whatsapp.svg);
+}
+
+.main .footer a.phone {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+
+  align-self: flex-start;
+  justify-self: flex-end;
+}
+
+.main .footer .grid--footer {
+  display: grid;
+  grid-template-areas:
+    'links logo'
+    'links phone-and-button--calculator'
+    'divider divider'
+    'copyright messengers';
+  grid-template-columns: 1fr 218px;
+  grid-template-rows: 42px 122px 88px;
+}
+
+.main .footer .divider {
+  height: 49px;
+  grid-area: divider;
+}
+
+.main .footer .links {
+  grid-area: links;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 336px;
+}
+
+.main .footer .links ul:first-child {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 60px;
+}
+
+.main .footer .logo {
+  grid-area: logo;
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin-bottom: 13px;
+}
+
+.main .footer .phone-and-button--calculator {
+  grid-area: phone-and-button--calculator;
+  display: grid;
+  gap: 13px;
+  grid-template-rows: min-content min-content;
+}
+
+.main .footer .messengers {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 12px;
+  grid-area: messengers;
+  border-top: 1px solid var(--grey-1);
+}
+
+.main .footer .copyright {
+  grid-area: copyright;
+  color: var(--grey-3);
+  display: grid;
+  border-top: 1px solid var(--grey-1);
+  grid-template-rows: 24px 24px;
+  gap: 8px;
+  padding-top: 16px;
+}
