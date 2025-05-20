@@ -112,6 +112,7 @@
   text-transform: uppercase;
   border-radius: 6px;
   background-color: transparent;
+  text-decoration: none;
 }
 
 .button--order-call {

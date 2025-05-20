@@ -7,8 +7,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-left: 156px;
-  padding-right: 927px;
 }
 
 .main .header .overlay {
@@ -23,8 +21,14 @@
   opacity: 0.6;
 }
 
+.main .header .container {
+  position: relative;
+  grid-auto-rows: max-content max-content;
+}
+
 .main .header .wrapper {
   position: relative;
+  padding-right: 765px;
 }
 
 .main .header h2 {
@@ -46,4 +50,8 @@
 
 .main .header .frame .description {
   color: var(--white);
+}
+
+.main .header .button {
+  width: fit-content;
 }
