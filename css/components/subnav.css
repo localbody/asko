@@ -34,6 +34,7 @@
 .main .subnav .city-selector {
   position: relative;
   cursor: pointer;
+  width: 250px;
 }
 
 .main .subnav .city-selected,

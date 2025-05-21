@@ -6,7 +6,7 @@
   height: var(--height-header-top);
 }
 
-.header-top .container {
+.header-top > .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
