@@ -4,10 +4,20 @@
   justify-content: space-between;
   gap: 46px;
   height: 77px;
+  position: relative;
+  padding-left: 92px;
+  padding-right: 92px;
 }
 
-.main .partners .slider--prev,
-.main .partners .slider--next {
+.main .partners .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.main .partners .slider-button-prev,
+.main .partners .slider-button-next {
+  position: absolute;
+  z-index: 10;
   width: 46px;
   height: 46px;
   background-position: center;
@@ -15,15 +25,22 @@
   background-size: 24px;
 }
 
-.main .partners .slider--prev {
+.main .partners .slider-button-prev {
   background-image: url(../../images/icons/arrow-right.svg);
   transform: rotate(180deg);
+  left: 0;
 }
 
-.main .partners .slider--next {
+.main .partners .slider-button-next {
   background-image: url(../../images/icons/arrow-right.svg);
+  right: 0;
 }
 
 .main .partners .slide {
   height: 77px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: none;
 }

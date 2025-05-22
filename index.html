@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -132,23 +133,48 @@
       </div>
 
       <div class="partners container">
-        <button class="slider--prev"></button>
-        <div class="slide">
-          <img src="./images/partners/rockfon.png" alt="" />
+        <button class="slider-button-prev"></button>
+        <button class="slider-button-next"></button>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+              <img src="./images/partners/rockfon.png" alt="" />
+            </div>
+            <div class="swiper-slide slide">
+              <img src="./images/partners/ermak.png" alt="" />
+            </div>
+            <div class="swiper-slide slide">
+              <img src="./images/partners/armstrong.png" alt="" />
+            </div>
+            <div class="swiper-slide slide">
+              <img src="./images/partners/albes.png" alt="" />
+            </div>
+            <div class="swiper-slide slide">
+              <img src="./images/partners/lepota.png" alt="" />
+            </div>
+
+            <div class="swiper-slide slide">
+              <img src="./images/partners/rockfon.png" alt="" />
+            </div>
+            <div class="swiper-slide slide">
+              <img src="./images/partners/ermak.png" alt="" />
+            </div>
+            <div class="swiper-slide slide">
+              <img src="./images/partners/armstrong.png" alt="" />
+            </div>
+            <div class="swiper-slide slide">
+              <img src="./images/partners/albes.png" alt="" />
+            </div>
+            <div class="swiper-slide slide">
+              <img src="./images/partners/lepota.png" alt="" />
+            </div>
+          </div>
         </div>
-        <div class="slide">
-          <img src="./images/partners/ermak.png" alt="" />
-        </div>
-        <div class="slide">
-          <img src="./images/partners/armstrong.png" alt="" />
-        </div>
-        <div class="slide">
-          <img src="./images/partners/albes.png" alt="" />
-        </div>
-        <div class="slide">
-          <img src="./images/partners/lepota.png" alt="" />
-        </div>
-        <button class="slider--next"></button>
+      </div>
+
+      <div class="container">
+        <h2 class="title-top text--h2">Каталог</h2>
       </div>
 
       <div class="products container">
@@ -776,6 +802,8 @@
       </div>
     </div>
 
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/slider-partners.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
