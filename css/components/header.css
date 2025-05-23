@@ -26,7 +26,7 @@
   grid-auto-rows: max-content max-content;
 }
 
-.main .header .wrapper {
+.main .header .container.container--place-center > .wrapper {
   position: relative;
   padding-right: 765px;
 }

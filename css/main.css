@@ -17,6 +17,7 @@
 @import url(./components/footer.css);
 @import url(./components/search-panel.css);
 @import url(./components/trust.css);
+@import url(./components/catalog-in-header.css);
 
 :root {
   --desktop-width: 1608px;

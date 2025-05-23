@@ -69,7 +69,7 @@
   transition: 0.3s opacity ease;
 }
 
-.main .wrapper--search .search-panel .search-result--open {
+.main .wrapper--search .popup-toggle.open .search-panel .search-result--open {
   height: initial;
   visibility: visible;
   opacity: 1;
