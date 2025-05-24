@@ -27,8 +27,6 @@ const onLoaded = () => {
   const citySelector = document.querySelector('.subnav .city-selector')
 
   const onClickCitySelector = function (event) {
-    closePopup(event)
-
     // console.log(event.target, event.currentTarget)
 
     // если кликнули по городу из списка
@@ -37,6 +35,7 @@ const onLoaded = () => {
         event.target.textContent
       citySelector.dataset.city = event.target.textContent
     }
+    closePopup(event)
 
     citySelector?.classList.toggle('open')
   }
