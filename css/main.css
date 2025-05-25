@@ -67,8 +67,30 @@ button {
 .main {
   display: grid;
   gap: 40px;
+  position: relative;
 }
 
 .main .row--top {
   position: relative;
+}
+
+.main .overlay--main {
+  position: absolute;
+  z-index: 10;
+  top: 145px;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 29%,
+    rgba(102, 102, 102, 0) 100%
+  );
+  opacity: 0.6;
+}
+
+.main .overlay--main.hidden {
+  visibility: hidden;
+  pointer-events: none;
+  width: 0;
+  height: 0;
 }

@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
 }
 
-.main .header .overlay {
+.main .header .overlay--header {
   position: absolute;
   height: 100%;
   width: 100%;

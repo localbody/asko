@@ -8,6 +8,8 @@ const onLoaded = () => {
 
   const onClickButtonCatalogOpen = () => {
     closePopup()
+
+    document.querySelector('.overlay--main').classList.remove('hidden')
     buttonCatalogOpen.closest('.popup-toggle').classList.toggle('open')
   }
 
@@ -60,6 +62,7 @@ const onLoaded = () => {
     // если кликнули не по самому popup
     if (popup && !event?.target?.closest('.popup-toggle.open')) {
       popup?.classList.remove('open')
+      document.querySelector('.overlay--main').classList.add('hidden')
     }
   }
 
