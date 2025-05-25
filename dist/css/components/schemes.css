@@ -1,0 +1,56 @@
+.main .container--schemes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 352px 296px;
+  column-gap: 24px;
+  row-gap: 40px;
+}
+
+.main .container--schemes .scheme {
+  display: grid;
+  gap: 24px;
+}
+
+.main .container--schemes .scheme .scheme__overlay {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .container--schemes .scheme .scheme__overlay::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-color: var(--orange);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-image: url(../../images/icons/zoom-in.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+}
+
+.main .container--schemes .scheme .scheme__image {
+  height: 100%;
+}
+
+.main .container--schemes .scheme .scheme__description {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--grey-1);
+}
+
+.main .container--schemes .scheme--big {
+  grid-template-rows: 280px 48px;
+}
+
+.main .container--schemes .scheme--small {
+  grid-template-rows: 200px 72px;
+}
+
+.main .container--schemes .schemes__wrapper {
+  display: flex;
+  gap: 24px;
+}
