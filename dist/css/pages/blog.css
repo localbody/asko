@@ -5,10 +5,12 @@
 }
 
 .blog__articles .blog__article-link {
+  text-decoration: none;
+
   width: 396px;
   height: 462px;
   background-color: var(--grey-4);
-  cursor: pointer;
+
   display: grid;
   grid-template-rows: 268px 1fr;
   border-bottom: 2px solid transparent;
@@ -49,4 +51,9 @@
   font-size: 20px;
   line-height: 28px;
   font-weight: 500;
+  color: var(--black);
+}
+
+.blog__articles .blog__article-images {
+  width: 100%;
 }

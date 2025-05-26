@@ -191,3 +191,79 @@
   line-height: 28px;
   font-weight: 500;
 }
+
+.main ul.ul--circles li {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--grey-1);
+
+  position: relative;
+
+  padding-left: 24px;
+}
+
+.main ul.ul--circles > li::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: var(--orange);
+
+  position: absolute;
+  left: 0;
+  bottom: 33%;
+}
+
+.main ol.ol--numbers {
+  display: grid;
+  gap: 16px;
+}
+
+.main ol.ol--numbers li.li {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--grey-1);
+
+  padding-left: 40px;
+}
+
+.main ol.ol--numbers li.li-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+}
+
+.main ol.ol--numbers {
+  list-style: none; /* Remove default numbering */
+  counter-reset: item;
+  padding-left: 0; /* Optional: adjust padding */
+}
+
+.main ol.ol--numbers > li {
+  counter-increment: item;
+  position: relative;
+  /* padding-left: 1.5em; */
+}
+
+.main ol.ol--numbers > li::before {
+  content: counter(item);
+  position: absolute;
+  left: 0;
+
+  color: var(--orange);
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+
+  width: 24px;
+  height: 24px;
+
+  background-color: var(--grey-4);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 4px;
+}

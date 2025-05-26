@@ -33,7 +33,7 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container container--blog-article">
         <div class="blog-article__body">
           <h2 class="blog-article__title">
             Значение потолочного дизайна для создания эффектного интерьера
@@ -51,8 +51,12 @@
               интерьера.
             </p>
 
-            <img src="" alt="" />
+            <div class="image-wrapper">
+              <img src="./images/info-01.png" alt="" />
+            </div>
           </div>
+
+          <div class="blog-article__diviver"></div>
 
           <h2 class="blog-article__title">Виды систем кубообразного потолка</h2>
 
@@ -60,7 +64,7 @@
             class="blog-article__paragraph blog-article__paragraph--2columns"
           >
             <div class="wrapper">
-              <h3>Горизонтальная система</h3>
+              <h3 class="blog-article__subtitle">Горизонтальная система</h3>
               <p>
                 Горизонтальная система кубообразного потолка представляет собой
                 конструкцию, состоящую из горизонтальных элементов,
@@ -82,7 +86,7 @@
           >
             <div class="slider"></div>
             <div class="wrapper">
-              <h3>Горизонтальная система</h3>
+              <h3 class="blog-article__subtitle">Горизонтальная система</h3>
               <p>
                 Горизонтальная система кубообразного потолка представляет собой
                 конструкцию, состоящую из горизонтальных элементов,
@@ -326,10 +330,12 @@
           <!--  -->
 
           <div class="blog-article__author">
-            <img src="" alt="" />
             <div class="wrapper">
-              <p>Алексей Петров</p>
-              <p>Мастер бригады</p>
+              <img src="./images/author.png" alt="" />
+              <div class="inner">
+                <p><b>Алексей Петров</b></p>
+                <p>Мастер бригады</p>
+              </div>
             </div>
           </div>
 
@@ -350,204 +356,198 @@
             </ol>
           </div>
 
-          <h2>Похожие статьи</h2>
+          <!--  -->
+        </div>
 
-          <div class="blog__articles">
-            <div class="blog__article-link">
-              <img
-                class="blog__article-images"
-                src="./images/blog/01.png "
-                alt=""
-              />
+        <div class="blog-article__sidebar">
+          <div class="sidebar__item">
+            <h3>Содержание</h3>
 
-              <div class="blog__article-info">
-                <div class="wrapper">
-                  <span class="date">12.09.2024</span>
-                  <h4 class="title">5 удивительных визуальных эффектов</h4>
-                </div>
-              </div>
-            </div>
+            <ol class="ol--numbers">
+              <li class="li">Значение потолочного дизайна</li>
+              <li class="li">Значение потолочного дизайна</li>
+              <li class="li">Значение потолочного дизайна</li>
+              <li class="li">Значение потолочного дизайна</li>
+              <li class="li">Значение потолочного дизайна</li>
+            </ol>
+          </div>
 
-            <div class="blog__article-link">
-              <img
-                class="blog__article-images"
-                src="./images/blog/01.png "
-                alt=""
-              />
-
-              <div class="blog__article-info">
-                <div class="wrapper">
-                  <span class="date">12.09.2024</span>
-                  <h4 class="title">5 удивительных визуальных эффектов</h4>
-                </div>
-              </div>
-            </div>
-
-            <div class="blog__article-link">
-              <img
-                class="blog__article-images"
-                src="./images/blog/01.png "
-                alt=""
-              />
-
-              <div class="blog__article-info">
-                <div class="wrapper">
-                  <span class="date">12.09.2024</span>
-                  <h4 class="title">5 удивительных визуальных эффектов</h4>
-                </div>
-              </div>
-            </div>
-
-            <div class="blog__article-link">
-              <img
-                class="blog__article-images"
-                src="./images/blog/01.png "
-                alt=""
-              />
-
-              <div class="blog__article-info">
-                <div class="wrapper">
-                  <span class="date">12.09.2024</span>
-                  <h4 class="title">5 удивительных визуальных эффектов</h4>
-                </div>
-              </div>
-            </div>
-
-            <div class="blog__article-link">
-              <img
-                class="blog__article-images"
-                src="./images/blog/01.png "
-                alt=""
-              />
-
-              <div class="blog__article-info">
-                <div class="wrapper">
-                  <span class="date">12.09.2024</span>
-                  <h4 class="title">5 удивительных визуальных эффектов</h4>
-                </div>
-              </div>
-            </div>
-
-            <div class="blog__article-link">
-              <img
-                class="blog__article-images"
-                src="./images/blog/01.png "
-                alt=""
-              />
-
-              <div class="blog__article-info">
-                <div class="wrapper">
-                  <span class="date">12.09.2024</span>
-                  <h4 class="title">5 удивительных визуальных эффектов</h4>
-                </div>
-              </div>
+          <div class="tabs sidebar__item">
+            <div class="tabs">
+              <div class="tabs-item">Интерьер</div>
+              <div class="tabs-item">Дизайн</div>
+              <div class="tabs-item">Безопасность</div>
+              <div class="tabs-item tabs-item--active">Шумопоглащение</div>
+              <div class="tabs-item">Влагоустойчивость</div>
             </div>
           </div>
 
-          <h2>Каталог товаров</h2>
+          <div class="wrapper">
+            <h3>Подходящие товары</h3>
 
-          <div class="products container--products">
-            <a href="" class="product">
-              <img src="./images/products/items-1/01.png" alt="" />
-              <div class="wrapper">
-                <span class="title text--h4">Потолочные панели Армстронг</span>
-                <span class="more">Подробнее</span>
-              </div>
-            </a>
+            <div class="sidebar__products">
+              <a class="sidebar__product" href="">
+                <img src="./images/product.png" alt="" />
+                <div class="wrapper">
+                  <p class="subtitle">Эконом</p>
+                  <p class="title">Потолочная плита BAJKAL 90RH</p>
+                </div>
+              </a>
 
-            <a href="" class="product">
-              <img src="./images/products/items-1/02.png" alt="" />
-              <div class="wrapper">
-                <span class="title text--h4">Подвисная система Албес</span>
-                <span class="more">Подробнее</span>
-              </div>
-            </a>
+              <a class="sidebar__product" href="">
+                <img src="./images/product.png" alt="" />
+                <div class="wrapper">
+                  <p class="subtitle">Эконом</p>
+                  <p class="title">Потолочная плита BAJKAL 90RH</p>
+                </div>
+              </a>
 
-            <a href="" class="product">
-              <img src="./images/products/items-1/01.png" alt="" />
-              <div class="wrapper">
-                <span class="title text--h4">Потолочные панели Армстронг</span>
-                <span class="more">Подробнее</span>
-              </div>
-            </a>
+              <a class="sidebar__product" href="">
+                <img src="./images/product.png" alt="" />
+                <div class="wrapper">
+                  <p class="subtitle">Эконом</p>
+                  <p class="title">Потолочная плита BAJKAL 90RH</p>
+                </div>
+              </a>
 
-            <a href="" class="product">
-              <img src="./images/products/items-1/02.png" alt="" />
-              <div class="wrapper">
-                <span class="title text--h4">Подвисная система Албес</span>
-                <span class="more">Подробнее</span>
-              </div>
-            </a>
+              <a class="sidebar__product" href="">
+                <img src="./images/product.png" alt="" />
+                <div class="wrapper">
+                  <p class="subtitle">Эконом</p>
+                  <p class="title">Потолочная плита BAJKAL 90RH</p>
+                </div>
+              </a>
 
-            <a href="" class="product">
-              <img src="./images/products/items-1/01.png" alt="" />
-              <div class="wrapper">
-                <span class="title text--h4">Потолочные панели Армстронг</span>
-                <span class="more">Подробнее</span>
-              </div>
-            </a>
-
-            <a href="" class="product">
-              <img src="./images/products/items-1/02.png" alt="" />
-              <div class="wrapper">
-                <span class="title text--h4">Подвисная система Албес</span>
-                <span class="more">Подробнее</span>
-              </div>
-            </a>
-
-            <a href="" class="product">
-              <img src="./images/products/items-1/01.png" alt="" />
-              <div class="wrapper">
-                <span class="title text--h4">Потолочные панели Армстронг</span>
-                <span class="more">Подробнее</span>
-              </div>
-            </a>
-
-            <a href="" class="product">
-              <img src="./images/products/items-1/02.png" alt="" />
-              <div class="wrapper">
-                <span class="title text--h4">Подвисная система Албес</span>
-                <span class="more">Подробнее</span>
-              </div>
-            </a>
-
-            <a href="" class="product">
-              <img src="./images/products/items-1/01.png" alt="" />
-              <div class="wrapper">
-                <span class="title text--h4">Потолочные панели Армстронг</span>
-                <span class="more">Подробнее</span>
-              </div>
-            </a>
-
-            <a href="" class="product">
-              <img src="./images/products/items-1/02.png" alt="" />
-              <div class="wrapper">
-                <span class="title text--h4">Подвисная система Албес</span>
-                <span class="more">Подробнее</span>
-              </div>
-            </a>
-
-            <a href="" class="product">
-              <img src="./images/products/items-1/01.png" alt="" />
-              <div class="wrapper">
-                <span class="title text--h4">Потолочные панели Армстронг</span>
-                <span class="more">Подробнее</span>
-              </div>
-            </a>
-
-            <a href="" class="product">
-              <img src="./images/products/items-1/02.png" alt="" />
-              <div class="wrapper">
-                <span class="title text--h4">Подвисная система Албес</span>
-                <span class="more">Подробнее</span>
-              </div>
-            </a>
+              <a class="sidebar__product" href="">
+                <img src="./images/product.png" alt="" />
+                <div class="wrapper">
+                  <p class="subtitle">Эконом</p>
+                  <p class="title">Потолочная плита BAJKAL 90RH</p>
+                </div>
+              </a>
+            </div>
           </div>
 
           <!--  -->
         </div>
+      </div>
 
-        <div class="blog-article__sidebar"></div>
+      <div class="container">
+        <h2 class="blog-article__title">Похожие статьи</h2>
+
+        <div class="blog__articles">
+          <a class="blog__article-link" href="">
+            <img
+              class="blog__article-images"
+              src="./images/blog/01.png "
+              alt=""
+            />
+
+            <div class="blog__article-info">
+              <div class="wrapper">
+                <span class="date">12.09.2024</span>
+                <h4 class="title">5 удивительных визуальных эффектов</h4>
+              </div>
+            </div>
+          </a>
+
+          <a class="blog__article-link" href="">
+            <img
+              class="blog__article-images"
+              src="./images/blog/01.png "
+              alt=""
+            />
+
+            <div class="blog__article-info">
+              <div class="wrapper">
+                <span class="date">12.09.2024</span>
+                <h4 class="title">5 удивительных визуальных эффектов</h4>
+              </div>
+            </div>
+          </a>
+
+          <a class="blog__article-link" href="">
+            <img
+              class="blog__article-images"
+              src="./images/blog/01.png "
+              alt=""
+            />
+
+            <div class="blog__article-info">
+              <div class="wrapper">
+                <span class="date">12.09.2024</span>
+                <h4 class="title">5 удивительных визуальных эффектов</h4>
+              </div>
+            </div>
+          </a>
+
+          <a class="blog__article-link" href="">
+            <img
+              class="blog__article-images"
+              src="./images/blog/01.png "
+              alt=""
+            />
+
+            <div class="blog__article-info">
+              <div class="wrapper">
+                <span class="date">12.09.2024</span>
+                <h4 class="title">5 удивительных визуальных эффектов</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <h2 class="blog-article__title">Каталог товаров</h2>
+
+        <div class="products container--products">
+          <a href="" class="product">
+            <img
+              class="product__image"
+              src="./images/products/items-1/01.png"
+              alt=""
+            />
+            <div class="wrapper">
+              <span class="title text--h4">Потолочные панели Армстронг</span>
+              <span class="more">Подробнее</span>
+            </div>
+          </a>
+
+          <a href="" class="product">
+            <img
+              class="product__image"
+              src="./images/products/items-1/02.png"
+              alt=""
+            />
+            <div class="wrapper">
+              <span class="title text--h4">Подвисная система Албес</span>
+              <span class="more">Подробнее</span>
+            </div>
+          </a>
+
+          <a href="" class="product">
+            <img
+              class="product__image"
+              src="./images/products/items-1/01.png"
+              alt=""
+            />
+            <div class="wrapper">
+              <span class="title text--h4">Потолочные панели Армстронг</span>
+              <span class="more">Подробнее</span>
+            </div>
+          </a>
+
+          <a href="" class="product">
+            <img
+              class="product__image"
+              src="./images/products/items-1/02.png"
+              alt=""
+            />
+            <div class="wrapper">
+              <span class="title text--h4">Подвисная система Албес</span>
+              <span class="more">Подробнее</span>
+            </div>
+          </a>
+        </div>
       </div>
 
       <!-- footer -->
