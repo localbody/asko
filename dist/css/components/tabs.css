@@ -1,0 +1,21 @@
+.main .tabs {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.main .tabs .tabs-item {
+  color: var(--grey-1);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 12px;
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.main .tabs .tabs-item--active {
+  color: var(--black);
+  border-color: var(--black);
+}

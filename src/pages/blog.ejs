@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="main blog">
+      <div class="overlay--main hidden"></div>
+      <div class="row row--top">
+        <!-- subnav -->
+        <%- include('../templates/subnav') %>
+
+        <!-- header-top -->
+        <%- include('../templates/header-top') %>
+      </div>
+
+      <div class="container page-header">
+        <div class="breadcrumbs">
+          <a href="">Главная</a> <span class="divider">/</span>
+          <span class="current-page">Блог</span>
+        </div>
+        <h1 class="title-page text--h1">Блог</h1>
+      </div>
+
+      <div class="container">
+        <div class="tabs">
+          <div class="tabs">
+            <div class="tabs-item">Интерьер</div>
+            <div class="tabs-item">Дизайн</div>
+            <div class="tabs-item">Безопасность</div>
+            <div class="tabs-item tabs-item--active">Шумопоглащение</div>
+            <div class="tabs-item">Влагоустойчивость</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container blog__articles">
+        <div class="blog__article-link">
+          <img
+            class="blog__article-images"
+            src="./images/blog/01.png "
+            alt=""
+          />
+
+          <div class="blog__article-info">
+            <div class="wrapper">
+              <span class="date">12.09.2024</span>
+              <h4 class="title">5 удивительных визуальных эффектов</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog__article-link">
+          <img
+            class="blog__article-images"
+            src="./images/blog/01.png "
+            alt=""
+          />
+
+          <div class="blog__article-info">
+            <div class="wrapper">
+              <span class="date">12.09.2024</span>
+              <h4 class="title">5 удивительных визуальных эффектов</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog__article-link">
+          <img
+            class="blog__article-images"
+            src="./images/blog/01.png "
+            alt=""
+          />
+
+          <div class="blog__article-info">
+            <div class="wrapper">
+              <span class="date">12.09.2024</span>
+              <h4 class="title">5 удивительных визуальных эффектов</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog__article-link">
+          <img
+            class="blog__article-images"
+            src="./images/blog/01.png "
+            alt=""
+          />
+
+          <div class="blog__article-info">
+            <div class="wrapper">
+              <span class="date">12.09.2024</span>
+              <h4 class="title">5 удивительных визуальных эффектов</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog__article-link">
+          <img
+            class="blog__article-images"
+            src="./images/blog/01.png "
+            alt=""
+          />
+
+          <div class="blog__article-info">
+            <div class="wrapper">
+              <span class="date">12.09.2024</span>
+              <h4 class="title">5 удивительных визуальных эффектов</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog__article-link">
+          <img
+            class="blog__article-images"
+            src="./images/blog/01.png "
+            alt=""
+          />
+
+          <div class="blog__article-info">
+            <div class="wrapper">
+              <span class="date">12.09.2024</span>
+              <h4 class="title">5 удивительных визуальных эффектов</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <%- include('../templates/footer') %>
+
+      <div class="mobile" style="display: none">
+        <div class="burger"></div>
+        <div class="logo"></div>
+        <div class="wrapper">
+          <button class="search"></button>
+          <button class="call"></button>
+          <button class="whatsapp"></button>
+          <button class="telegram"></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/slider-partners.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 .main .container--schemes {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 352px 296px;
+  /* grid-template-rows: 352px 296px; */
   column-gap: 24px;
   row-gap: 40px;
 }
@@ -43,11 +43,11 @@
 }
 
 .main .container--schemes .scheme--big {
-  grid-template-rows: 280px 48px;
+  grid-template-rows: 280px 1fr;
 }
 
 .main .container--schemes .scheme--small {
-  grid-template-rows: 200px 72px;
+  grid-template-rows: 200px 1fr;
 }
 
 .main .container--schemes .schemes__wrapper {

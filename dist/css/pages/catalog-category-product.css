@@ -1,0 +1,49 @@
+.main .catalog-category-product {
+  display: grid;
+  grid-template-columns: 520px 1fr;
+  gap: 80px;
+}
+
+.main .catalog-category-product .sidebar .slider {
+  height: 360px;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 24px;
+
+  margin-bottom: 80px;
+}
+
+.main .catalog-category-product .sidebar table tr td:last-child {
+  text-align: right;
+}
+
+.main .catalog-category-product .body {
+  display: grid;
+  gap: 40px;
+}
+
+.main .catalog-category-product > .wrapper {
+}
+
+.main .catalog-category-product p {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--grey-1);
+}
+
+.main .catalog-category-product p.title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.main .catalog-category-product p.article-number {
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+
+.main .catalog-category-product .button--big {
+  margin-top: 12px;
+  margin-bottom: 24px;
+}

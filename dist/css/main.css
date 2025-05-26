@@ -18,9 +18,13 @@
 @import url(./components/search-panel.css);
 @import url(./components/trust.css);
 @import url(./components/catalog-in-header.css);
-@import url(./pages/catalog-item.css);
 @import url(./components/page-information.css);
 @import url(./components/schemes.css);
+@import url(./components/tabs.css);
+
+@import url(./pages/catalog-category.css);
+@import url(./pages/catalog-category-product.css);
+@import url(./pages/blog.css);
 
 :root {
   --desktop-width: 1608px;

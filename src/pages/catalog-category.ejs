@@ -12,90 +12,10 @@
       <div class="overlay--main hidden"></div>
       <div class="row row--top">
         <!-- subnav -->
-        <div class="subnav text--12">
-  <div class="container">
-    <div class="city-selector popup-toggle" data-city="Москва">
-      <span class="city-selected">Москва</span>
-      <ul class="cities">
-        <li class="city">Санкт-Петербург</li>
-        <li class="city">Москва</li>
-        <li class="city">Вышний Волочок</li>
-        <li class="city">Петропавловск-Камчатский</li>
-        <li class="city">Москва</li>
-        <li class="city">Вышний Волочок</li>
-        <li class="city">Петропавловск-Камчатский</li>
-        <li class="city">Москва</li>
-        <li class="city">Вышний Волочок</li>
-        <li class="city">Петропавловск-Камчатский</li>
-        <li class="city">Москва</li>
-        <li class="city">Вышний Волочок</li>
-        <li class="city">Петропавловск-Камчатский</li>
-      </ul>
-    </div>
-
-    <div class="address">ул. Правды 24, стр.4, офис 313</div>
-    <span class="mail"><a href="mailto:info@asko.su">info@asko.su</a></span>
-    <span class="phone"><a href="tel:+74959011200">+7 495 901 12 00</a></span>
-
-    <div class="messengers">
-      <a class="whatsapp" href="http://"></a>
-      <a class="telegram" href="http://"></a>
-    </div>
-
-    <button class="button button--order-call">Заказать звонок</button>
-  </div>
-</div>
-
+        <%- include('../templates/subnav') %>
 
         <!-- header-top -->
-        <div class="header-top">
-  <div class="container">
-    <a class="logo" href="/"><img src="./images/logo.png" alt="" /></a>
-    <nav>
-      <ul class="text--title-16">
-        <li><a href="http://">Каталог</a></li>
-        <li><a href="http://">Калькулятор</a></li>
-        <li><a href="http://">О компании</a></li>
-        <li><a href="http://">Блог</a></li>
-        <li><a href="http://">Контакты</a></li>
-      </ul>
-    </nav>
-
-    <div class="wrapper">
-      <div class="wrapper--search popup-toggle">
-        <button class="search"></button>
-
-        <div class="search-panel">
-          <div class="container">
-            <div class="wrapper">
-              <input
-                type="text"
-                name="search-in-header"
-                id="search-in-header"
-                placeholder="Введите фразу для поиска"
-              />
-            </div>
-
-            <!-- если есть результат добавить search-result--open -->
-            <div class="search-result search-result--open">
-              <ul>
-                <li><a href="">Минеральные потолки </a></li>
-                <li><a href="">Минеральные потолки </a></li>
-                <li><a href="">Минеральные потолки </a></li>
-                <li><a href="">Минеральные потолки </a></li>
-                <li><a href="">Минеральные потолки </a></li>
-              </ul>
-
-              <a class="button button--grey" href="#">все результаты</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="send-request">Отправить заявку</button>
-    </div>
-  </div>
-</div>
-
+        <%- include('../templates/header-top') %>
       </div>
 
       <div class="container page-header">
@@ -120,7 +40,7 @@
       </div>
 
       <div class="container">
-        <div class="catalog-item-tabs">
+        <div class="tabs">
           <div class="tabs-item">Потолки Армстронг эконом класса</div>
           <div class="tabs-item">Бюджетный вариант потолки Армстронг</div>
           <div class="tabs-item">Потолки Армстронг с кромкой Board</div>
@@ -133,7 +53,7 @@
         </div>
       </div>
 
-      <div class="container catalog-item">
+      <div class="container catalog-category">
         <div class="sidebar">
           <ul class="items-types">
             <li class="item-type">
@@ -267,7 +187,7 @@
           </ul>
         </div>
 
-        <div class="wraper">
+        <div class="wrapper">
           <div class="products">
             <!--  -->
             <div class="product">
@@ -440,8 +360,8 @@
           В ассортименте представлены стильные конструкции:
         </p>
 
-        <ol>
-          <li class="li-title">Плиты эконом-класса</li>
+        <ol class="ol--numbers">
+          <li class="li li-title">Плиты эконом-класса</li>
           <p>
             серия TACTIC, в которую входят панели Bajkal (Байкал), Retail
             (Ритейл), Oasis (Оазис), Skala (Скала). Изделия обладают хорошими
@@ -450,9 +370,9 @@
             коммерческих предприятиях.
           </p>
 
-          <li class="li-title">Специализированные плиты</li>
+          <li class="li li-title">Специализированные плиты</li>
           <p>функциональные решения:</p>
-          <ul>
+          <ul class="ul--circles">
             <li>
               медицинские плиты Bioguard, Alpina, Clean Room FL. Они находят
               повсеместное применение в больничных палатах, различных врачебных
@@ -499,7 +419,7 @@
 
       <div class="container page-information">
         <h3 class="page-information__title">Преимущества</h3>
-        <ul>
+        <ul class="ul--circles">
           <li>
             медицинские плиты Bioguard, Alpina, Clean Room FL. Они находят
             повсеместное применение в больничных палатах, различных врачебных
@@ -747,102 +667,8 @@
         </div>
       </div>
 
-      <div class="container">
-        <h2 class="title-top text--h2">Контакты</h2>
-      </div>
-
-      <div class="container">
-        <div class="contact">
-          <div class="address">
-            <h3>127137, г. Москва, ул. Правды 24, стр.4, офис 313</h3>
-
-            <div class="wrapper">
-              <span class="work-time">
-                Офис работает: ПН-ПТ с 9:00 до 18:00
-              </span>
-
-              <span class="phone"
-                ><a href="tel:+74959011200">+7(495)901-12-00</a></span
-              >
-
-              <span class="mail"
-                ><a href="mailto:info@asko.su">info@asko.su</a></span
-              >
-            </div>
-          </div>
-          <div class="map">
-            <img src="./images/map.png" alt="" />
-          </div>
-        </div>
-      </div>
-
       <!-- footer -->
-      <div class="footer">
-  <div class="container">
-    <div class="grid--footer">
-      <div class="links">
-        <ul>
-          <li>Каталог</li>
-          <li><a href="">Армстронг</a></li>
-          <li><a href="">Албес</a></li>
-          <li><a href="">Ермак</a></li>
-          <li><a href="">Грильято Албес</a></li>
-          <li><a href="">Грильято Ермак</a></li>
-          <li><a href="">Касетный потолок Албес</a></li>
-          <li><a href="">Реечный потолок Албес</a></li>
-          <li><a href="">Подвесной потолок пр-ва Китай</a></li>
-          <li><a href="">Подвесная система Армстронг</a></li>
-          <li><a href="">Подвесная система Албес</a></li>
-          <li><a href="">Акустические потолочные решения</a></li>
-        </ul>
-
-        <ul>
-          <li>Компания</li>
-          <li><a href="">Главная</a></li>
-          <li><a href="">О компании</a></li>
-          <li><a href="">Блог</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-
-        <ul>
-          <li>Документы</li>
-          <li><a href="">Сертификаты</a></li>
-          <li><a href="">Юридическая информация</a></li>
-          <li><a href="">Условия возврата</a></li>
-          <li><a href="">Политика конфиденциальности</a></li>
-        </ul>
-      </div>
-
-      <img class="logo" src="./images/logo-footer.png" alt="" />
-
-      <div class="phone-and-button--calculator">
-        <a class="phone" href="tel:+74959011200">+7(495)901-12-00</a>
-        <a class="button button--calculator" href="">
-          <span>Калькулятор</span>
-        </a>
-      </div>
-
-      <div class="diviver"></div>
-
-      <div class="copyright">
-        <span class="text--title-1 text--uppercase"
-          >© АГЕНТСТВО СТРОИТЕЛЬНОЙ КОМПЛЕКТАЦИИ "АСКО", 2024</span
-        >
-        <span
-          >Официальный поставщик крупнейших производителей материалов потолочных
-          систем и строительной химии
-        </span>
-      </div>
-
-      <div class="messengers">
-        <a href="" class="viber"></a>
-        <a href="" class="telegram"></a>
-        <a href="" class="whatsapp"></a>
-      </div>
-    </div>
-  </div>
-</div>
-
+      <%- include('../templates/footer') %>
 
       <div class="mobile" style="display: none">
         <div class="burger"></div>

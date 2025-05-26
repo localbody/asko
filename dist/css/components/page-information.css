@@ -27,7 +27,7 @@
   color: var(--grey-1);
 }
 
-.main .page-information ul li {
+.main .page-information ul.ul--circles li {
   font-size: 14px;
   line-height: 24px;
   color: var(--grey-1);
@@ -37,7 +37,7 @@
   padding-left: 24px;
 }
 
-.main .page-information ul > li::before {
+.main .page-information ul.ul--circles > li::before {
   content: '';
   width: 6px;
   height: 6px;
@@ -49,32 +49,38 @@
   bottom: 33%;
 }
 
-.main .page-information ol {
+.main .page-information ol.ol--numbers {
   display: grid;
   gap: 16px;
 }
 
-.main .page-information ol li.li-title {
-  font-size: 16px;
+.main .page-information ol.ol--numbers li.li {
+  font-size: 14px;
   line-height: 24px;
-  color: var(--black);
+  color: var(--grey-1);
 
   padding-left: 40px;
 }
 
-.main .page-information ol {
+.main .page-information ol.ol--numbers li.li-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+}
+
+.main .page-information ol.ol--numbers {
   list-style: none; /* Remove default numbering */
   counter-reset: item;
   padding-left: 0; /* Optional: adjust padding */
 }
 
-.main .page-information ol > li {
+.main .page-information ol.ol--numbers > li {
   counter-increment: item;
   position: relative;
   /* padding-left: 1.5em; */
 }
 
-.main .page-information ol > li::before {
+.main .page-information ol.ol--numbers > li::before {
   content: counter(item);
   position: absolute;
   left: 0;
@@ -114,4 +120,37 @@
   font-size: 14px;
   line-height: 24px;
   padding: 20px 0;
+}
+
+.page-information ul.documents {
+  display: flex;
+  gap: 24px;
+}
+
+.page-information ul.documents li {
+  border: 1px solid var(--grey-3);
+  padding: 25px 12px;
+  border-radius: 8px;
+}
+
+.page-information ul.documents li a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--grey-1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.page-information ul.documents li a::before {
+  content: '';
+  width: 50px;
+  height: 56px;
+  background-image: url(../../images/icons/pdf.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex-shrink: 0;
 }

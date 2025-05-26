@@ -133,6 +133,7 @@
   font-weight: 500;
   padding: 16px 40px;
 }
+
 .button--grey {
   border: 1px solid var(--grey-1);
   color: var(--grey-1);
@@ -146,6 +147,14 @@
 .button--orange-fill {
   background-color: var(--orange);
   color: var(--white);
+}
+
+.button--big {
+  padding: 16px 56px;
+  font-size: 48px;
+  line-height: 54px;
+  font-weight: 500;
+  text-transform: none;
 }
 
 .main .title-top {
