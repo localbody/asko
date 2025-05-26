@@ -1,10 +1,10 @@
-.blog .blog__articles {
+.blog__articles {
   display: grid;
   gap: 8px;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.blog .blog__articles .blog__article-link {
+.blog__articles .blog__article-link {
   width: 396px;
   height: 462px;
   background-color: var(--grey-4);
@@ -15,20 +15,20 @@
   transition: 0.3s all ease;
 }
 
-.blog .blog__articles .blog__article-link:hover {
+.blog__articles .blog__article-link:hover {
   border-bottom-color: var(--orange);
 }
 
-.blog .blog__articles .blog__article-link .blog__article-info {
+.blog__articles .blog__article-link .blog__article-info {
   padding: 24px;
 }
 
-.blog .blog__articles .blog__article-link .wrapper {
+.blog__articles .blog__article-link .wrapper {
   position: relative;
   padding-top: 10px;
 }
 
-.blog .blog__articles .blog__article-link .wrapper::before {
+.blog__articles .blog__article-link .wrapper::before {
   content: '';
   position: absolute;
   top: 0;
@@ -38,14 +38,14 @@
   background-color: var(--orange);
 }
 
-.blog .blog__articles .blog__article-link .date {
+.blog__articles .blog__article-link .date {
   font-size: 12px;
   line-height: 18px;
   color: var(--grey-1);
   margin-bottom: 8px;
 }
 
-.blog .blog__articles .blog__article-link .title {
+.blog__articles .blog__article-link .title {
   font-size: 20px;
   line-height: 28px;
   font-weight: 500;

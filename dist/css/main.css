@@ -25,6 +25,7 @@
 @import url(./pages/catalog-category.css);
 @import url(./pages/catalog-category-product.css);
 @import url(./pages/blog.css);
+@import url(./pages/blog-article.css);
 
 :root {
   --desktop-width: 1608px;
