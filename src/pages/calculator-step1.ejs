@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="overlay--main hidden"></div>
+      <div class="row row--top">
+        <!-- subnav -->
+        <%- include('../templates/subnav') %>
+
+        <!-- header-top -->
+        <%- include('../templates/header-top') %>
+      </div>
+
+      <div class="container page-header">
+        <div class="breadcrumbs">
+          <a href="">Главная</a> <span class="divider">/</span>
+          <span class="current-page">Калькулятор</span>
+        </div>
+        <h1 class="page-title text--h1">Калькулятор расчета Армстронг</h1>
+      </div>
+
+      <div class="container calculator">
+        <div class="page-with-sidebar">
+          <!--  -->
+          <div class="page-with-sidebar__body">
+            <!--  -->
+            <p class="text--grey text--14">
+              При ремонте и обновлении интерьера часто уделяют большое внимание
+              стенам, полу, мебели и декору, но потолок остается зачастую
+              забытым. Однако, правильно спроектированный и оформленный потолок
+              может значительно повлиять на атмосферу в помещении и сделать его
+              по-настоящему выдающимся. Именно поэтому системы кубообразного
+              дизайна потолка становятся все более популярными среди дизайнеров
+              интерьера.
+            </p>
+
+            <h3>ШАГ 1</h3>
+
+            <div class="wrapper--row">
+              <div class="input input--text">
+                <label for="">Укажите площадь потолка (м<sup>2</sup>)</label>
+                <input type="text" placeholder="Площадь потолка" />
+              </div>
+
+              <div class="input input--select">
+                <label for="">Выберите размер потолочной плиты</label>
+                <select name="" id="">
+                  <option value="">Евростандарт (600x600)</option>
+                  <option value="">Евростандарт (600x600)</option>
+                  <option value="">Евростандарт (600x600)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="wrapper--row">
+              <button class="button button--width-min button--orange-fill">
+                Рассчитать
+              </button>
+              <button class="button button--width-min button--grey">
+                Очистить
+              </button>
+            </div>
+
+            <div class="page-information">
+              <h3 class="page-information__title">Расчеты</h3>
+              <div class="wrapper wrapper--flex">
+                <table>
+                  <tr>
+                    <td>Плита потолочная</td>
+                    <td>0 шт.</td>
+                    <td>0 кв.м.</td>
+                  </tr>
+                  <tr>
+                    <td>Рейка несущая - 3,6м</td>
+                    <td></td>
+                    <td>0 шт.</td>
+                  </tr>
+                  <tr>
+                    <td>Масса</td>
+                    <td></td>
+                    <td>0 кг.</td>
+                  </tr>
+                </table>
+
+                <table>
+                  <tr>
+                    <td>Подвес</td>
+                    <td>0 шт.</td>
+                  </tr>
+                  <tr>
+                    <td>Рейка - 1,2м</td>
+                    <td>0 шт.</td>
+                  </tr>
+                  <tr>
+                    <td>Объем</td>
+                    <td>0 м<sup>3</sup></td>
+                  </tr>
+                </table>
+
+                <table>
+                  <tr>
+                    <td>Подвес</td>
+                    <td>0 шт.</td>
+                  </tr>
+                  <tr>
+                    <td>Рейка - 1,2м</td>
+                    <td>0 шт.</td>
+                  </tr>
+                </table>
+              </div>
+              <span class="note">
+                * - Масса и объем считается по средним показателям веса реек и
+                плиты.
+              </span>
+              <p class="text--black text--medium">
+                Точную информацию по весу и объему уточняйте у специалистов.
+              </p>
+            </div>
+
+            <button class="button button--width-min button--orange-fill">
+              Следующий шаг
+            </button>
+          </div>
+          <!--  -->
+          <div class="page-with-sidebar__sidebar">
+            <div class="sidebar__item--noborder">
+              <h3>Калькулятор</h3>
+              <ul class="links">
+                <li>
+                  <a class="active" href=""
+                    >Калькулятор Армстронг (Armstrong)</a
+                  >
+                </li>
+                <li>
+                  <a href="">Калькулятор Грильято</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <%- include('../templates/footer') %>
+
+      <div class="mobile" style="display: none">
+        <div class="burger"></div>
+        <div class="logo"></div>
+        <div class="wrapper">
+          <button class="search"></button>
+          <button class="call"></button>
+          <button class="whatsapp"></button>
+          <button class="telegram"></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/slider-partners.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

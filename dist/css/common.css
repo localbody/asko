@@ -106,7 +106,29 @@
   text-transform: uppercase;
 }
 
+.text--grey {
+  color: var(--grey-1);
+}
+
+.text--black {
+  color: var(--black) !important;
+}
+
+.text--regular {
+  font-weight: 400 !important;
+}
+
+.text--medium {
+  font-weight: 500 !important;
+}
+
+.text--bold {
+  font-weight: 700 !important;
+}
+
 .button {
+  display: block;
+  width: fit-content;
   padding: 16px 56px;
   font-size: 12px;
   line-height: 24px;
@@ -114,6 +136,12 @@
   border-radius: 6px;
   background-color: transparent;
   text-decoration: none;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.button--width-min {
+  width: min-content;
 }
 
 .button--order-call {
@@ -266,4 +294,90 @@
   justify-content: center;
 
   border-radius: 4px;
+}
+
+.wrapper--flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input--text label {
+}
+
+.input {
+  width: 100%;
+  display: grid;
+  gap: 8px;
+}
+
+.input input[type='text'],
+.input select {
+  width: 100%;
+
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  padding: 16px;
+  color: var(--grey-1);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.input label {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: var(--grey-1);
+}
+
+.input--select select {
+  appearance: none; /* Убирает стандартный стиль (Chrome, Safari, Edge) */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(../images/icons/chevron.svg);
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 24px;
+  padding-right: 54px; /* Оставляем место под стрелку */
+}
+
+.wrapper--row {
+  display: flex;
+  gap: 24px;
+}
+
+.flex--space-between {
+  justify-content: space-between;
+}
+
+.content--orange {
+  width: 100%;
+  background-color: var(--orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 42px 40px;
+  gap: 24px;
+}
+
+.content--orange h4 {
+  color: var(--white);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.content--orange .wrapper--image {
+  width: 52px;
+  height: 52px;
+  background-color: var(--white);
+  border-radius: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.content--orange img {
+  width: 24px;
+  height: 24px;
 }

@@ -21,11 +21,15 @@
 @import url(./components/page-information.css);
 @import url(./components/schemes.css);
 @import url(./components/tabs.css);
+@import url(./components/page-with-sidebar.css);
 
 @import url(./pages/catalog-category.css);
 @import url(./pages/catalog-category-product.css);
 @import url(./pages/blog.css);
 @import url(./pages/blog-article.css);
+@import url(./pages/certificates.css);
+@import url(./pages/calculator.css);
+@import url(./pages/contacts.css);
 
 :root {
   --desktop-width: 1608px;

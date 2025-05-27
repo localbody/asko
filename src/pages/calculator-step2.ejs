@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="overlay--main hidden"></div>
+      <div class="row row--top">
+        <!-- subnav -->
+        <%- include('../templates/subnav') %>
+
+        <!-- header-top -->
+        <%- include('../templates/header-top') %>
+      </div>
+
+      <div class="container page-header">
+        <div class="breadcrumbs">
+          <a href="">Главная</a> <span class="divider">/</span>
+          <span class="current-page">Калькулятор</span>
+        </div>
+        <h1 class="page-title text--h1">Калькулятор расчета Армстронг</h1>
+      </div>
+
+      <div class="container calculator">
+        <div class="page-with-sidebar">
+          <!--  -->
+          <div class="page-with-sidebar__body">
+            <!--  -->
+            <p class="text--grey text--14">
+              При ремонте и обновлении интерьера часто уделяют большое внимание
+              стенам, полу, мебели и декору, но потолок остается зачастую
+              забытым. Однако, правильно спроектированный и оформленный потолок
+              может значительно повлиять на атмосферу в помещении и сделать его
+              по-настоящему выдающимся. Именно поэтому системы кубообразного
+              дизайна потолка становятся все более популярными среди дизайнеров
+              интерьера.
+            </p>
+
+            <h3>ШАГ 2</h3>
+
+            <div class="wrapper--row">
+              <div class="input input--text">
+                <label for="">Ваше имя</label>
+                <input type="text" placeholder="Имя" />
+              </div>
+
+              <div class="input input--text">
+                <label for="">Ваш телефон</label>
+                <input type="text" placeholder="Ваш телефон" />
+              </div>
+            </div>
+
+            <div class="wrapper--row">
+              <div class="input input--text">
+                <label for="">Название компании</label>
+                <input type="text" placeholder="Название компании" />
+              </div>
+
+              <div class="input input--text">
+                <label for="">Сообщение</label>
+                <input type="text" placeholder="Сообщение" />
+              </div>
+            </div>
+
+            <div class="wrapper--row flex--space-between">
+              <button class="button button--width-min button--grey">
+                Назад
+              </button>
+              <button class="button button--width-min button--orange-fill">
+                Отправить
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="page-with-sidebar__sidebar">
+            <div class="sidebar__item--noborder">
+              <h3>Калькулятор</h3>
+              <ul class="links">
+                <li>
+                  <a class="active" href=""
+                    >Калькулятор Армстронг (Armstrong)</a
+                  >
+                </li>
+                <li>
+                  <a href="">Калькулятор Грильято</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="content--orange">
+          <div class="wrapper--image">
+            <img src="./images/icons/truck.svg " alt="" />
+          </div>
+          <h4>
+            Стоимость и сроки доставки вам поможет рассчитать наш менеджер
+          </h4>
+        </div>
+
+        <div class="wrapper--row">
+          <div class="content--orange">
+            <div class="wrapper--image">
+              <img src="./images/icons/import.svg " alt="" />
+            </div>
+            <h4>Погрузка с нашего склада осуществляется нашими силами</h4>
+          </div>
+          <div class="content--orange">
+            <div class="wrapper--image">
+              <img src="./images/icons/export.svg " alt="" />
+            </div>
+            <h4>Разгрузка на вашем объекте осуществляется вашими силами</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <%- include('../templates/footer') %>
+
+      <div class="mobile" style="display: none">
+        <div class="burger"></div>
+        <div class="logo"></div>
+        <div class="wrapper">
+          <button class="search"></button>
+          <button class="call"></button>
+          <button class="whatsapp"></button>
+          <button class="telegram"></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/slider-partners.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

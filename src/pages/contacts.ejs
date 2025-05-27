@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="overlay--main hidden"></div>
+      <div class="row row--top">
+        <!-- subnav -->
+        <%- include('../templates/subnav') %>
+
+        <!-- header-top -->
+        <%- include('../templates/header-top') %>
+      </div>
+
+      <div class="container page-header">
+        <div class="breadcrumbs">
+          <a href="">Главная</a> <span class="divider">/</span>
+          <span class="current-page">Контакты</span>
+        </div>
+        <h1 class="page-title text--h1">Контакты</h1>
+      </div>
+
+      <div class="container contacts">
+        <h2 class="text--h3">
+          27137, г. Москва, ул. Правды 24, стр.4, офис 313
+        </h2>
+        <div class="wrapper--row flex--space-between">
+          <ul>
+            <li class="text--grey text--14">
+              Офис работает: ПН-ПТ с 9:00 до 18:00
+            </li>
+            <li><a class="phone" href="tel:+">+7(495)901-12-00</a></li>
+            <li><a class="mail" href="mailto:">info@asko.su</a></li>
+          </ul>
+
+          <ul>
+            <li class="with-title">
+              <span class="text--grey text--14">Название</span>
+              <span class="text--h3">ООО “Аско”</span>
+            </li>
+            <li class="with-title">
+              <span class="text--grey text--14">Директор</span>
+              <span class="text--h3">Куликов Виктор Алексеевич</span>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="with-title">
+              <span class="text--grey text--14">ИНН</span>
+              <span class="text--h3">5406800776</span>
+            </li>
+            <li>
+              <button class="button button--orange button--download">
+                Карточка предприятия
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <img class="map" src="./images/map--fluid.png " alt="" />
+
+        <a
+          class="button button--grey"
+          style="margin: 0 auto; margin-top: 1.5em"
+          href=""
+          >Схема проезда</a
+        >
+      </div>
+
+      <div class="row contact-form">
+        <div class="container">
+          <div class="write_to_us">
+            <div class="inner">
+              <h3>Напишите нам</h3>
+              <p>Наши специалисты проконсультируют вас по любому вопросу.</p>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <div class="wrapper--row">
+              <div class="input input--text">
+                <label for="">Ваше имя</label>
+                <input type="text" placeholder="Имя" />
+              </div>
+
+              <div class="input input--text">
+                <label for="">Ваш телефон</label>
+                <input type="text" placeholder="Ваш телефон" />
+              </div>
+            </div>
+
+            <div class="wrapper--row">
+              <div class="input input--text">
+                <label for="">Название компании</label>
+                <input type="text" placeholder="Название компании" />
+              </div>
+
+              <div class="input input--text">
+                <label for="">Сообщение</label>
+                <input type="text" placeholder="Сообщение" />
+              </div>
+            </div>
+
+            <button class="button button--width-min button--orange-fill">
+              Отправить
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <%- include('../templates/footer') %>
+
+      <div class="mobile" style="display: none">
+        <div class="burger"></div>
+        <div class="logo"></div>
+        <div class="wrapper">
+          <button class="search"></button>
+          <button class="call"></button>
+          <button class="whatsapp"></button>
+          <button class="telegram"></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/slider-partners.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

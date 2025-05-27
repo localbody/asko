@@ -1,0 +1,26 @@
+.calculator {
+  display: grid;
+  gap: 80px;
+}
+
+.calculator .page-with-sidebar__body {
+  gap: 40px;
+}
+
+.calculator .page-information table tr td:not(:first-child) {
+  text-align: right;
+  padding-left: 5em;
+}
+
+.calculator h3 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.calculator .note {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--grey-1);
+}
