@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="overlay--main hidden"></div>
+      <div class="row row--top">
+        <!-- subnav -->
+        <%- include('../templates/subnav') %>
+
+        <!-- header-top -->
+        <%- include('../templates/header-top') %>
+      </div>
+
+      <div class="container page-header">
+        <div class="breadcrumbs">
+          <a href="">Главная</a> <span class="divider">/</span>
+          <span class="current-page">Доставка</span>
+        </div>
+        <h1 class="page-title text--h1">Доставка</h1>
+      </div>
+
+      <div class="container delivery">
+        <div class="divider"></div>
+        <p>
+          Продукция популярного производителя пользуется неимоверным спросом.
+          Это объясняется тем, что потолочные плиты изготавливаются из
+          первосортного сырья, в качестве которого выступает твердое минволокно.
+          В ассортименте представлены стильные конструкции:
+        </p>
+
+        <div class="wrapper--boxes">
+          <div class="box">
+            <img src="./images/icons/truck.svg " alt="" />
+            <p>
+              Мы ценим ваше время и возьмем на себя поиск транспортного средства
+            </p>
+          </div>
+          <div class="box">
+            <img src="./images/icons/box--orange.svg " alt="" />
+            <p>
+              Прямые поставки от производителя и собственного склада 950м<sup
+                >2</sup
+              >
+            </p>
+          </div>
+          <div class="box">
+            <img src="./images/icons/ok.svg " alt="" />
+            <p>
+              Установка и монтаж не входят в стоимость товара, но мы готовы вам
+              помочь и в этом
+            </p>
+          </div>
+          <div class="box">
+            <img src="./images/icons/medal-star.svg " alt="" />
+            <p>Гарантия на нашу продукцию – не менее 25 лет</p>
+          </div>
+        </div>
+
+        <h2 class="text--h2">Тест про условия доставки</h2>
+
+        <p>
+          Компания АСКО является официальным поставщиком крупнейших
+          производителей материалов потолочных систем и строительной химии.
+          История нашей компании началась с 2019 г. За этот время мы прошли все
+          стадии становления. Теперь мы не просто торгуем, а оказываем
+          комплексные услуги с использованием творческого подхода, современных
+          материалов и технологий. На наших складских площадях более 950 позиций
+          от эконома до дизайнерских потолков в разных цветовых решениях. Мы
+          воплощаем в жизнь даже самые смелые решения.
+        </p>
+
+        <p>
+          Наша команда стремиться к непрекращающемуся развитию, наш компас —
+          ориентир на клиента, что позволяет нам быть максимально гибкими в
+          сотрудничестве с нашими заказчиками.
+        </p>
+
+        <div class="wrapper--icons-texts">
+          <div class="icon-text">
+            <div class="wrapper--image">
+              <img src="./images/icons/discount.svg" alt="" />
+            </div>
+            <p>Гибкая система скидок для всех наших клиентов</p>
+          </div>
+          <div class="icon-text">
+            <div class="wrapper--image">
+              <img src="./images/icons/location--white.svg" alt="" />
+            </div>
+            <p>Доставка по Москве и МО, в регионы России</p>
+          </div>
+          <div class="icon-text">
+            <div class="wrapper--image">
+              <img src="./images/icons/box--white.svg" alt="" />
+            </div>
+
+            <p>Качественная упаковка материала</p>
+          </div>
+          <div class="icon-text">
+            <div class="wrapper--image">
+              <img src="./images/icons/box--white.svg" alt="" />
+            </div>
+            <p>Качественная упаковка материала</p>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="content--orange">
+          <div class="wrapper--image">
+            <img src="./images/icons/truck.svg " alt="" />
+          </div>
+          <h4>
+            Стоимость и сроки доставки вам поможет рассчитать наш менеджер
+          </h4>
+        </div>
+
+        <div class="wrapper--row">
+          <div class="content--orange">
+            <div class="wrapper--image">
+              <img src="./images/icons/import.svg " alt="" />
+            </div>
+            <h4>Погрузка с нашего склада осуществляется нашими силами</h4>
+          </div>
+          <div class="content--orange">
+            <div class="wrapper--image">
+              <img src="./images/icons/export.svg " alt="" />
+            </div>
+            <h4>Разгрузка на вашем объекте осуществляется вашими силами</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <%- include('../templates/footer') %>
+
+      <div class="mobile" style="display: none">
+        <div class="burger"></div>
+        <div class="logo"></div>
+        <div class="wrapper">
+          <button class="search"></button>
+          <button class="call"></button>
+          <button class="whatsapp"></button>
+          <button class="telegram"></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/slider-partners.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

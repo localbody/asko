@@ -22,6 +22,7 @@
 @import url(./components/schemes.css);
 @import url(./components/tabs.css);
 @import url(./components/page-with-sidebar.css);
+@import url(./components/popup.css);
 
 @import url(./pages/catalog-category.css);
 @import url(./pages/catalog-category-product.css);
@@ -30,6 +31,8 @@
 @import url(./pages/certificates.css);
 @import url(./pages/calculator.css);
 @import url(./pages/contacts.css);
+@import url(./pages/page-404.css);
+@import url(./pages/delivery.css);
 
 :root {
   --desktop-width: 1608px;
@@ -90,14 +93,9 @@ button {
   position: absolute;
   z-index: 10;
   top: 145px;
-  height: 100%;
+  height: calc(100% - 145px);
   width: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 29%,
-    rgba(102, 102, 102, 0) 100%
-  );
-  opacity: 0.6;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .main .overlay--main.hidden {

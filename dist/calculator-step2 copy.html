@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <div class="main blog">
+    <div class="main">
       <div class="overlay--main hidden"></div>
       <div class="row row--top">
         <!-- subnav -->
@@ -101,113 +101,102 @@
       <div class="container page-header">
         <div class="breadcrumbs">
           <a href="">Главная</a> <span class="divider">/</span>
-          <span class="current-page">Блог</span>
+          <span class="current-page">Калькулятор</span>
         </div>
-        <h1 class="page-title text--h1">Блог</h1>
+        <h1 class="page-title text--h1">Калькулятор расчета Армстронг</h1>
       </div>
 
-      <div class="container">
-        <div class="tabs">
-          <div class="tabs">
-            <div class="tabs-item">Интерьер</div>
-            <div class="tabs-item">Дизайн</div>
-            <div class="tabs-item">Безопасность</div>
-            <div class="tabs-item tabs-item--active">Шумопоглащение</div>
-            <div class="tabs-item">Влагоустойчивость</div>
+      <div class="container calculator">
+        <div class="page-with-sidebar">
+          <!--  -->
+          <div class="page-with-sidebar__body">
+            <!--  -->
+            <p class="text--grey text--14">
+              При ремонте и обновлении интерьера часто уделяют большое внимание
+              стенам, полу, мебели и декору, но потолок остается зачастую
+              забытым. Однако, правильно спроектированный и оформленный потолок
+              может значительно повлиять на атмосферу в помещении и сделать его
+              по-настоящему выдающимся. Именно поэтому системы кубообразного
+              дизайна потолка становятся все более популярными среди дизайнеров
+              интерьера.
+            </p>
+
+            <h3>ШАГ 2</h3>
+
+            <div class="wrapper--row">
+              <div class="input input--text">
+                <label for="">Ваше имя</label>
+                <input type="text" placeholder="Имя" />
+              </div>
+
+              <div class="input input--text">
+                <label for="">Ваш телефон</label>
+                <input type="text" placeholder="Ваш телефон" />
+              </div>
+            </div>
+
+            <div class="wrapper--row">
+              <div class="input input--text">
+                <label for="">Название компании</label>
+                <input type="text" placeholder="Название компании" />
+              </div>
+
+              <div class="input input--text">
+                <label for="">Сообщение</label>
+                <input type="text" placeholder="Сообщение" />
+              </div>
+            </div>
+
+            <div class="wrapper--row flex--space-between">
+              <button class="button button--width-min button--grey">
+                Назад
+              </button>
+              <button class="button button--width-min button--orange-fill">
+                Отправить
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="page-with-sidebar__sidebar">
+            <div class="sidebar__item--noborder">
+              <h3>Калькулятор</h3>
+              <ul class="links">
+                <li>
+                  <a class="active" href=""
+                    >Калькулятор Армстронг (Armstrong)</a
+                  >
+                </li>
+                <li>
+                  <a href="">Калькулятор Грильято</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="container blog__articles">
-        <a class="blog__article-link" href="">
-          <img
-            class="blog__article-images"
-            src="./images/blog/01.png "
-            alt=""
-          />
-
-          <div class="blog__article-info">
-            <div class="wrapper">
-              <span class="date">12.09.2024</span>
-              <h4 class="title">5 удивительных визуальных эффектов</h4>
-            </div>
+        <div class="content--orange">
+          <div class="wrapper--image">
+            <img src="./images/icons/truck.svg " alt="" />
           </div>
-        </a>
+          <h4>
+            Стоимость и сроки доставки вам поможет рассчитать наш менеджер
+          </h4>
+        </div>
 
-        <a class="blog__article-link" href="">
-          <img
-            class="blog__article-images"
-            src="./images/blog/01.png "
-            alt=""
-          />
-
-          <div class="blog__article-info">
-            <div class="wrapper">
-              <span class="date">12.09.2024</span>
-              <h4 class="title">5 удивительных визуальных эффектов</h4>
+        <div class="wrapper--row">
+          <div class="content--orange">
+            <div class="wrapper--image">
+              <img src="./images/icons/import.svg " alt="" />
             </div>
+            <h4>Погрузка с нашего склада осуществляется нашими силами</h4>
           </div>
-        </a>
-
-        <a class="blog__article-link" href="">
-          <img
-            class="blog__article-images"
-            src="./images/blog/01.png "
-            alt=""
-          />
-
-          <div class="blog__article-info">
-            <div class="wrapper">
-              <span class="date">12.09.2024</span>
-              <h4 class="title">5 удивительных визуальных эффектов</h4>
+          <div class="content--orange">
+            <div class="wrapper--image">
+              <img src="./images/icons/export.svg " alt="" />
             </div>
+            <h4>Разгрузка на вашем объекте осуществляется вашими силами</h4>
           </div>
-        </a>
-
-        <a class="blog__article-link" href="">
-          <img
-            class="blog__article-images"
-            src="./images/blog/01.png "
-            alt=""
-          />
-
-          <div class="blog__article-info">
-            <div class="wrapper">
-              <span class="date">12.09.2024</span>
-              <h4 class="title">5 удивительных визуальных эффектов</h4>
-            </div>
-          </div>
-        </a>
-
-        <a class="blog__article-link" href="">
-          <img
-            class="blog__article-images"
-            src="./images/blog/01.png "
-            alt=""
-          />
-
-          <div class="blog__article-info">
-            <div class="wrapper">
-              <span class="date">12.09.2024</span>
-              <h4 class="title">5 удивительных визуальных эффектов</h4>
-            </div>
-          </div>
-        </a>
-
-        <a class="blog__article-link" href="">
-          <img
-            class="blog__article-images"
-            src="./images/blog/01.png "
-            alt=""
-          />
-
-          <div class="blog__article-info">
-            <div class="wrapper">
-              <span class="date">12.09.2024</span>
-              <h4 class="title">5 удивительных визуальных эффектов</h4>
-            </div>
-          </div>
-        </a>
+        </div>
       </div>
 
       <!-- footer -->

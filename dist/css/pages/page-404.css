@@ -1,0 +1,6 @@
+.page-404 {
+  display: grid;
+  gap: 40px;
+  place-items: center;
+  padding: 120px 0;
+}

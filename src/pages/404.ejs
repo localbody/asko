@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="overlay--main hidden"></div>
+      <div class="row row--top">
+        <!-- subnav -->
+        <%- include('../templates/subnav') %>
+
+        <!-- header-top -->
+        <%- include('../templates/header-top') %>
+      </div>
+
+      <div class="container page-404">
+        <div class="wrapper text--center">
+          <h1 class="text--h1 pb--24">Извините</h1>
+          <h4 class="text--h4">такой страницы не существует</h4>
+        </div>
+        <a class="button button--orange" href="http://">В каталог</a>
+      </div>
+
+      <div class="container">
+        <h2 class="text--h2 pb--40">Каталог товаров</h2>
+
+        <div class="products container--products">
+          <a href="" class="product">
+            <img
+              class="product__image"
+              src="./images/products/items-1/01.png"
+              alt=""
+            />
+            <div class="wrapper">
+              <span class="title text--h4">Потолочные панели Армстронг</span>
+              <span class="more">Подробнее</span>
+            </div>
+          </a>
+
+          <a href="" class="product">
+            <img
+              class="product__image"
+              src="./images/products/items-1/02.png"
+              alt=""
+            />
+            <div class="wrapper">
+              <span class="title text--h4">Подвисная система Албес</span>
+              <span class="more">Подробнее</span>
+            </div>
+          </a>
+
+          <a href="" class="product">
+            <img
+              class="product__image"
+              src="./images/products/items-1/01.png"
+              alt=""
+            />
+            <div class="wrapper">
+              <span class="title text--h4">Потолочные панели Армстронг</span>
+              <span class="more">Подробнее</span>
+            </div>
+          </a>
+
+          <a href="" class="product">
+            <img
+              class="product__image"
+              src="./images/products/items-1/02.png"
+              alt=""
+            />
+            <div class="wrapper">
+              <span class="title text--h4">Подвисная система Албес</span>
+              <span class="more">Подробнее</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <%- include('../templates/footer') %>
+
+      <div class="mobile" style="display: none">
+        <div class="burger"></div>
+        <div class="logo"></div>
+        <div class="wrapper">
+          <button class="search"></button>
+          <button class="call"></button>
+          <button class="whatsapp"></button>
+          <button class="telegram"></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/slider-partners.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

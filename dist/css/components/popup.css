@@ -1,0 +1,56 @@
+.popup {
+  position: absolute;
+  z-index: 100;
+
+  width: 100%;
+  height: 100%;
+}
+
+.popup__body {
+  position: relative;
+  background-color: var(--grey-4);
+  padding: 40px;
+  max-width: 872px;
+  margin: 30vh auto;
+}
+
+.popup__button-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 24px;
+  height: 24px;
+  background-image: url(../../images/icons/close.svg);
+  background-size: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.popup__body .popup__header {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.popup__body .popup__header w .popup__body .popup__header::before {
+  content: '';
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  background-color: var(--orange);
+  background-image: url(../../images/icons/mail--open.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  flex-shrink: 0;
+}
+
+.popup__body .wrapper {
+  width: 100%;
+  display: grid;
+  gap: 16px;
+}
+
+.popup__body button {
+  justify-self: flex-end;
+}
