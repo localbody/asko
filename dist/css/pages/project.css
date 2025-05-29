@@ -1,0 +1,48 @@
+.main .project {
+  display: grid;
+  grid-template-columns: 520px 1fr;
+  gap: 80px;
+}
+
+.main .project .sidebar .slider {
+  height: 360px;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 24px;
+
+  margin-bottom: 80px;
+}
+
+.main .project .sidebar table tr td:last-child {
+  text-align: right;
+}
+
+.main .project .body {
+  display: grid;
+  gap: 40px;
+}
+
+.main .project > .body .wrapper {
+  display: grid;
+  gap: 24px;
+}
+
+.main .project p {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--grey-1);
+}
+
+.main .project p.title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.main .project .sidebar h3 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}

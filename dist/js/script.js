@@ -1,4 +1,41 @@
 const onLoaded = () => {
+  // phone-mask
+  const phoneInput = document.querySelector('.phone-with-mask')
+
+  if (phoneInput) {
+    phoneInput.addEventListener('input', function (e) {
+      // Удаляем все символы, кроме цифр
+      let numbers = this.value.replace(/\D/g, '')
+
+      // Удаляем ведущие символы, кроме первой 7
+      if (!numbers.startsWith('7')) {
+        numbers = '7' + numbers
+      }
+
+      // Ограничиваем длину до 11 цифр (7 + 10 цифр номера)
+      numbers = numbers.substring(0, 11)
+
+      // Форматируем строку
+      let formatted = '+7 '
+
+      if (numbers.length > 1) {
+        formatted += numbers.substring(1, 4)
+      }
+      if (numbers.length >= 4) {
+        formatted += '-' + numbers.substring(4, 7)
+      }
+      if (numbers.length >= 7) {
+        formatted += '-' + numbers.substring(7, 9)
+      }
+      if (numbers.length >= 9) {
+        formatted += '-' + numbers.substring(9, 11)
+      }
+
+      this.value = formatted
+    })
+  }
+  // end phone-mask
+
   // sidebar in catalog
   const listSidebarItemsTypes = document.querySelectorAll(
     '.main .catalog-item .sidebar .item-type span',

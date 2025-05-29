@@ -23,6 +23,7 @@
 @import url(./components/tabs.css);
 @import url(./components/page-with-sidebar.css);
 @import url(./components/popup.css);
+@import url(./components/sidebar__product.css);
 
 @import url(./pages/catalog-category.css);
 @import url(./pages/catalog-category-product.css);
@@ -33,6 +34,7 @@
 @import url(./pages/contacts.css);
 @import url(./pages/page-404.css);
 @import url(./pages/delivery.css);
+@import url(./pages/project.css);
 
 :root {
   --desktop-width: 1608px;
@@ -112,7 +114,6 @@ button {
 
 .main .page-header .breadcrumbs {
   display: flex;
-  gap: 8px;
   align-items: center;
 }
 
@@ -124,10 +125,13 @@ button {
   font-weight: 500;
 }
 
-.main .page-header .breadcrumbs .divider {
+.main .page-header .breadcrumbs a::after {
+  content: '/';
   color: var(--grey-1);
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .main .page-header .breadcrumbs .current-page {
