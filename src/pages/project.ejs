@@ -30,59 +30,66 @@
 
       <div class="container project">
         <div class="sidebar">
-          <div class="slider">
-            <div class="slider__previews"></div>
-
-            <div class="slider__full">
-              <div class="slider__image"></div>
-              <div class="slider__paginator"></div>
+          <!--  -->
+          <div class="slider swiper">
+            <div class="slider__images swiper-wrapper">
+              <div class="slider__image swiper-slide">
+                <img src="./images/projects/01.png" alt="" />
+              </div>
+              <div class="slider__image swiper-slide">
+                <img src="./images/projects/02.png" alt="" />
+              </div>
+              <div class="slider__image swiper-slide">
+                <img src="./images/projects/03.png" alt="" />
+              </div>
+              <div class="slider__image swiper-slide">
+                <img src="./images/projects/04.png" alt="" />
+              </div>
             </div>
+            <div class="slider__paginator swiper-pagination"></div>
           </div>
 
-          <div class="wrapper">
-            <h3>В проекте использовались</h3>
+          <div class="map">
+            <img src="./images/map--small.png" alt="" />
+          </div>
 
-            <div class="sidebar__products">
-              <a class="sidebar__product" href="">
-                <img src="./images/product.png" alt="" />
-                <div class="wrapper">
-                  <p class="subtitle">Эконом</p>
-                  <p class="title">Потолочная плита BAJKAL 90RH</p>
-                </div>
-              </a>
+          <div class="page-information">
+            <h3 class="page-information__title">Характеристики</h3>
 
-              <a class="sidebar__product" href="">
-                <img src="./images/product.png" alt="" />
-                <div class="wrapper">
-                  <p class="subtitle">Эконом</p>
-                  <p class="title">Потолочная плита BAJKAL 90RH</p>
-                </div>
-              </a>
-
-              <a class="sidebar__product" href="">
-                <img src="./images/product.png" alt="" />
-                <div class="wrapper">
-                  <p class="subtitle">Эконом</p>
-                  <p class="title">Потолочная плита BAJKAL 90RH</p>
-                </div>
-              </a>
-
-              <a class="sidebar__product" href="">
-                <img src="./images/product.png" alt="" />
-                <div class="wrapper">
-                  <p class="subtitle">Эконом</p>
-                  <p class="title">Потолочная плита BAJKAL 90RH</p>
-                </div>
-              </a>
-
-              <a class="sidebar__product" href="">
-                <img src="./images/product.png" alt="" />
-                <div class="wrapper">
-                  <p class="subtitle">Эконом</p>
-                  <p class="title">Потолочная плита BAJKAL 90RH</p>
-                </div>
-              </a>
-            </div>
+            <table>
+              <tr>
+                <td>Формат</td>
+                <td>600х600 мм; 600х1200 мм</td>
+              </tr>
+              <tr>
+                <td>Толщина плиты</td>
+                <td>от 15 до 20 мм</td>
+              </tr>
+              <tr>
+                <td>Материал</td>
+                <td>минеральное волокно</td>
+              </tr>
+              <tr>
+                <td>Цвет</td>
+                <td>белый</td>
+              </tr>
+              <tr>
+                <td>Поверхность</td>
+                <td>ровная, гладкая</td>
+              </tr>
+              <tr>
+                <td>Кромка</td>
+                <td>board, tegular, microlook</td>
+              </tr>
+              <tr>
+                <td>Шумопоглощение</td>
+                <td>0,65 (standart)</td>
+              </tr>
+              <tr>
+                <td>Шумоизоляция</td>
+                <td>35 dB (standart)</td>
+              </tr>
+            </table>
           </div>
         </div>
 
@@ -523,7 +530,7 @@
     </div>
 
     <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/slider-partners.js"></script>
+    <script src="./js/slider-project.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

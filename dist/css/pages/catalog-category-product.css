@@ -9,8 +9,50 @@
   display: grid;
   grid-template-columns: 80px 1fr;
   gap: 24px;
-
   margin-bottom: 80px;
+}
+
+.main .catalog-category-product .sidebar .slider__full {
+  width: 100%;
+  height: calc(326px + 28px);
+  padding-bottom: 28px;
+}
+
+.main .catalog-category-product .sidebar .slider__full .swiper-slide img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.main .catalog-category-product .sidebar .slider__thumbs .swiper-slide {
+  width: 100%;
+}
+
+.main .catalog-category-product .sidebar .slider__thumbs .swiper-slide img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: contain;
+}
+
+.main .catalog-category-product .sidebar .slider .slider__paginator {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 0 32px;
+}
+
+.main .catalog-category-product .sidebar .slider .swiper-pagination-bullet {
+  all: unset;
+  background-color: var(--grey-3);
+  height: 2px;
+  width: 100%;
+}
+
+.main
+  .catalog-category-product
+  .sidebar
+  .slider
+  .swiper-pagination-bullet-active {
+  background-color: var(--orange);
 }
 
 .main .catalog-category-product .sidebar table tr td:last-child {
