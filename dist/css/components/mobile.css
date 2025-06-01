@@ -136,6 +136,51 @@ button.close-menu {
   pointer-events: auto;
 }
 
+.mobile-menu .submenu ul li {
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.mobile-menu .submenu ul li.item--hidden {
+  display: none;
+}
+
+.mobile-menu .submenu ul li.title {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.mobile-menu .submenu ul li.more {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.mobile-menu .submenu ul li.more {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.mobile-menu .submenu ul li.more::after {
+  content: '';
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(../../images/icons/chevron.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(0deg);
+
+  transition: 0.3s transform ease;
+}
+
+.mobile-menu .submenu ul li.more--expanded::after {
+  transform: rotate(180deg);
+}
+
 .mobile-menu .send-request {
   width: 100%;
 }
@@ -148,7 +193,7 @@ button.close-menu {
 
 .mobile-menu a {
   text-decoration: none;
-  color: var(--grey-1);
+  color: var(--black);
 }
 
 .mobile-menu .mail,

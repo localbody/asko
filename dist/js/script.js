@@ -93,6 +93,53 @@ const onLoaded = () => {
 
   // end sidebar in catalog
 
+  // .mobile-menu .submenu
+  const COUNT_OF_SUBMENU_ITEMS_TO_SHOW = 5
+  const listSubmenu = document.querySelectorAll('.mobile-menu .submenu')
+
+  console.log(listSubmenu)
+
+  listSubmenu?.forEach((submenu) => {
+    const listUL = submenu.querySelectorAll('ul')
+
+    // свернем в каталоге строки, где больше 10 строк
+    // если нет более 10 строк - скроем кнопку ЕЩЕ
+
+    listUL?.forEach((item) => {
+      let isShowButtonMore = false
+      item.querySelectorAll('li.item').forEach((itemLI, index) => {
+        if (index > COUNT_OF_SUBMENU_ITEMS_TO_SHOW) {
+          itemLI.classList.add('item--hidden')
+          isShowButtonMore = true
+        }
+      })
+
+      if (!isShowButtonMore) {
+        item.querySelector('li.more').style.display = 'none'
+      }
+    })
+  })
+
+  const listSubmenuButtonMore = document.querySelectorAll('.submenu li.more')
+
+  listSubmenuButtonMore?.forEach((item) => {
+    const onClickSubmenuButtonMore = (event) => {
+      event.target.classList.toggle('more--expanded')
+
+      const listLI = event.target.closest('ul').querySelectorAll('li.item')
+
+      listLI.forEach((itemLI, index) => {
+        if (index > COUNT_OF_SUBMENU_ITEMS_TO_SHOW) {
+          itemLI.classList.toggle('item--hidden')
+        }
+      })
+    }
+
+    item.addEventListener('click', onClickSubmenuButtonMore)
+  })
+
+  // end .mobile-menu .submenu
+
   //catalog-in-header
   const COUNT_OF_CATALOG_ITEMS_TO_SHOW = 10
   const catalogInHeader = document.querySelector('.catalog-in-header .catalog')
