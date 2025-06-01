@@ -397,3 +397,8 @@
 .text--center {
   text-align: center;
 }
+
+.container--gap40 {
+  display: grid;
+  gap: 40px;
+}
