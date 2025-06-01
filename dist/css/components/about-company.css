@@ -1,6 +1,6 @@
 .main .about-company {
   display: flex;
-  gap: 160px;
+  gap: 10rem;
 }
 
 .main .about-company .column {
@@ -10,21 +10,26 @@
 .main .about-company .column--items {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  column-gap: 24px;
-  row-gap: 40px;
+  column-gap: 1.5rem;
+  row-gap: 2.5rem;
+}
+
+@media (max-width: 1650px) {
+  .main .about-company .column--items {
+    grid-template-columns: 1fr;
+  }
 }
 
 .main .about-company .column-item {
   display: flex;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .main .about-company .circle {
-  width: 52px;
-  height: 52px;
+  width: 3.25rem;
+  height: 3.25rem;
   background-position: center;
-  background-size: 24px;
+  background-size: 1.5rem;
   background-repeat: no-repeat;
   background-color: var(--orange);
   border-radius: 100%;

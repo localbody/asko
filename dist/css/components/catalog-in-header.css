@@ -2,12 +2,12 @@
   position: absolute;
   top: 0;
   width: 100%;
-  max-height: 650px;
+  max-height: calc(650 / 16 * 1rem);
   background-color: var(--white);
-  padding-top: 40px;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 40px;
+  padding-top: 2.5rem;
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
+  padding-bottom: 2.5rem;
   overflow-y: auto;
 
   height: 0;
@@ -27,25 +27,33 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  column-gap: 60px;
-  row-gap: 40px;
+  column-gap: 3.75rem;
+  row-gap: 2.5rem;
   /* высота контейнера фиксированная */
   /* должна быть больше любой из колонок */
-  height: 1000px;
+  height: calc(1000 / 16 * 1rem);
   width: 100%;
+}
+
+@media (max-width: 1650px) {
+  .main .header .catalog-in-header .catalog {
+    /* высота контейнера фиксированная */
+    /* должна быть больше любой из колонок */
+    height: calc(1200 / 16 * 1rem);
+  }
 }
 
 .main .header .catalog-in-header .catalog ul {
   /* width: calc(100% / 5); */
-  width: 300px;
+  width: calc(300 / 16 * 1rem);
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .main .header .catalog-in-header .catalog ul li.title a {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 500;
 }
 
@@ -60,8 +68,8 @@
 }
 
 .main .header .catalog-in-header .catalog ul li.item a {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
   font-weight: 400;
 }
 
@@ -78,8 +86,8 @@
 }
 
 .main .header .catalog-in-header .catalog ul li.more {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
   font-weight: 400;
 }
 
@@ -87,14 +95,14 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   cursor: pointer;
 }
 
 .main .header .catalog-in-header .catalog ul li.more::after {
   content: '';
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   background-image: url(../../images/icons/chevron.svg);
   background-position: center;
   background-repeat: no-repeat;

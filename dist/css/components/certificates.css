@@ -1,11 +1,12 @@
 .main .certificates {
   display: flex;
-  gap: 9px;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
 }
 
 .main .certificates .image {
-  padding: 9px;
+  padding: 0.5rem;
   background-color: var(--grey-4);
 }
 
@@ -16,12 +17,12 @@
 
 .main .certificate::after {
   content: '';
-  width: 45px;
-  height: 2px;
+  width: 2.875rem;
+  height: 0.125rem;
   background-color: var(--grey-1);
   position: absolute;
   bottom: 0;
-  left: 20px;
+  left: 1.25rem;
   transition: 0.3s all ease;
 }
 
@@ -30,9 +31,9 @@
 }
 
 .main .certificate .wrapper {
-  padding: 12px 20px;
+  padding: 0.75rem 1.25rem;
   display: grid;
-  gap: 8px;
+  gap: 0.5rem;
 }
 .main .certificate .title {
   color: var(--grey-1);

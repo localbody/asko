@@ -2,11 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 46px;
-  height: 77px;
+  gap: 2.875rem;
+  height: 4.75rem;
   position: relative;
-  padding-left: 92px;
-  padding-right: 92px;
+  /* padding-left: 5.75rem; */
+  /* padding-right: 5.75rem; */
 }
 
 .main .partners .swiper {
@@ -18,11 +18,14 @@
 .main .partners .slider-button-next {
   position: absolute;
   z-index: 10;
-  width: 46px;
-  height: 46px;
-  background-position: center;
+  width: 2.875rem;
+  height: 2.875rem;
+  background-position: center right;
+
   background-repeat: no-repeat;
-  background-size: 24px;
+  background-size: 1.5rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .main .partners .slider-button-prev {
@@ -33,11 +36,12 @@
 
 .main .partners .slider-button-next {
   background-image: url(../../images/icons/arrow-right.svg);
+
   right: 0;
 }
 
 .main .partners .slide {
-  height: 77px;
+  height: 4.75rem;
 }
 
 .swiper-button-next:after,

@@ -1,7 +1,20 @@
 .container--products {
   display: grid;
-  gap: 8px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+}
+
+@media (max-width: 1650px) {
+  .container--products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1440px) {
+  .container--products {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .container--products a {
@@ -9,13 +22,13 @@
 }
 
 .container--products .product {
-  width: 396px;
-  height: 448px;
+  width: calc(396 / 16 * 1rem);
+  height: calc(448 / 16 * 1rem);
   background-color: var(--grey-4);
   cursor: pointer;
   display: grid;
   grid-template-rows: 289px 1fr;
-  border-bottom: 2px solid transparent;
+  border-bottom: 0.125rem solid transparent;
   transition: 0.3s all ease;
 }
 
@@ -24,15 +37,15 @@
 }
 
 .container--products .product .wrapper {
-  padding: 24px 32px;
+  padding: 1.5rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .container--products .product .title {
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-weight: 500;
   color: var(--black);
   transition: 0.3s all ease;
@@ -44,8 +57,8 @@
 
 .container--products .product .more {
   color: var(--grey-1);
-  font-size: 12px;
-  line-height: 24px;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -58,8 +71,8 @@
 
 .container--products .product .more::after {
   content: '';
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   background-image: url(../../images/icons/arrow-right.svg);
   background-position: center;
   background-repeat: no-repeat;

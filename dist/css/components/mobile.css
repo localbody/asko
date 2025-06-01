@@ -1,0 +1,215 @@
+.mobile {
+  /* height: 56px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+}
+
+.mobile .burger {
+  width: 40px;
+  height: 40px;
+  background-image: url(../../images/icons/burger.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.mobile .logo {
+  display: flex;
+  align-items: center;
+}
+
+.mobile .logo img {
+  width: 86px;
+  height: 24px;
+}
+
+.mobile .wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.mobile .wrapper-social {
+  display: flex;
+  gap: 8px;
+}
+
+.mobile .search,
+.mobile .call,
+.mobile .whatsapp,
+.mobile .telegram {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 32px;
+}
+
+.mobile .search {
+  background-image: url(../../images/icons/search--mobile.svg);
+}
+.mobile .call {
+  background-image: url(../../images/icons/call--mobile.svg);
+}
+.mobile .whatsapp {
+  background-image: url(../../images/icons/whatsapp--grey.svg);
+}
+.mobile .telegram {
+  background-image: url(../../images/icons/telegram--grey.svg);
+}
+
+.mobile-menu {
+  padding: 24px 20px 48px 20px;
+  display: grid;
+  gap: 24px;
+  transition: 0.3s opacity ease;
+  position: absolute;
+  background-color: white;
+  z-index: 100;
+}
+
+.mobile-menu.hidden {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  padding: 0;
+}
+
+button.close-menu {
+  width: 24px;
+  height: 24px;
+  float: right;
+  background-image: url(../../images/icons/close.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+}
+
+.mobile-menu > ul {
+  display: grid;
+  gap: 16px;
+}
+
+.mobile-menu > ul > li:not(:first-child) {
+  border-bottom: 1px solid var(--grey-3);
+  padding-bottom: 16px;
+}
+
+.mobile-menu .submenu button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.mobile-menu .submenu button::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url(../../images/icons/chevron.svg);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  transition: 0.3s all ease;
+}
+
+.mobile-menu .submenu--open button::after {
+  transform: rotate(180deg);
+}
+
+.mobile-menu .submenu ul {
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s opacity ease;
+}
+
+.mobile-menu .submenu--open ul {
+  height: initial;
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-menu .send-request {
+  width: 100%;
+}
+
+.mobile-menu .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: var(--grey-1);
+}
+
+.mobile-menu .mail,
+.mobile-menu .phone {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mobile-menu .mail::before {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  background-image: url(../../images/icons/sms.svg);
+}
+
+.mobile-menu .phone::before {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  background-image: url(../../images/icons/call.svg);
+}
+
+.mobile-menu .mail a {
+  color: var(--black);
+}
+
+.mobile-menu .phone a {
+  font-size: 1rem;
+  line-height: 2rem;
+  color: var(--black);
+}
+
+.mobile-menu .messengers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.mobile-menu .messengers a {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mobile-menu .messengers .whatsapp {
+  background-image: url(../../images/icons/whatsapp--grey.svg);
+}
+
+.mobile-menu .messengers .telegram {
+  background-image: url(../../images/icons/telegram--grey.svg);
+}
+
+/*  */
+
+@media (min-width: 600px) {
+  .mobile,
+  .mobile-menu {
+    display: none;
+  }
+}

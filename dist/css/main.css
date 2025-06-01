@@ -25,6 +25,7 @@
 @import url(./components/popup.css);
 @import url(./components/sidebar__product.css);
 @import url(./components/easy-slider.css);
+@import url(./components/mobile.css);
 
 @import url(./pages/catalog-category.css);
 @import url(./pages/catalog-category-product.css);
@@ -38,7 +39,14 @@
 @import url(./pages/project.css);
 
 :root {
+  --font-size: 16;
   --desktop-width: 1608px;
+}
+
+@media (max-width: 1650px) {
+  :root {
+    --desktop-width: 100vw;
+  }
 }
 
 *,
@@ -53,6 +61,10 @@ body {
   font-family: 'Montserrat';
   font-weight: 400;
   color: var(--black);
+  font-size: var(--font-size);
+}
+
+@media (max-width: 1650px) {
 }
 
 ul {
@@ -71,6 +83,12 @@ li {
   margin: 0 auto;
 }
 
+@media (max-width: 1650px) {
+  .container {
+    padding: 0 1em;
+  }
+}
+
 .container--place-center {
   display: grid;
   place-content: center;
@@ -84,7 +102,7 @@ button {
 
 .main {
   display: grid;
-  gap: 40px;
+  gap: 2.5rem;
   position: relative;
 }
 
@@ -95,8 +113,8 @@ button {
 .main .overlay--main {
   position: absolute;
   z-index: 10;
-  top: 145px;
-  height: calc(100% - 145px);
+  top: 9.0625rem;
+  height: calc(100% - 9.0625rem);
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -110,7 +128,7 @@ button {
 
 .main .page-header {
   display: grid;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .main .page-header .breadcrumbs {
@@ -121,30 +139,30 @@ button {
 .main .page-header .breadcrumbs a {
   text-decoration: none;
   color: var(--grey-1);
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
   font-weight: 500;
 }
 
 .main .page-header .breadcrumbs a::after {
   content: '/';
   color: var(--grey-1);
-  font-size: 12px;
-  line-height: 24px;
-  margin-left: 8px;
-  margin-right: 8px;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .main .page-header .breadcrumbs .current-page {
   color: var(--grey-3);
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
   font-weight: 500;
 }
 
 .main .page-description {
   color: var(--grey-1);
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
   font-weight: 400;
 }

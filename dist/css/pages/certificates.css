@@ -1,17 +1,17 @@
 .certificates .page-with-sidebar__body {
   display: grid;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .certificates .certificates__group,
 .certificates__items {
   display: grid;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .certificates__group-title {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -19,12 +19,12 @@
 }
 
 .certificates__item {
-  border: 1px solid var(--grey-3);
-  border-radius: 8px;
-  padding: 24px 24px 24px 98px;
+  border: 0.0625rem solid var(--grey-3);
+  border-radius: 0.5rem;
+  padding: 1.5rem 1.5rem 1.5rem 6.125rem;
   background-image: url(../../images/icons/pdf.svg);
-  background-size: 50px 56px;
-  background-position: 24px 24px;
+  background-size: 3.125rem 3.5rem;
+  background-position: 1.5rem 1.5rem;
   background-repeat: no-repeat;
 }
 
@@ -34,19 +34,19 @@
 
 .certificates__item-title {
   color: var(--black);
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   transition: 0.3s all ease;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 .certificates__item-title::after {
   content: '';
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   background-image: url(../../images/icons/arrow-right.svg);
   transition: 0.3s all ease;
 }
@@ -61,8 +61,8 @@
 }
 
 .certificates__item-description {
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
   font-weight: 500;
   color: var(--grey-1);
 }

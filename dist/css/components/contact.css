@@ -1,11 +1,12 @@
 .main .contact {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .main .contact .address h3 {
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
   font-weight: 500;
 }
 
@@ -15,28 +16,28 @@
 }
 
 .main .contact .address .work-time {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
   font-weight: 500;
   color: var(--grey-1);
 }
 
 .main .contact .address .wrapper {
   display: grid;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .main .contact .address .mail,
 .main .contact .address .phone {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .main .contact .address .mail a,
 .main .contact .address .phone a {
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
   font-weight: 500;
   color: var(--black);
   text-decoration: none;
@@ -44,11 +45,11 @@
 .main .contact .address .mail::before,
 .main .contact .address .phone::before {
   content: '';
-  width: 42px;
-  height: 42px;
+  width: 2.625rem;
+  height: 2.625rem;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 16px;
+  background-size: 1rem;
   background-color: var(--grey-4);
   border-radius: 100%;
 }

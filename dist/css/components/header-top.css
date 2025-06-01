@@ -1,9 +1,15 @@
 :root {
-  --height-header-top: 88px;
+  --height-header-top: calc(88 / 16 * 1rem);
 }
 
 .header-top {
   height: var(--height-header-top);
+}
+
+@media (max-width: 600px) {
+  .header-top {
+    display: none;
+  }
 }
 
 .header-top > .container {
@@ -13,15 +19,15 @@
 }
 
 .header-top .logo {
-  width: 157px;
-  height: 44px;
+  width: calc(157 / 16 * 1rem);
+  height: calc(44 / 16 * 1rem);
 }
 
 .header-top nav ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 56px;
+  gap: 3.5rem;
 }
 
 .header-top nav ul a {
@@ -30,8 +36,8 @@
 }
 
 .header-top .search {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   background-image: url(../../images/icons/search--grey.svg);
   background-position: center;
   background-size: cover;
@@ -42,18 +48,18 @@
 
 .header-top .send-request {
   background-color: transparent;
-  border: 1px solid var(--orange);
-  border-radius: 6px;
+  border: 0.0625rem solid var(--orange);
+  border-radius: 0.375rem;
   color: var(--orange);
   text-transform: uppercase;
-  font-size: 12px;
-  line-height: 24px;
-  padding: 16px 56px;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  padding: 1rem 3.5rem;
 }
 
 .header-top .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 1.5rem;
 }

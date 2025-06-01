@@ -1,8 +1,8 @@
 .main .page-information {
   position: relative;
-  padding-top: 26px;
+  padding-top: 1.625rem;
   display: grid;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .main .page-information::before {
@@ -10,68 +10,68 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 80px;
-  height: 2px;
+  width: 5rem;
+  height: 0.125rem;
   background-color: var(--orange);
 }
 
 .main .page-information .page-information__title {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: 500;
 }
 
 .main .page-information p {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
   color: var(--grey-1);
 }
 
 .page-information table tr {
-  border-bottom: 1px solid var(--grey-3);
+  border-bottom: 0.0625rem solid var(--grey-3);
 }
 
 .page-information table th {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
   font-weight: 500;
   text-align: left;
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 
 .page-information table td {
   color: var(--grey-1);
-  font-size: 14px;
-  line-height: 24px;
-  padding: 20px 0;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  padding: 1.25rem 0;
 }
 
 .page-information ul.documents {
   display: flex;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .page-information ul.documents li {
-  border: 1px solid var(--grey-3);
-  padding: 25px 12px;
-  border-radius: 8px;
+  border: 0.0625rem solid var(--grey-3);
+  padding: 1.625rem 0.75rem;
+  border-radius: 0.5rem;
 }
 
 .page-information ul.documents li a {
   text-decoration: none;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
   color: var(--grey-1);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .page-information ul.documents li a::before {
   content: '';
-  width: 50px;
-  height: 56px;
+  width: 3.125rem;
+  height: 3.5rem;
   background-image: url(../../images/icons/pdf.svg);
   background-position: center;
   background-repeat: no-repeat;

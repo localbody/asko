@@ -1,16 +1,16 @@
 .sidebar__products {
   display: grid;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .sidebar__product {
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 32px;
-  border-bottom: 1px solid var(--grey-3);
+  gap: 2rem;
+  border-bottom: 0.0625rem solid var(--grey-3);
   transition: 0.3s all ease;
-  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
 }
 
 .sidebar__product:hover {
@@ -19,14 +19,14 @@
 
 .sidebar__product .wrapper {
   display: grid;
-  gap: 8px;
+  gap: 0.5rem;
   flex-grow: 1;
 }
 
 .sidebar__product p.title,
 .sidebar__product p.subtitle {
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
 }
 
 .sidebar__product p.subtitle {
@@ -38,12 +38,12 @@
 
 .sidebar__product p.subtitle::after {
   content: '';
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   background-image: url(../../images/icons/arrow-right.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 24px;
+  background-size: 1.5rem;
   transition: 0.3s all ease;
 }
 

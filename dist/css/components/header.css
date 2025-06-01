@@ -1,5 +1,5 @@
 .main .header {
-  height: 822px;
+  height: calc(822 / 16 * 1rem);
   position: relative;
   display: grid;
   align-items: center;
@@ -28,7 +28,13 @@
 
 .main .header .container.container--place-center > .wrapper {
   position: relative;
-  padding-right: 765px;
+  padding-right: calc(765 / 16 * 1rem);
+}
+
+@media (max-width: 1650px) {
+  .main .header .container.container--place-center > .wrapper {
+    padding-right: 20vw;
+  }
 }
 
 .main .header h2 {
@@ -39,8 +45,8 @@
 .main .header .frames {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
-  margin-bottom: 24px;
+  gap: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .main .header .frame .title {

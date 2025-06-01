@@ -9,46 +9,46 @@
 .popup__body {
   position: relative;
   background-color: var(--grey-4);
-  padding: 40px;
-  max-width: 872px;
+  padding: 2.5rem;
+  max-width: calc(872 / 16 * 1rem);
   margin: 30vh auto;
 }
 
 .popup__button-close {
   position: absolute;
-  top: 40px;
-  right: 40px;
-  width: 24px;
-  height: 24px;
+  top: 2.5rem;
+  right: 2.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
   background-image: url(../../images/icons/close.svg);
-  background-size: 24px;
+  background-size: 1.5rem;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .popup__body .popup__header {
   display: flex;
-  gap: 24px;
-  margin-bottom: 24px;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .popup__body .popup__header w .popup__body .popup__header::before {
   content: '';
-  width: 80px;
-  height: 80px;
-  border-radius: 80px;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
   background-color: var(--orange);
   background-image: url(../../images/icons/mail--open.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 40px;
+  background-size: 2.5rem;
   flex-shrink: 0;
 }
 
 .popup__body .wrapper {
   width: 100%;
   display: grid;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .popup__body button {

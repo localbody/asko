@@ -1,4 +1,33 @@
 const onLoaded = () => {
+  // button.burger
+  const buttonCloseMenu = document.querySelector('button.close-menu')
+  const buttonBurger = document.querySelector('button.burger')
+
+  const onClickButtonBurger = () => {
+    document.querySelector('.overlay--main').classList.toggle('hidden')
+    document.querySelector('.mobile-menu').classList.toggle('hidden')
+  }
+
+  buttonCloseMenu?.addEventListener('click', onClickButtonBurger)
+  buttonBurger?.addEventListener('click', onClickButtonBurger)
+
+  // end button.burger
+
+  // mobile-menu submenu
+  const listMobileSubMenu = document.querySelectorAll(
+    '.mobile-menu .submenu button',
+  )
+
+  const onClickMobileSubmenu = (event) => {
+    event.target.closest('li.submenu').classList.toggle('submenu--open')
+  }
+
+  listMobileSubMenu?.forEach((item) => {
+    item.addEventListener('click', onClickMobileSubmenu)
+  })
+
+  // end mobile-menu submenu
+
   // phone-mask
   const phoneInput = document.querySelector('.phone-with-mask')
 

@@ -1,12 +1,12 @@
 .main .project {
   display: grid;
-  grid-template-columns: 520px 1fr;
-  gap: 80px;
+  grid-template-columns: calc(520 / 16 * 1rem) 1fr;
+  gap: 5rem;
 }
 
 .main .project .sidebar {
   display: grid;
-  gap: 80px;
+  gap: 5rem;
   grid-auto-rows: max-content;
 }
 
@@ -16,37 +16,37 @@
 
 .main .project .body {
   display: grid;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .main .project > .body .wrapper {
   display: grid;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .main .project p {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
   color: var(--grey-1);
 }
 
 .main .project p.title {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 500;
   color: var(--black);
 }
 
 .main .project .sidebar h3 {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   font-weight: 500;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .main .project .map {
   width: 100%;
-  height: 298px;
+  height: calc(298 / 16 * 1rem);
   overflow: hidden;
 }
 

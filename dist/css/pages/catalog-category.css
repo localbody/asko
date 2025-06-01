@@ -1,26 +1,24 @@
 .main .catalog-category {
   display: grid;
   grid-template-columns: 256px 1fr;
-  gap: 40px;
-}
-
-.main .catalog-category .sidebar {
+  gap: 2.5rem;
 }
 
 .main .catalog-category .products {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
 }
 
 .main .catalog-category .products .product {
-  width: 424px;
-  height: 424px;
+  width: calc(424 / 16 * 1rem);
+  height: calc(424 / 16 * 1rem);
   background-color: var(--grey-4);
   cursor: pointer;
   display: grid;
-  grid-template-rows: 287px 1fr;
-  border-bottom: 2px solid transparent;
+  grid-template-rows: calc(287 / 16 * 1rem) 1fr;
+  border-bottom: 0.125rem solid transparent;
   transition: 0.3s all ease;
 }
 
@@ -30,15 +28,15 @@
 
 .main .catalog-category .products .product .slider__image {
   width: 100%;
-  height: 269px;
+  height: calc(269 / 16 * 1rem);
   object-fit: cover;
 }
 
 .main .catalog-category .products .product a.product__description {
   text-decoration: none;
   display: grid;
-  gap: 8px;
-  padding: 24px 32px;
+  gap: 0.5rem;
+  padding: 1.5rem 2rem;
 }
 
 .main .catalog-category .products .product .product__description:hover .title,
@@ -57,14 +55,14 @@
 }
 
 .main .catalog-category .products .product .product__description .type {
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
   color: var(--grey-1);
 }
 
 .main .catalog-category .products .product .product__description .title {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: var(--black);
 }
 
@@ -73,15 +71,15 @@
   align-items: center;
   justify-content: space-between;
   text-transform: uppercase;
-  font-size: 12px;
-  line-height: 24px;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
   color: var(--grey-1);
 }
 
 .main .catalog-category .products .product .product__description .more::after {
   content: '';
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   background-image: url(../../images/icons/arrow-right.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -91,24 +89,24 @@
 
 .main .catalog-category .paginator {
   display: flex;
-  gap: 8px;
+  gap: 0.5rem;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .main .catalog-category .paginator button {
-  border: 1px solid var(--grey-3);
+  border: 0.0625rem solid var(--grey-3);
   color: var(--black);
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
   font-weight: 400;
-  padding: 8px 24px;
-  border-radius: 4px;
-  height: 40px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+  height: 2.5rem;
 }
 
 .main .catalog-category .paginator button.page-number {
-  width: 40px;
+  width: 2.5rem;
   padding: 0;
 }
 .main .catalog-category .paginator button.page-number.current-page {
@@ -119,11 +117,11 @@
 
 .main .catalog-category .paginator button.prev,
 .main .catalog-category .paginator button.next {
-  padding: 11px 17px;
-  width: 40px;
+  padding: 0.75rem 1rem;
+  width: 2.5rem;
   background-image: url(../../images/icons/chevron.svg);
   background-position: center;
-  background-size: 24px;
+  background-size: 1.5rem;
   background-repeat: no-repeat;
 }
 
@@ -138,7 +136,7 @@
 .main .catalog-category .sidebar .items-types {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .main .catalog-category .sidebar .item-type .items {
@@ -149,7 +147,7 @@
 }
 
 .main .catalog-category .sidebar .item-type--open .items {
-  height: 293px;
+  height: calc(293 / 16 * 1rem);
   opacity: 1;
   visibility: visible;
   overflow-y: auto;
@@ -158,12 +156,12 @@
 .main .catalog-category .sidebar .item-type span {
   cursor: pointer;
   color: var(--black);
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 500;
-  border-bottom: 1px solid var(--grey-1);
-  padding: 12px 0;
-  margin-bottom: 12px;
+  border-bottom: 0.0625rem solid var(--grey-1);
+  padding: 0.75rem 0;
+  margin-bottom: 0.75rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -175,8 +173,8 @@
 
 .main .catalog-category .sidebar .item-type span::after {
   content: '';
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   background-image: url(../../images/icons/chevron.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -186,12 +184,12 @@
 .main .catalog-category .sidebar .item-type .items {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .main .catalog-category .sidebar .item-type .items a {
   color: var(--black);
   text-decoration: none;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }

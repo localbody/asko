@@ -1,7 +1,22 @@
 .main .cards {
-  display: grid;
-  gap: 8px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  /* place-items: center; */
+  /* grid-template-columns: repeat(4, 1fr); */
+}
+
+@media (max-width: 1650px) {
+  .main .cards {
+    /* grid-template-columns: repeat(3, 1fr); */
+  }
+}
+
+@media (max-width: 1440px) {
+  .main .cards {
+    /* grid-template-columns: repeat(2, 1fr); */
+  }
 }
 
 .main .cards a {
@@ -9,12 +24,12 @@
 }
 
 .main .cards .card {
-  width: 396px;
-  height: 462px;
+  width: calc(396 / 16 * 1rem);
+  height: calc(462 / 16 * 1rem);
   background-color: var(--grey-4);
   cursor: pointer;
   display: grid;
-  grid-template-rows: 268px 1fr;
+  grid-template-rows: calc(268 / 16 * 1rem) 1fr;
   font-weight: 500;
   color: var(--black);
 }
@@ -22,37 +37,37 @@
 .main .cards .card .wrapper {
   position: relative;
 
-  padding: 24px 32px;
+  padding: 1.5rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .main .cards .card .wrapper::before {
   content: '';
-  width: 45px;
-  height: 2px;
+  width: 2.875rem;
+  height: 0.125rem;
   background-color: var(--orange);
   position: absolute;
-  top: 20px;
-  left: 32px;
+  top: 1.25rem;
+  left: 2rem;
 }
 
 .main .cards .card hr {
-  width: 45px;
-  height: 2px;
+  width: 2.875rem;
+  height: 0.125rem;
   margin: 0 auto 0 0;
   background-color: var(--orange);
   border: none;
 }
 
 .main .cards .card .title {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
 }
 
 .main .cards .card .description {
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }

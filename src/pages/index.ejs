@@ -11,6 +11,9 @@
     <div class="main">
       <div class="overlay--main hidden"></div>
       <div class="row row--top">
+        <!-- mobile -->
+        <%- include('../templates/mobile') %>
+
         <!-- subnav -->
         <%- include('../templates/subnav') %>
 
@@ -278,42 +281,44 @@
         </div>
       </div>
 
-      <div class="partners container">
-        <button class="slider-button-prev"></button>
-        <button class="slider-button-next"></button>
+      <div class="container">
+        <div class="partners">
+          <button class="slider-button-prev"></button>
+          <button class="slider-button-next"></button>
 
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide slide">
-              <img src="./images/partners/rockfon.png" alt="" />
-            </div>
-            <div class="swiper-slide slide">
-              <img src="./images/partners/ermak.png" alt="" />
-            </div>
-            <div class="swiper-slide slide">
-              <img src="./images/partners/armstrong.png" alt="" />
-            </div>
-            <div class="swiper-slide slide">
-              <img src="./images/partners/albes.png" alt="" />
-            </div>
-            <div class="swiper-slide slide">
-              <img src="./images/partners/lepota.png" alt="" />
-            </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide">
+                <img src="./images/partners/rockfon.png" alt="" />
+              </div>
+              <div class="swiper-slide slide">
+                <img src="./images/partners/ermak.png" alt="" />
+              </div>
+              <div class="swiper-slide slide">
+                <img src="./images/partners/armstrong.png" alt="" />
+              </div>
+              <div class="swiper-slide slide">
+                <img src="./images/partners/albes.png" alt="" />
+              </div>
+              <div class="swiper-slide slide">
+                <img src="./images/partners/lepota.png" alt="" />
+              </div>
 
-            <div class="swiper-slide slide">
-              <img src="./images/partners/rockfon.png" alt="" />
-            </div>
-            <div class="swiper-slide slide">
-              <img src="./images/partners/ermak.png" alt="" />
-            </div>
-            <div class="swiper-slide slide">
-              <img src="./images/partners/armstrong.png" alt="" />
-            </div>
-            <div class="swiper-slide slide">
-              <img src="./images/partners/albes.png" alt="" />
-            </div>
-            <div class="swiper-slide slide">
-              <img src="./images/partners/lepota.png" alt="" />
+              <div class="swiper-slide slide">
+                <img src="./images/partners/rockfon.png" alt="" />
+              </div>
+              <div class="swiper-slide slide">
+                <img src="./images/partners/ermak.png" alt="" />
+              </div>
+              <div class="swiper-slide slide">
+                <img src="./images/partners/armstrong.png" alt="" />
+              </div>
+              <div class="swiper-slide slide">
+                <img src="./images/partners/albes.png" alt="" />
+              </div>
+              <div class="swiper-slide slide">
+                <img src="./images/partners/lepota.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -872,17 +877,6 @@
 
       <!-- footer -->
       <%- include('../templates/footer') %>
-
-      <div class="mobile" style="display: none">
-        <div class="burger"></div>
-        <div class="logo"></div>
-        <div class="wrapper">
-          <button class="search"></button>
-          <button class="call"></button>
-          <button class="whatsapp"></button>
-          <button class="telegram"></button>
-        </div>
-      </div>
     </div>
 
     <script src="./js/swiper-bundle.min.js"></script>
