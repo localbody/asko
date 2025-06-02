@@ -9,6 +9,12 @@
   background-repeat: no-repeat;
 }
 
+@media (max-width: 600px) {
+  .main .header {
+    height: 460px;
+  }
+}
+
 .main .header .overlay--header {
   position: absolute;
   height: 100%;
@@ -33,7 +39,12 @@
 
 @media (max-width: 1650px) {
   .main .header .container.container--place-center > .wrapper {
-    padding-right: 20vw;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .main .header .container.container--place-center .catalog-open {
+    margin-left: 1rem;
   }
 }
 
@@ -43,10 +54,19 @@
 }
 
 .main .header .frames {
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
   gap: 2.5rem;
   margin-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .main .header .frames {
+    margin-top: 16px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
 }
 
 .main .header .frame .title {

@@ -4,6 +4,13 @@
   gap: 5rem;
 }
 
+@media (max-width: 600px) {
+  .main .project {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
 .main .project .sidebar {
   display: grid;
   gap: 5rem;

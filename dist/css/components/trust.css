@@ -4,3 +4,11 @@
   row-gap: 0.5rem;
   flex-wrap: wrap;
 }
+
+@media (max-width: 600px) {
+  .main .trust {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-bottom: 1rem;
+  }
+}

@@ -89,6 +89,12 @@ li {
   }
 }
 
+@media (max-width: 600px) {
+  .container--scroll-x {
+    overflow-x: scroll;
+  }
+}
+
 .container--place-center {
   display: grid;
   place-content: center;
@@ -104,6 +110,12 @@ button {
   display: grid;
   gap: 2.5rem;
   position: relative;
+}
+
+@media (max-width: 600px) {
+  .main {
+    gap: 2rem;
+  }
 }
 
 .main .row--top {
@@ -133,6 +145,7 @@ button {
 
 .main .page-header .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 

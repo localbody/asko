@@ -1,3 +1,9 @@
+@media (max-width: 600px) {
+  .mobile--hidden {
+    display: none !important;
+  }
+}
+
 .mobile {
   /* height: 56px; */
   display: flex;
@@ -68,6 +74,7 @@
   position: absolute;
   background-color: white;
   z-index: 100;
+  width: 100%;
 }
 
 .mobile-menu.hidden {

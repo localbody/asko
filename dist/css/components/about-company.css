@@ -3,8 +3,21 @@
   gap: 10rem;
 }
 
+@media (max-width: 600px) {
+  .main .about-company {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
 .main .about-company .column {
   width: 50%;
+}
+
+@media (max-width: 600px) {
+  .main .about-company .column {
+    width: 100%;
+  }
 }
 
 .main .about-company .column--items {

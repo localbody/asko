@@ -1,5 +1,6 @@
 .main .header .catalog-in-header {
   position: absolute;
+  left: 0;
   top: 0;
   width: 100%;
   max-height: calc(650 / 16 * 1rem);
@@ -14,6 +15,13 @@
   visibility: hidden;
   opacity: 0;
   transition: 0.3s opacity ease;
+}
+
+@media (max-width: 600px) {
+  .main .header .catalog-in-header {
+    max-height: inherit;
+    padding-bottom: 2rem;
+  }
 }
 
 .main .header .popup-toggle.open .catalog-in-header {
@@ -33,6 +41,13 @@
   /* должна быть больше любой из колонок */
   height: calc(1000 / 16 * 1rem);
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  .main .header .catalog-in-header .catalog {
+    flex-wrap: nowrap;
+    height: inherit;
+  }
 }
 
 @media (max-width: 1650px) {

@@ -4,12 +4,6 @@
   justify-content: space-between;
 }
 
-.main .contact .address h3 {
-  font-size: 1.5rem;
-  line-height: 2.25rem;
-  font-weight: 500;
-}
-
 .main .contact .address {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -36,12 +30,10 @@
 
 .main .contact .address .mail a,
 .main .contact .address .phone a {
-  font-size: 1.5rem;
-  line-height: 2.25rem;
-  font-weight: 500;
   color: var(--black);
   text-decoration: none;
 }
+
 .main .contact .address .mail::before,
 .main .contact .address .phone::before {
   content: '';
@@ -63,4 +55,14 @@
 
 .main .contact .address .mail a {
   color: var(--black);
+}
+
+.main .contact .map img {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .main .contact .map img {
+    margin-top: 24px;
+  }
 }

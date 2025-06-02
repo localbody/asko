@@ -4,3 +4,13 @@
   place-items: center;
   padding: calc(120 / 16 * 1rem) 0;
 }
+
+@media (max-width: 600px) {
+  .page-404 {
+    gap: 1.5rem;
+  }
+
+  .page-404 .button {
+    width: 100%;
+  }
+}
