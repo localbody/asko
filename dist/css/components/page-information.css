@@ -15,6 +15,12 @@
   background-color: var(--orange);
 }
 
+@media (max-width: 600px) {
+  .main .page-information::before {
+    left: 1rem;
+  }
+}
+
 .main .page-information .page-information__title {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -36,14 +42,14 @@
   line-height: 1.5rem;
   font-weight: 500;
   text-align: left;
-  padding: 1.25rem 0;
+  padding: 1.25rem;
 }
 
 .page-information table td {
   color: var(--grey-1);
   font-size: 0.875rem;
   line-height: 1.5rem;
-  padding: 1.25rem 0;
+  padding: 1.25rem;
 }
 
 .page-information ul.documents {

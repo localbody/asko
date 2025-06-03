@@ -11,18 +11,94 @@
     <div class="main">
       <div class="overlay--main hidden"></div>
       <div class="row row--top">
-        <!-- mobile -->
-        <div class="mobile">
-  <div class="wrapper">
-    <button class="burger"></button>
-    <a href="" class="logo"><img src="./images/logo--mobile.png" alt="" /></a>
-  </div>
+        <!-- subnav -->
+        <div class="subnav text--12">
+  <div class="container">
+    <div class="city-selector popup-toggle" data-city="Москва">
+      <span class="city-selected">Москва</span>
+      <ul class="cities">
+        <li class="city">Санкт-Петербург</li>
+        <li class="city">Москва</li>
+        <li class="city">Вышний Волочок</li>
+        <li class="city">Петропавловск-Камчатский</li>
+        <li class="city">Москва</li>
+        <li class="city">Вышний Волочок</li>
+        <li class="city">Петропавловск-Камчатский</li>
+        <li class="city">Москва</li>
+        <li class="city">Вышний Волочок</li>
+        <li class="city">Петропавловск-Камчатский</li>
+        <li class="city">Москва</li>
+        <li class="city">Вышний Волочок</li>
+        <li class="city">Петропавловск-Камчатский</li>
+      </ul>
+    </div>
 
-  <div class="wrapper-social">
-    <a href="" class="search"></a>
-    <a href="" class="call"></a>
-    <a href="" class="whatsapp"></a>
-    <a href="" class="telegram"></a>
+    <div class="address">ул. Правды 24, стр.4, офис 313</div>
+    <span class="mail"><a href="mailto:info@asko.su">info@asko.su</a></span>
+    <span class="phone"><a href="tel:+74959011200">+7 495 901 12 00</a></span>
+
+    <div class="messengers">
+      <a class="whatsapp" href="http://"></a>
+      <a class="telegram" href="http://"></a>
+    </div>
+
+    <button class="button button--order-call">Заказать звонок</button>
+  </div>
+</div>
+
+
+        <!-- header-top -->
+        <div class="header-top mobile">
+  <div class="container">
+    <button class="burger desktop--hidden"></button>
+    <a class="logo" href="/"><img src="./images/logo.png" alt="" /></a>
+    <nav class="mobile--hidden">
+      <ul class="text--title-16">
+        <li><a href="http://">Каталог</a></li>
+        <li><a href="http://">Калькулятор</a></li>
+        <li><a href="http://">О компании</a></li>
+        <li><a href="http://">Блог</a></li>
+        <li><a href="http://">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div class="wrapper--header-top">
+      <div class="wrapper--search popup-toggle">
+        <div class="wrapper-social">
+          <button class="search"></button>
+          <a class="call desktop--hidden"></a>
+          <a class="whatsapp desktop--hidden"></a>
+          <a class="telegram desktop--hidden"></a>
+        </div>
+
+        <div class="search-panel">
+          <div class="container">
+            <div class="wrapper">
+              <input
+                type="text"
+                name="search-in-header"
+                id="search-in-header"
+                placeholder="Введите фразу для поиска"
+              />
+            </div>
+
+            <!-- если есть результат добавить search-result--open -->
+            <div class="search-result search-result--open">
+              <ul>
+                <li><a href="">Минеральные потолки </a></li>
+                <li><a href="">Минеральные потолки </a></li>
+                <li><a href="">Минеральные потолки </a></li>
+                <li><a href="">Минеральные потолки </a></li>
+                <li><a href="">Минеральные потолки </a></li>
+              </ul>
+
+              <a class="button button--grey" href="#">все результаты</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="send-request mobile--hidden">Отправить заявку</button>
+    </div>
   </div>
 </div>
 
@@ -239,92 +315,6 @@
     <div class="messengers">
       <a class="whatsapp" href="http://"></a>
       <a class="telegram" href="http://"></a>
-    </div>
-  </div>
-</div>
-
-
-        <!-- subnav -->
-        <div class="subnav text--12">
-  <div class="container">
-    <div class="city-selector popup-toggle" data-city="Москва">
-      <span class="city-selected">Москва</span>
-      <ul class="cities">
-        <li class="city">Санкт-Петербург</li>
-        <li class="city">Москва</li>
-        <li class="city">Вышний Волочок</li>
-        <li class="city">Петропавловск-Камчатский</li>
-        <li class="city">Москва</li>
-        <li class="city">Вышний Волочок</li>
-        <li class="city">Петропавловск-Камчатский</li>
-        <li class="city">Москва</li>
-        <li class="city">Вышний Волочок</li>
-        <li class="city">Петропавловск-Камчатский</li>
-        <li class="city">Москва</li>
-        <li class="city">Вышний Волочок</li>
-        <li class="city">Петропавловск-Камчатский</li>
-      </ul>
-    </div>
-
-    <div class="address">ул. Правды 24, стр.4, офис 313</div>
-    <span class="mail"><a href="mailto:info@asko.su">info@asko.su</a></span>
-    <span class="phone"><a href="tel:+74959011200">+7 495 901 12 00</a></span>
-
-    <div class="messengers">
-      <a class="whatsapp" href="http://"></a>
-      <a class="telegram" href="http://"></a>
-    </div>
-
-    <button class="button button--order-call">Заказать звонок</button>
-  </div>
-</div>
-
-
-        <!-- header-top -->
-        <div class="header-top">
-  <div class="container">
-    <a class="logo" href="/"><img src="./images/logo.png" alt="" /></a>
-    <nav>
-      <ul class="text--title-16">
-        <li><a href="http://">Каталог</a></li>
-        <li><a href="http://">Калькулятор</a></li>
-        <li><a href="http://">О компании</a></li>
-        <li><a href="http://">Блог</a></li>
-        <li><a href="http://">Контакты</a></li>
-      </ul>
-    </nav>
-
-    <div class="wrapper">
-      <div class="wrapper--search popup-toggle">
-        <button class="search"></button>
-
-        <div class="search-panel">
-          <div class="container">
-            <div class="wrapper">
-              <input
-                type="text"
-                name="search-in-header"
-                id="search-in-header"
-                placeholder="Введите фразу для поиска"
-              />
-            </div>
-
-            <!-- если есть результат добавить search-result--open -->
-            <div class="search-result search-result--open">
-              <ul>
-                <li><a href="">Минеральные потолки </a></li>
-                <li><a href="">Минеральные потолки </a></li>
-                <li><a href="">Минеральные потолки </a></li>
-                <li><a href="">Минеральные потолки </a></li>
-                <li><a href="">Минеральные потолки </a></li>
-              </ul>
-
-              <a class="button button--grey" href="#">все результаты</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="send-request">Отправить заявку</button>
     </div>
   </div>
 </div>
@@ -712,11 +702,9 @@
 
         <div class="blog__articles">
           <a class="blog__article-link" href="">
-            <img
-              class="blog__article-images"
-              src="./images/blog/01.png "
-              alt=""
-            />
+            <div class="blog__article-images">
+              <img src="./images/blog/01.png " alt="" />
+            </div>
 
             <div class="blog__article-info">
               <div class="wrapper">
@@ -727,11 +715,9 @@
           </a>
 
           <a class="blog__article-link" href="">
-            <img
-              class="blog__article-images"
-              src="./images/blog/01.png "
-              alt=""
-            />
+            <div class="blog__article-images">
+              <img src="./images/blog/01.png " alt="" />
+            </div>
 
             <div class="blog__article-info">
               <div class="wrapper">
@@ -742,11 +728,9 @@
           </a>
 
           <a class="blog__article-link" href="">
-            <img
-              class="blog__article-images"
-              src="./images/blog/01.png "
-              alt=""
-            />
+            <div class="blog__article-images">
+              <img src="./images/blog/01.png " alt="" />
+            </div>
 
             <div class="blog__article-info">
               <div class="wrapper">
@@ -757,11 +741,9 @@
           </a>
 
           <a class="blog__article-link" href="">
-            <img
-              class="blog__article-images"
-              src="./images/blog/01.png "
-              alt=""
-            />
+            <div class="blog__article-images">
+              <img src="./images/blog/01.png " alt="" />
+            </div>
 
             <div class="blog__article-info">
               <div class="wrapper">
@@ -794,7 +776,7 @@
               <div class="easy-slider__paginator swiper-pagination"></div>
             </div>
             <div class="wrapper">
-              <span class="title text--h4">Потолочные панели Армстронг</span>
+              <span class="title">Потолочные панели Армстронг</span>
               <span class="more">Подробнее</span>
             </div>
           </a>
@@ -818,7 +800,7 @@
               <div class="easy-slider__paginator swiper-pagination"></div>
             </div>
             <div class="wrapper">
-              <span class="title text--h4">Подвисная система Албес</span>
+              <span class="title">Подвисная система Албес</span>
               <span class="more">Подробнее</span>
             </div>
           </a>
@@ -842,7 +824,7 @@
               <div class="easy-slider__paginator swiper-pagination"></div>
             </div>
             <div class="wrapper">
-              <span class="title text--h4">Потолочные панели Армстронг</span>
+              <span class="title">Потолочные панели Армстронг</span>
               <span class="more">Подробнее</span>
             </div>
           </a>
@@ -866,7 +848,7 @@
               <div class="easy-slider__paginator swiper-pagination"></div>
             </div>
             <div class="wrapper">
-              <span class="title text--h4">Подвисная система Албес</span>
+              <span class="title">Подвисная система Албес</span>
               <span class="more">Подробнее</span>
             </div>
           </a>

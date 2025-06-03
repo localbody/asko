@@ -20,6 +20,8 @@
 @media (max-width: 600px) {
   .main .header .catalog-in-header {
     max-height: inherit;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-bottom: 2rem;
   }
 }
@@ -128,4 +130,26 @@
 
 .main .header .catalog-in-header .catalog ul li.more--expanded::after {
   transform: rotate(180deg);
+}
+
+.close-catalog-in-header {
+  display: none;
+  visibility: hidden;
+  pointer-events: none;
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../../images/icons/close.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  float: right;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .close-catalog-in-header {
+    display: block;
+    visibility: visible;
+    pointer-events: all;
+  }
 }

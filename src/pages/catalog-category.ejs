@@ -11,9 +11,6 @@
     <div class="main">
       <div class="overlay--main hidden"></div>
       <div class="row row--top">
-        <!-- mobile -->
-        <%- include('../templates/mobile') %>
-
         <!-- subnav -->
         <%- include('../templates/subnav') %>
 
@@ -42,7 +39,7 @@
         </p>
       </div>
 
-      <div class="container">
+      <div class="container container--tabs">
         <div class="tabs">
           <div class="tabs-item">Потолки Армстронг эконом класса</div>
           <div class="tabs-item">Бюджетный вариант потолки Армстронг</div>
@@ -422,12 +419,12 @@
           </div>
 
           <div class="paginator">
-            <button class="first">В начало</button>
+            <button class="first mobile--hidden">В начало</button>
             <button class="prev"></button>
             <button class="page-number current-page">1</button>
             <button class="page-number">2</button>
             <button class="next"></button>
-            <button class="last">В конец</button>
+            <button class="last mobile--hidden">В конец</button>
           </div>
         </div>
       </div>
@@ -624,7 +621,7 @@
         </div>
       </div>
 
-      <div class="container page-information">
+      <div class="container page-information container--scroll-x">
         <h3 class="page-information__title">Характеристики</h3>
 
         <table>

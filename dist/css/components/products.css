@@ -36,10 +36,10 @@
 
 @media (max-width: 600px) {
   .container--products .product {
-    width: calc(280 / 16 * 1rem);
-    height: calc(400 / 16 * 1rem);
-    grid-template-rows: 248px 1fr;
-    grid-template-columns: calc(280 / 16 * 1rem);
+    width: 100%;
+    height: calc(396 / 16 * 1rem);
+    grid-template-rows: 270px 1fr;
+    grid-template-columns: 100%;
   }
 }
 
@@ -71,6 +71,13 @@
   font-weight: 500;
   color: var(--black);
   transition: 0.3s all ease;
+}
+
+@media (max-width: 600px) {
+  .container--products .product .title {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
 }
 
 .container--products .product:hover .title {

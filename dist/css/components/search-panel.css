@@ -14,6 +14,12 @@
   padding-top: 1rem;
 }
 
+@media (max-width: 600px) {
+  .main .wrapper--search .search-panel {
+    top: 56px;
+  }
+}
+
 .main .wrapper--search.open .search-panel {
   height: inherit;
   visibility: visible;
@@ -49,6 +55,12 @@
   font-weight: 500;
   padding: 1rem 3rem;
   border-bottom: 0.0625rem solid var(--grey-3);
+}
+
+@media (max-width: 600px) {
+  .main .wrapper--search .search-panel ul li a {
+    padding: 1rem;
+  }
 }
 
 .main .wrapper--search .search-panel ul {

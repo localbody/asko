@@ -140,6 +140,24 @@ const onLoaded = () => {
 
   // end .mobile-menu .submenu
 
+  // close-catalog-in-header
+
+  const buttonCloseCatalogInHeader = document.querySelector(
+    '.close-catalog-in-header',
+  )
+
+  const onClickButtonCloseCatalogInHeader = () => {
+    document.querySelector('.overlay--main').classList.add('hidden')
+    document.querySelector('.popup-toggle.open').classList.remove('open')
+  }
+
+  buttonCloseCatalogInHeader?.addEventListener(
+    'click',
+    onClickButtonCloseCatalogInHeader,
+  )
+
+  // end close-catalog-in-header
+
   //catalog-in-header
   const COUNT_OF_CATALOG_ITEMS_TO_SHOW = 10
   const catalogInHeader = document.querySelector('.catalog-in-header .catalog')
@@ -214,6 +232,7 @@ const onLoaded = () => {
 
   const onClickButtonSearch = (event) => {
     closePopup(event)
+
     document.querySelector('.wrapper--search')?.classList.toggle('open')
   }
 

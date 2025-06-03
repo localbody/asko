@@ -24,3 +24,13 @@
   font-weight: 500;
   color: var(--grey-1);
 }
+
+@media (max-width: 600px) {
+  .calculator .wrapper--row {
+    flex-wrap: wrap;
+  }
+
+  .calculator .button {
+    width: 100%;
+  }
+}

@@ -28,6 +28,12 @@
   background-repeat: no-repeat;
 }
 
+@media (max-width: 600px) {
+  .certificates__item {
+    padding: 6.125rem 1.5rem 1.5rem 1.5rem;
+  }
+}
+
 .certificates__item a {
   text-decoration: none;
 }
@@ -43,12 +49,20 @@
   margin-bottom: 1rem;
 }
 
+@media (max-width: 600px) {
+  .certificates__item-title {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+}
+
 .certificates__item-title::after {
   content: '';
   width: 1.5rem;
   height: 1.5rem;
   background-image: url(../../images/icons/arrow-right.svg);
   transition: 0.3s all ease;
+  flex-shrink: 0;
 }
 
 .certificates__item a:hover .certificates__item-title {

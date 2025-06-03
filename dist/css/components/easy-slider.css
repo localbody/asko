@@ -3,6 +3,12 @@
   padding-bottom: 1.75rem;
 }
 
+@media (max-width: 600px) {
+  .easy-slider {
+    padding-bottom: 1.25rem;
+  }
+}
+
 .easy-slider__images {
   width: 100%;
 }
@@ -14,7 +20,8 @@
 
 .easy-slider__image img {
   width: 100%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
 }
 
 .easy-slider__paginator {

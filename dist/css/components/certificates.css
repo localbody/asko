@@ -51,3 +51,9 @@
 .main .certificate .line2 {
   color: var(--black);
 }
+
+@media (max-width: 600px) {
+  .main .certificates .page-with-sidebar__sidebar {
+    display: none;
+  }
+}

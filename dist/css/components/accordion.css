@@ -22,6 +22,13 @@
   cursor: pointer;
 }
 
+@media (max-width: 600px) {
+  .main .accordion .title {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+}
+
 .main .accordion .title::after {
   content: '';
   position: absolute;
@@ -53,6 +60,13 @@
   height: 0;
   opacity: 0;
   overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .main .accordion .item .description {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
 }
 
 .main .accordion .item--open .description {

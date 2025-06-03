@@ -11,14 +11,19 @@
     <div class="main blog-article">
       <div class="overlay--main hidden"></div>
       <div class="row row--top">
-        <!-- mobile -->
-        <%- include('../templates/mobile') %>
-
         <!-- subnav -->
         <%- include('../templates/subnav') %>
 
         <!-- header-top -->
         <%- include('../templates/header-top') %>
+
+        <div class="container page-header">
+          <div class="breadcrumbs">
+            <a href="">Главная</a>
+            <a href="">Блог</a>
+            <span class="current-page">5 удивительных визуальных эффектов</span>
+          </div>
+        </div>
 
         <div class="blog-article__header">
           <img src="./images/banner.png" alt="" />
@@ -59,7 +64,7 @@
             </div>
           </div>
 
-          <div class="blog-article__diviver"></div>
+          <div class="blog-article__diviver mobile--hidden"></div>
 
           <h2 class="blog-article__title">Виды систем кубообразного потолка</h2>
 
@@ -236,7 +241,7 @@
             </div>
           </div>
 
-          <div class="container page-information">
+          <div class="container page-information container--scroll-x">
             <h3 class="page-information__title">Характеристики</h3>
 
             <table>
@@ -408,7 +413,7 @@
             </ol>
           </div>
 
-          <div class="tabs sidebar__item">
+          <div class="tabs sidebar__item mobile--hidden">
             <div class="tabs">
               <div class="tabs-item">Интерьер</div>
               <div class="tabs-item">Дизайн</div>
@@ -418,7 +423,7 @@
             </div>
           </div>
 
-          <div class="wrapper">
+          <div class="wrapper mobile--hidden">
             <h3>Подходящие товары</h3>
 
             <div class="sidebar__products">
@@ -475,11 +480,9 @@
 
         <div class="blog__articles">
           <a class="blog__article-link" href="">
-            <img
-              class="blog__article-images"
-              src="./images/blog/01.png "
-              alt=""
-            />
+            <div class="blog__article-images">
+              <img src="https://placehold.co/600x400" alt="" />
+            </div>
 
             <div class="blog__article-info">
               <div class="wrapper">
@@ -490,11 +493,9 @@
           </a>
 
           <a class="blog__article-link" href="">
-            <img
-              class="blog__article-images"
-              src="./images/blog/01.png "
-              alt=""
-            />
+            <div class="blog__article-images">
+              <img src="./images/blog/01.png " alt="" />
+            </div>
 
             <div class="blog__article-info">
               <div class="wrapper">
@@ -505,11 +506,9 @@
           </a>
 
           <a class="blog__article-link" href="">
-            <img
-              class="blog__article-images"
-              src="./images/blog/01.png "
-              alt=""
-            />
+            <div class="blog__article-images">
+              <img src="./images/blog/01.png " alt="" />
+            </div>
 
             <div class="blog__article-info">
               <div class="wrapper">
@@ -520,11 +519,9 @@
           </a>
 
           <a class="blog__article-link" href="">
-            <img
-              class="blog__article-images"
-              src="./images/blog/01.png "
-              alt=""
-            />
+            <div class="blog__article-images">
+              <img src="./images/blog/01.png " alt="" />
+            </div>
 
             <div class="blog__article-info">
               <div class="wrapper">
@@ -557,7 +554,7 @@
               <div class="easy-slider__paginator swiper-pagination"></div>
             </div>
             <div class="wrapper">
-              <span class="title text--h4">Потолочные панели Армстронг</span>
+              <span class="title">Потолочные панели Армстронг</span>
               <span class="more">Подробнее</span>
             </div>
           </a>
@@ -581,7 +578,7 @@
               <div class="easy-slider__paginator swiper-pagination"></div>
             </div>
             <div class="wrapper">
-              <span class="title text--h4">Подвисная система Албес</span>
+              <span class="title">Подвисная система Албес</span>
               <span class="more">Подробнее</span>
             </div>
           </a>
@@ -605,7 +602,7 @@
               <div class="easy-slider__paginator swiper-pagination"></div>
             </div>
             <div class="wrapper">
-              <span class="title text--h4">Потолочные панели Армстронг</span>
+              <span class="title">Потолочные панели Армстронг</span>
               <span class="more">Подробнее</span>
             </div>
           </a>
@@ -629,7 +626,7 @@
               <div class="easy-slider__paginator swiper-pagination"></div>
             </div>
             <div class="wrapper">
-              <span class="title text--h4">Подвисная система Албес</span>
+              <span class="title">Подвисная система Албес</span>
               <span class="more">Подробнее</span>
             </div>
           </a>

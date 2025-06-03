@@ -51,6 +51,7 @@
 
 .main .container--schemes .scheme--big {
   grid-template-rows: 280px 1fr;
+  justify-content: center;
 }
 
 .main .container--schemes .scheme--small {
@@ -59,5 +60,6 @@
 
 .main .container--schemes .schemes__wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
