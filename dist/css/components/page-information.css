@@ -15,16 +15,24 @@
   background-color: var(--orange);
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .main .page-information::before {
     left: 1rem;
   }
-}
+} */
 
 .main .page-information .page-information__title {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .main .page-information .page-information__title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+  }
 }
 
 .main .page-information p {
@@ -55,6 +63,12 @@
 .page-information ul.documents {
   display: flex;
   gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .page-information ul.documents {
+    flex-wrap: wrap;
+  }
 }
 
 .page-information ul.documents li {

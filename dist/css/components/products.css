@@ -37,9 +37,10 @@
 @media (max-width: 600px) {
   .container--products .product {
     width: 100%;
+    min-width: 280px;
     height: calc(396 / 16 * 1rem);
     grid-template-rows: 270px 1fr;
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
   }
 }
 

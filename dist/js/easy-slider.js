@@ -9,6 +9,8 @@ const onLoad = () => {
 
   const easySliders = document.querySelectorAll('.easy-slider')
 
+  console.log(easySliders)
+
   easySliders.forEach((item) => {
     new Swiper(item, {
       pagination: {

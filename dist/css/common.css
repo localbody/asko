@@ -234,6 +234,13 @@
   text-transform: none;
 }
 
+@media (max-width: 600px) {
+  .button--big {
+    font-size: 12px;
+    line-height: 24px;
+  }
+}
+
 .main .title-top {
   display: flex;
   align-items: center;
@@ -454,4 +461,26 @@
 .container--gap40 {
   display: grid;
   gap: 2.5rem;
+}
+
+@media (max-width: 600px) {
+  .container--gap40 {
+    gap: 2rem;
+  }
+}
+
+.wrapper--gap16 {
+  display: grid;
+  gap: 1rem;
+}
+
+.wrapper--gap40 {
+  display: grid;
+  gap: 2.5rem;
+}
+
+@media (max-width: 600px) {
+  .wrapper--gap40 {
+    gap: 2rem;
+  }
 }
