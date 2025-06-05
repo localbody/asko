@@ -21,11 +21,11 @@
 
 @media (max-width: 600px) {
   .mobile {
-    height: 56px;
+    height: 3.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 20px;
+    padding: 0px 1.25rem;
   }
 }
 
@@ -43,8 +43,8 @@
 }
 
 .mobile .burger {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   background-image: url(../../images/icons/burger.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -58,36 +58,36 @@
 
 @media (max-width: 600px) {
   .header-top .logo {
-    width: 86px;
-    height: 24px;
+    width: 5.375rem;
+    height: 1.5rem;
   }
 
   .mobile .logo img {
-    width: 86px;
-    height: 24px;
+    width: 5.375rem;
+    height: 1.5rem;
   }
 }
 
 /* .mobile .wrapper {
   display: flex;
-  gap: 16px;
+  gap: 1rem;
 } */
 
 .mobile .wrapper-social {
   display: flex;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .mobile .search,
 .mobile .call,
 .mobile .whatsapp,
 .mobile .telegram {
-  width: 32px;
-  height: 32px;
-  border-radius: 32px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 32px;
+  background-size: 2rem;
 }
 
 @media (max-width: 600px) {
@@ -107,9 +107,9 @@
 }
 
 .mobile-menu {
-  padding: 24px 20px 48px 20px;
+  padding: 24px 1.25rem 48px 1.25rem;
   display: grid;
-  gap: 24px;
+  gap: 1.5rem;
   transition: 0.3s opacity ease;
   position: absolute;
   background-color: white;
@@ -126,23 +126,23 @@
 }
 
 button.close-menu {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   float: right;
   background-image: url(../../images/icons/close.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 24px;
+  background-size: 1.5rem;
 }
 
 .mobile-menu > ul {
   display: grid;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .mobile-menu > ul > li:not(:first-child) {
   border-bottom: 1px solid var(--grey-3);
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
 }
 
 .mobile-menu .submenu button {
@@ -155,12 +155,12 @@ button.close-menu {
 
 .mobile-menu .submenu button::after {
   content: '';
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   background-image: url(../../images/icons/chevron.svg);
   background-position: center right;
   background-repeat: no-repeat;
-  background-size: 24px;
+  background-size: 1.5rem;
   transition: 0.3s all ease;
 }
 
@@ -184,9 +184,9 @@ button.close-menu {
 }
 
 .mobile-menu .submenu ul li {
-  padding: 8px 16px;
-  font-size: 12px;
-  line-height: 18px;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
 }
 
 .mobile-menu .submenu ul li.item--hidden {
@@ -194,8 +194,8 @@ button.close-menu {
 }
 
 .mobile-menu .submenu ul li.title {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
 }
 
 .mobile-menu .submenu ul li.more {

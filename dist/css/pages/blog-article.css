@@ -6,7 +6,7 @@
   .main.blog-article .page-header {
     display: grid;
     height: fit-content;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
   }
 }
 
@@ -32,7 +32,7 @@
 
 @media (max-width: 600px) {
   .blog-article__header .overlay {
-    height: 160px;
+    height: 10rem;
   }
 }
 
@@ -58,8 +58,8 @@
 
 @media (max-width: 600px) {
   .blog-article__header .overlay .title {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
   }
 }
 

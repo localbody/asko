@@ -54,7 +54,7 @@
 }
 
 .main .header .frames {
-  margin-top: 40px;
+  margin-top: 2.5rem;
   display: flex;
   justify-content: space-between;
   gap: 2.5rem;
@@ -63,9 +63,9 @@
 
 @media (max-width: 600px) {
   .main .header .frames {
-    margin-top: 16px;
+    margin-top: 1rem;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 1rem;
   }
 }
 

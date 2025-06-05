@@ -16,21 +16,21 @@
 
 @media (max-width: 600px) {
   .popup__body {
-    margin-top: 64px;
-    padding-top: 64px;
+    margin-top: 4rem;
+    padding-top: 4rem;
   }
 }
 
 .popup__body label {
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0.875rem;
+  line-height: 1rem;
   font-weight: 500;
 }
 
 @media (max-width: 600px) {
   .popup__body label {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
   }
 }
 
