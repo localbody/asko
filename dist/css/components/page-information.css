@@ -15,7 +15,7 @@
   background-color: var(--orange);
 }
 
-/* @media (max-width: 600px) {
+/* @media (max-width: var(--breakpoint)) {
   .main .page-information::before {
     left: 1rem;
   }
@@ -27,7 +27,7 @@
   font-weight: 500;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .main .page-information .page-information__title {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -65,7 +65,7 @@
   gap: 1.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .page-information ul.documents {
     flex-wrap: wrap;
   }

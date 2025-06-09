@@ -3,7 +3,7 @@
   padding-bottom: 1.75rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .easy-slider {
     padding-bottom: 1.25rem;
   }

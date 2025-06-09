@@ -5,7 +5,7 @@
   gap: 0.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .container--products {
     flex-direction: column;
   }
@@ -34,7 +34,7 @@
   transition: 0.3s all ease;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .container--products .product {
     width: 100%;
     min-width: 280px;
@@ -74,7 +74,7 @@
   transition: 0.3s all ease;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .container--products .product .title {
     font-size: 1rem;
     line-height: 1.25rem;

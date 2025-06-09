@@ -4,7 +4,7 @@
   padding-bottom: 2rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .main .footer {
     padding-top: 2.5rem;
     padding-bottom: 2rem;
@@ -92,7 +92,7 @@
   grid-template-rows: 2.625rem calc(122 / 16 * 1rem) calc(88 / 16 * 1rem);
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .main .footer .grid--footer {
     grid-template-areas:
       'logo phone-and-button--calculator'
@@ -117,13 +117,13 @@
   padding-right: calc(336 / 16 * 1rem);
 }
 
-@media (max-width: 1650px) {
+@media (max-width: var(--min-desktop)) {
   .main .footer .links {
     padding-right: 1vw;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .main .footer .links {
     padding-top: 1rem;
     flex-direction: column;
@@ -145,7 +145,7 @@
   margin-bottom: 0.75rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .main .footer .logo {
     align-self: flex-start;
     justify-self: flex-start;
@@ -168,7 +168,7 @@
   border-top: 0.0625rem solid var(--grey-1);
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .main .footer .messengers {
     align-items: flex-end;
     justify-content: flex-start;
@@ -186,8 +186,9 @@
   padding-top: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .main .footer .copyright {
     border: none;
+    grid-template-rows: inherit;
   }
 }

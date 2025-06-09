@@ -54,7 +54,7 @@
   gap: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .contacts .phone,
   .contacts .mail {
     font-size: 1rem;
@@ -93,7 +93,7 @@
   overflow: hidden;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .contacts .map {
     margin-top: 0;
     height: 260px;
@@ -101,7 +101,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .contacts .button {
     width: 100%;
   }
@@ -118,13 +118,13 @@
   gap: 1.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .contact-form .container {
     flex-direction: column;
   }
 }
 
-@media (max-width: 1650px) {
+@media (max-width: var(--min-desktop)) {
   .contact-form .container {
     padding: 1.5rem 1rem 5rem 1rem;
   }
@@ -153,7 +153,7 @@
   flex-shrink: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .write_to_us::before {
     width: 2.5rem;
     height: 2.5rem;
@@ -169,7 +169,7 @@
   font-weight: 500;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .write_to_us h3 {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -182,7 +182,7 @@
   line-height: 1.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .write_to_us p {
     font-size: 0.75rem;
     line-height: 1.125rem;
@@ -195,7 +195,7 @@
   gap: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .contact-form .wrapper--row {
     flex-direction: column;
   }
@@ -209,7 +209,7 @@
   margin: 0 0 0 auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .contact-form button {
     width: 100%;
   }

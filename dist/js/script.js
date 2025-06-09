@@ -97,8 +97,6 @@ const onLoaded = () => {
   const COUNT_OF_SUBMENU_ITEMS_TO_SHOW = 5
   const listSubmenu = document.querySelectorAll('.mobile-menu .submenu')
 
-  console.log(listSubmenu)
-
   listSubmenu?.forEach((submenu) => {
     const listUL = submenu.querySelectorAll('ul')
 

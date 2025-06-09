@@ -3,7 +3,7 @@
   gap: 2.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .delivery {
     gap: 2rem;
   }
@@ -21,7 +21,7 @@
   justify-content: space-between;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .wrapper--boxes {
     flex-direction: column;
   }
@@ -36,7 +36,7 @@
   width: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .wrapper--boxes .box {
     padding: 2rem;
     flex-direction: row;
@@ -53,7 +53,7 @@
   gap: 2.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .wrapper--icons-texts {
     flex-direction: column;
   }
@@ -76,7 +76,7 @@
   align-items: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .delivery .wrapper--row {
     flex-direction: column;
   }

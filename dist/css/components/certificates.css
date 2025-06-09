@@ -5,7 +5,7 @@
   justify-content: space-around;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .main .certificates {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -52,7 +52,7 @@
   color: var(--black);
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .main .certificates .page-with-sidebar__sidebar {
     display: none;
   }

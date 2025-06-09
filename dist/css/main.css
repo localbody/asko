@@ -26,6 +26,7 @@
 @import url(./components/sidebar__product.css);
 @import url(./components/easy-slider.css);
 @import url(./components/mobile.css);
+@import url(./components/captcha.css);
 
 @import url(./pages/catalog-category.css);
 @import url(./pages/catalog-category-product.css);
@@ -41,9 +42,11 @@
 :root {
   --font-size: 16;
   --desktop-width: 1608px;
+  --breakpoint: 600px;
+  --min-desktop: 1650px;
 }
 
-@media (max-width: 1650px) {
+@media (max-width: var(--min-desktop)) {
   :root {
     --desktop-width: 100vw;
   }
@@ -64,7 +67,7 @@ body {
   font-size: var(--font-size);
 }
 
-@media (max-width: 1650px) {
+@media (max-width: var(--min-desktop)) {
 }
 
 ul {
@@ -83,13 +86,13 @@ li {
   margin: 0 auto;
 }
 
-@media (max-width: 1650px) {
+@media (max-width: var(--min-desktop)) {
   .container {
     padding: 0 1em;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .container--scroll-x {
     overflow-x: scroll;
   }
@@ -113,7 +116,7 @@ button {
   position: relative;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .main {
     gap: 2rem;
   }

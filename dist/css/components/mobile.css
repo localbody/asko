@@ -4,7 +4,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .container--tabs,
   .container--divider {
     display: none;
@@ -19,7 +19,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .mobile {
     height: 3.5rem;
     display: flex;
@@ -29,7 +29,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .header-top > .container {
     padding: 0;
     display: grid;
@@ -56,7 +56,7 @@
   align-items: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .header-top .logo {
     width: 5.375rem;
     height: 1.5rem;
@@ -90,7 +90,7 @@
   background-size: 2rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .mobile .search {
     background-image: url(../../images/icons/search--mobile.svg);
   }

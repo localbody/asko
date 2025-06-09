@@ -4,7 +4,7 @@
   gap: 2.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .main .catalog-category {
     grid-template-columns: 1fr;
   }
@@ -28,7 +28,7 @@
   transition: 0.3s all ease;
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .main .catalog-category .products .product {
     width: calc(100vw - 2rem);
     height: calc(424 / 16 * 1rem);
@@ -146,7 +146,7 @@
   transform: rotate(-90deg);
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--breakpoint)) {
   .main .catalog-category .sidebar {
     display: none;
   }
