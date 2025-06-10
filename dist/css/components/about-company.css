@@ -3,7 +3,7 @@
   gap: 10rem;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .main .about-company {
     flex-wrap: wrap;
     gap: 1rem;
@@ -14,7 +14,7 @@
   width: 50%;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .main .about-company .column {
     width: 100%;
   }
@@ -27,7 +27,7 @@
   row-gap: 2.5rem;
 }
 
-@media (max-width: var(--min-desktop)) {
+@media (max-width: 1650px) {
   .main .about-company .column--items {
     grid-template-columns: 1fr;
   }

@@ -5,7 +5,7 @@
   gap: 2.5rem;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .main .project {
     grid-template-columns: 1fr;
     gap: 1rem;

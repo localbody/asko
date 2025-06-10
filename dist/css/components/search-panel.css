@@ -14,7 +14,7 @@
   padding-top: 1rem;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .main .wrapper--search .search-panel {
     top: 3.5rem;
   }
@@ -57,7 +57,7 @@
   border-bottom: 0.0625rem solid var(--grey-3);
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .main .wrapper--search .search-panel ul li a {
     padding: 1rem;
   }

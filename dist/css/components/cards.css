@@ -7,7 +7,7 @@
   /* grid-template-columns: repeat(4, 1fr); */
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .main .cards {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -30,7 +30,7 @@
   color: var(--black);
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .main .cards .card {
     width: calc(280 / 16 * 1rem);
     height: calc(440 / 16 * 1rem);
@@ -83,7 +83,7 @@
   line-height: 1.5rem;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .main .cards .card .title {
     font-size: 0.75rem;
     line-height: 1.125rem;
@@ -96,7 +96,7 @@
   line-height: 1.75rem;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .main .cards .card .description {
     font-size: 0.875rem;
     line-height: 1.5rem;

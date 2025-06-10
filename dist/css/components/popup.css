@@ -14,7 +14,7 @@
   margin: 30vh auto;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .popup__body {
     margin-top: 4rem;
     padding-top: 4rem;
@@ -27,7 +27,7 @@
   font-weight: 500;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .popup__body label {
     font-size: 0.75rem;
     line-height: 1.125rem;
@@ -65,7 +65,7 @@
   flex-shrink: 0;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .popup__body .popup__header::before {
     width: 2.5rem;
     height: 2.5rem;
@@ -84,13 +84,13 @@
   justify-self: flex-end;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .popup__body .button-send {
     width: 100%;
   }
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .popup__body .wrapper .wrapper--row {
     flex-wrap: wrap;
   }

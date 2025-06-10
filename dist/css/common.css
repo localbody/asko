@@ -1,10 +1,25 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: var(--grey-1);
+}
+
+.checkbox a {
+  color: var(--black);
+  text-decoration: none;
+}
+
 .text--ac {
   font-weight: 700;
   font-size: 4rem;
   line-height: 4.75rem;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .text--ac {
     font-weight: 700;
     font-size: 1.5rem;
@@ -19,7 +34,7 @@
   margin: 0;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .text--h1 {
     font-size: 1.5rem;
     line-height: 1.875rem;
@@ -32,7 +47,7 @@
   line-height: 3.75rem;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .text--number {
     font-weight: 500;
     font-size: 1.5rem;
@@ -46,7 +61,7 @@
   font-weight: 500;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .text--h2 {
     font-weight: 500;
     font-size: 1.25rem;
@@ -60,7 +75,7 @@
   line-height: 2.25rem;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .text--h3 {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -73,7 +88,7 @@
   line-height: 1.75rem;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .text--h4 {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -86,7 +101,7 @@
   line-height: 1.5rem;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .text--title-16 {
     font-size: 0.75rem;
     line-height: 1.125rem;
@@ -124,7 +139,7 @@
   font-weight: 500;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .text--title-16 {
     font-size: 0.75rem;
     line-height: 1.5rem;
@@ -234,7 +249,7 @@
   text-transform: none;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .button--big {
     font-size: 0.75rem;
     line-height: 1.5rem;
@@ -467,7 +482,7 @@
   gap: 2.5rem;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .container--gap40 {
     gap: 2rem;
   }
@@ -483,7 +498,7 @@
   gap: 2.5rem;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .wrapper--gap40 {
     gap: 2rem;
   }

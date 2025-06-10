@@ -28,7 +28,7 @@
   background-repeat: no-repeat;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .certificates__item {
     padding: 6.125rem 1.5rem 1.5rem 1.5rem;
   }
@@ -49,7 +49,7 @@
   margin-bottom: 1rem;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .certificates__item-title {
     font-size: 0.875rem;
     line-height: 1.5rem;

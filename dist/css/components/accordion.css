@@ -14,15 +14,17 @@
 }
 
 .main .accordion .title {
+  display: flex;
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 500;
   position: relative;
   padding-bottom: 0.5rem;
+  padding-right: 2rem;
   cursor: pointer;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .main .accordion .title {
     font-size: 0.875rem;
     line-height: 1.5rem;
@@ -62,7 +64,7 @@
   overflow: hidden;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .main .accordion .item .description {
     font-size: 0.75rem;
     line-height: 1.125rem;

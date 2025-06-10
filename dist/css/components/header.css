@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .main .header {
     height: 460px;
   }
@@ -37,7 +37,7 @@
   padding-right: calc(765 / 16 * 1rem);
 }
 
-@media (max-width: var(--min-desktop)) {
+@media (max-width: 1650px) {
   .main .header .container.container--place-center > .wrapper {
     padding-right: 1rem;
     padding-left: 1rem;
@@ -61,7 +61,7 @@
   margin-bottom: 1.5rem;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .main .header .frames {
     margin-top: 1rem;
     flex-wrap: wrap;

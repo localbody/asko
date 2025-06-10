@@ -17,7 +17,7 @@
   transition: 0.3s opacity ease;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .main .header .catalog-in-header {
     max-height: inherit;
     padding-left: 2rem;
@@ -45,14 +45,14 @@
   width: 100%;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .main .header .catalog-in-header .catalog {
     flex-wrap: nowrap;
     height: inherit;
   }
 }
 
-@media (max-width: var(--min-desktop)) {
+@media (max-width: 1650px) {
   .main .header .catalog-in-header .catalog {
     /* высота контейнера фиксированная */
     /* должна быть больше любой из колонок */
@@ -146,7 +146,7 @@
   margin-bottom: 1rem;
 }
 
-@media (max-width: var(--breakpoint)) {
+@media (max-width: 600px) {
   .close-catalog-in-header {
     display: block;
     visibility: visible;
