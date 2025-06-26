@@ -142,13 +142,13 @@ button {
   gap: 1.5rem;
 }
 
-.main .page-header .breadcrumbs {
+.main .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.main .page-header .breadcrumbs a {
+.main .breadcrumbs a {
   text-decoration: none;
   color: var(--grey-1);
   font-size: 0.75rem;
@@ -156,7 +156,7 @@ button {
   font-weight: 500;
 }
 
-.main .page-header .breadcrumbs a::after {
+.main .breadcrumbs a::after {
   content: '/';
   color: var(--grey-1);
   font-size: 0.75rem;
@@ -165,7 +165,7 @@ button {
   margin-right: 0.5rem;
 }
 
-.main .page-header .breadcrumbs .current-page {
+.main .breadcrumbs .current-page {
   color: var(--grey-3);
   font-size: 0.75rem;
   line-height: 1.125rem;
