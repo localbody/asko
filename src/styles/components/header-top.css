@@ -4,6 +4,7 @@
 
 .header-top {
   height: var(--height-header-top);
+  display: flex;
 }
 
 .header-top > .container {

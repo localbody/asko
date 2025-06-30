@@ -67,27 +67,25 @@ const onLoaded = () => {
 
   // sidebar in catalog
   const listSidebarItemsTypes = document.querySelectorAll(
-    '.main .catalog-item .sidebar .item-type span',
+    '.main .sidebar .item-type span',
   )
 
-  listSidebarItemsTypes?.forEach((item) => {
-    const onClickSidebarItemType = (event) => {
-      if (
-        event.target
-          .closest('li.item-type')
-          .classList.contains('item-type--open')
-      ) {
-        event.target.closest('li.item-type').classList.remove('item-type--open')
-      } else {
-        // закроем открытый
-        document
-          .querySelector('.main .catalog-item .sidebar .item-type--open')
-          ?.classList?.remove('item-type--open')
+  const onClickSidebarItemType = (event) => {
+    if (
+      event.target.closest('li.item-type').classList.contains('item-type--open')
+    ) {
+      event.target.closest('li.item-type').classList.remove('item-type--open')
+    } else {
+      // закроем открытый
+      document
+        .querySelector('.main .sidebar .item-type--open')
+        ?.classList?.remove('item-type--open')
 
-        event.target.closest('li.item-type').classList.add('item-type--open')
-      }
+      event.target.closest('li.item-type').classList.add('item-type--open')
     }
+  }
 
+  listSidebarItemsTypes?.forEach((item) => {
     item.addEventListener('click', onClickSidebarItemType)
   })
 
@@ -120,19 +118,19 @@ const onLoaded = () => {
 
   const listSubmenuButtonMore = document.querySelectorAll('.submenu li.more')
 
+  const onClickSubmenuButtonMore = (event) => {
+    event.target.classList.toggle('more--expanded')
+
+    const listLI = event.target.closest('ul').querySelectorAll('li.item')
+
+    listLI.forEach((itemLI, index) => {
+      if (index > COUNT_OF_SUBMENU_ITEMS_TO_SHOW) {
+        itemLI.classList.toggle('item--hidden')
+      }
+    })
+  }
+
   listSubmenuButtonMore?.forEach((item) => {
-    const onClickSubmenuButtonMore = (event) => {
-      event.target.classList.toggle('more--expanded')
-
-      const listLI = event.target.closest('ul').querySelectorAll('li.item')
-
-      listLI.forEach((itemLI, index) => {
-        if (index > COUNT_OF_SUBMENU_ITEMS_TO_SHOW) {
-          itemLI.classList.toggle('item--hidden')
-        }
-      })
-    }
-
     item.addEventListener('click', onClickSubmenuButtonMore)
   })
 

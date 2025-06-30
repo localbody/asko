@@ -46,8 +46,8 @@ function serve() {
 
   // Следим за изменениями в EJS и CSS
   gulp.watch('src/**/*.ejs', compileEJS)
-  gulp.watch('src/styles/*.css', copyCSS)
-  gulp.watch('dist/*.html').on('change', browserSync.reload)
+  gulp.watch('src/**/*.css', copyCSS)
+  gulp.watch(['dist/*.html', 'dist/css/*.css']).on('change', browserSync.reload)
 }
 
 // Копирование CSS (опционально)
