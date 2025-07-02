@@ -1,4 +1,43 @@
 const onLoaded = () => {
+  const overlayMain = document.querySelector('.overlay--main')
+
+  // send-request
+  listSendRequestButton = document.querySelectorAll(
+    '[data-action="send-request"]',
+  )
+
+  const popupSendRequest = document.querySelector('[data-popup="send-request"]')
+
+  const onClickSendRequest = () => {
+    //
+    if (popupSendRequest) {
+      overlayMain.classList.toggle('hidden')
+      popupSendRequest.classList.toggle('hidden')
+    }
+  }
+
+  if (listSendRequestButton) {
+    listSendRequestButton.forEach((button) => {
+      button.addEventListener('click', onClickSendRequest)
+    })
+  }
+  // END send-request
+
+  // popup close
+
+  const popupButtonClose = document.querySelector('.popup__button-close')
+
+  if (popupButtonClose) {
+    const onClickButtonPopupClose = (event) => {
+      event.target.closest('.popup').classList.toggle('hidden')
+      overlayMain.classList.toggle('hidden')
+    }
+
+    popupButtonClose.addEventListener('click', onClickButtonPopupClose)
+  }
+
+  // END popup close
+
   // button.burger
   const buttonCloseMenu = document.querySelector('button.close-menu')
   const buttonBurger = document.querySelector('button.burger')

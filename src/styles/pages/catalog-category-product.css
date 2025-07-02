@@ -88,6 +88,7 @@
 }
 
 .main .catalog-category-product .body {
+  height: fit-content;
   display: grid;
   gap: 2.5rem;
   grid-template-columns: 1fr;

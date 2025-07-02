@@ -191,6 +191,7 @@
 .button {
   display: block;
   width: fit-content;
+  height: fit-content;
   padding: 1rem 3.5rem;
   font-size: 0.75rem;
   line-height: 1.5rem;
