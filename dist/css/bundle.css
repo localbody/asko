@@ -1,55 +1,112 @@
 /* http://meyerweb.com/eric/tools/css/reset/ */
 /* v1.0 | 20080212 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 
 /* remember to define focus styles! */
 :focus {
-	outline: 0;
+  outline: 0;
 }
 
 /* remember to highlight inserts somehow! */
 ins {
-	text-decoration: none;
+  text-decoration: none;
 }
 del {
-	text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 /* tables still need 'cellspacing="0"' in the markup */
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -446,7 +503,6 @@ template {
   font-display: swap;
 }
 
-
 .checkbox {
   display: flex;
   align-items: center;
@@ -716,7 +772,7 @@ template {
   content: '';
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(../../images/icons/arrow-right.svg);
+  background-image: url(../images/icons/arrow-right.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1006,19 +1062,19 @@ template {
 }
 
 .main .about-company .circle--location {
-  background-image: url(../../images/icons/location--white.svg);
+  background-image: url(../images/icons/location--white.svg);
 }
 
 .main .about-company .circle--star {
-  background-image: url(../../images/icons/star--white.svg);
+  background-image: url(../images/icons/star--white.svg);
 }
 
 .main .about-company .circle--color-swatch {
-  background-image: url(../../images/icons/color-swatch--white.svg);
+  background-image: url(../images/icons/color-swatch--white.svg);
 }
 
 .main .about-company .circle--medal {
-  background-image: url(../../images/icons/medal--white.svg);
+  background-image: url(../images/icons/medal--white.svg);
 }
 
 .main .accordion {
@@ -1060,7 +1116,7 @@ template {
   right: 0;
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(../../images/icons/chevron.svg);
+  background-image: url(../images/icons/chevron.svg);
   background-position: center;
   background-size: 1.5rem;
   background-repeat: no-repeat;
@@ -1338,7 +1394,7 @@ template {
   content: '';
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(../../images/icons/chevron.svg);
+  background-image: url(../images/icons/chevron.svg);
   background-position: center;
   background-repeat: no-repeat;
   transform: rotate(0deg);
@@ -1356,7 +1412,7 @@ template {
   pointer-events: none;
   width: 2rem;
   height: 2rem;
-  background-image: url(../../images/icons/close.svg);
+  background-image: url(../images/icons/close.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 2rem;
@@ -1480,11 +1536,11 @@ template {
   border-radius: 100%;
 }
 .main .contact .address .mail::before {
-  background-image: url(../../images/icons/sms.svg);
+  background-image: url(../images/icons/sms.svg);
 }
 
 .main .contact .address .phone::before {
-  background-image: url(../../images/icons/call.svg);
+  background-image: url(../images/icons/call.svg);
 }
 
 .main .contact .address .mail a {
@@ -1591,7 +1647,7 @@ template {
   content: '';
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url('../../images/icons/add.svg');
+  background-image: url('../images/icons/add.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1.5rem;
@@ -1608,13 +1664,13 @@ template {
 }
 
 .main .footer .messengers .viber {
-  background-image: url(../../images/icons/viber.svg);
+  background-image: url(../images/icons/viber.svg);
 }
 .main .footer .messengers .telegram {
-  background-image: url(../../images/icons/telegram.svg);
+  background-image: url(../images/icons/telegram.svg);
 }
 .main .footer .messengers .whatsapp {
-  background-image: url(../../images/icons/whatsapp.svg);
+  background-image: url(../images/icons/whatsapp.svg);
 }
 
 .main .footer a.phone {
@@ -1681,7 +1737,7 @@ template {
 .main .footer .links ul:first-child {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   column-gap: 3.75rem;
 }
 
@@ -1777,7 +1833,7 @@ template {
 .header-top .search {
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(../../images/icons/search--grey.svg);
+  background-image: url(../images/icons/search--grey.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1808,7 +1864,7 @@ template {
   position: relative;
   display: grid;
   align-items: center;
-  background-image: url(../../images/header.png);
+  background-image: url(../images/header.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1934,7 +1990,7 @@ template {
 .mobile .burger {
   width: 2.5rem;
   height: 2.5rem;
-  background-image: url(../../images/icons/burger.svg);
+  background-image: url(../images/icons/burger.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1981,18 +2037,18 @@ template {
 
 @media (max-width: 600px) {
   .mobile .search {
-    background-image: url(../../images/icons/search--mobile.svg);
+    background-image: url(../images/icons/search--mobile.svg);
   }
 }
 
 .mobile .call {
-  background-image: url(../../images/icons/call--mobile.svg);
+  background-image: url(../images/icons/call--mobile.svg);
 }
 .mobile .whatsapp {
-  background-image: url(../../images/icons/whatsapp--grey.svg);
+  background-image: url(../images/icons/whatsapp--grey.svg);
 }
 .mobile .telegram {
-  background-image: url(../../images/icons/telegram--grey.svg);
+  background-image: url(../images/icons/telegram--grey.svg);
 }
 
 .mobile-menu {
@@ -2018,7 +2074,7 @@ button.close-menu {
   width: 1.5rem;
   height: 1.5rem;
   float: right;
-  background-image: url(../../images/icons/close.svg);
+  background-image: url(../images/icons/close.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1.5rem;
@@ -2046,7 +2102,7 @@ button.close-menu {
   content: '';
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(../../images/icons/chevron.svg);
+  background-image: url(../images/icons/chevron.svg);
   background-position: center right;
   background-repeat: no-repeat;
   background-size: 1.5rem;
@@ -2105,7 +2161,7 @@ button.close-menu {
   content: '';
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(../../images/icons/chevron.svg);
+  background-image: url(../images/icons/chevron.svg);
   background-position: center;
   background-repeat: no-repeat;
   transform: rotate(0deg);
@@ -2143,14 +2199,14 @@ button.close-menu {
   content: '';
   width: 1rem;
   height: 1rem;
-  background-image: url(../../images/icons/sms.svg);
+  background-image: url(../images/icons/sms.svg);
 }
 
 .mobile-menu .phone::before {
   content: '';
   width: 1rem;
   height: 1rem;
-  background-image: url(../../images/icons/call.svg);
+  background-image: url(../images/icons/call.svg);
 }
 
 .mobile-menu .mail a {
@@ -2179,11 +2235,11 @@ button.close-menu {
 }
 
 .mobile-menu .messengers .whatsapp {
-  background-image: url(../../images/icons/whatsapp--grey.svg);
+  background-image: url(../images/icons/whatsapp--grey.svg);
 }
 
 .mobile-menu .messengers .telegram {
-  background-image: url(../../images/icons/telegram--grey.svg);
+  background-image: url(../images/icons/telegram--grey.svg);
 }
 
 /*  */
@@ -2288,7 +2344,7 @@ button.close-menu {
   content: '';
   width: 3.125rem;
   height: 3.5rem;
-  background-image: url(../../images/icons/pdf.svg);
+  background-image: url(../images/icons/pdf.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2407,13 +2463,13 @@ button.close-menu {
 }
 
 .main .partners .slider-button-prev {
-  background-image: url(../../images/icons/arrow-right.svg);
+  background-image: url(../images/icons/arrow-right.svg);
   transform: rotate(180deg);
   left: 0;
 }
 
 .main .partners .slider-button-next {
-  background-image: url(../../images/icons/arrow-right.svg);
+  background-image: url(../images/icons/arrow-right.svg);
 
   right: 0;
 }
@@ -2445,11 +2501,17 @@ button.close-menu {
 }
 
 .popup__body {
+  display: grid;
+  gap: 1.5rem;
   position: relative;
   background-color: var(--grey-4);
   padding: 2.5rem;
   max-width: calc(872 / 16 * 1rem);
   margin: 30vh auto;
+}
+
+.popup__body[data-popup='send-request-thanks'] {
+  margin: calc(50vh - 5rem) auto;
 }
 
 @media (max-width: 600px) {
@@ -2478,7 +2540,7 @@ button.close-menu {
   right: 2.5rem;
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(../../images/icons/close.svg);
+  background-image: url(../images/icons/close.svg);
   background-size: 1.5rem;
   background-position: center;
   background-repeat: no-repeat;
@@ -2487,7 +2549,7 @@ button.close-menu {
 .popup__body .popup__header {
   display: flex;
   gap: 1.5rem;
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
 }
 
 .popup__body .popup__header::before {
@@ -2496,7 +2558,7 @@ button.close-menu {
   height: 5rem;
   border-radius: 5rem;
   background-color: var(--orange);
-  background-image: url(../../images/icons/mail--open.svg);
+  background-image: url(../images/icons/mail--open.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 2.5rem;
@@ -2639,7 +2701,7 @@ button.close-menu {
   content: '';
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(../../images/icons/arrow-right.svg);
+  background-image: url(../images/icons/arrow-right.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2647,7 +2709,7 @@ button.close-menu {
 }
 
 .container--products .product:hover .more::after {
-  background-image: url(../../images/icons/arrow-right--orange.svg);
+  background-image: url(../images/icons/arrow-right--orange.svg);
 }
 
 .main .container--schemes {
@@ -2684,7 +2746,7 @@ button.close-menu {
   position: absolute;
   right: 0;
   bottom: 0;
-  background-image: url(../../images/icons/zoom-in.svg);
+  background-image: url(../images/icons/zoom-in.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1.5rem;
@@ -2759,7 +2821,7 @@ button.close-menu {
 .main .wrapper--search .search-panel .wrapper {
   background: var(--grey-4);
   border-radius: 0.5rem;
-  background-image: url(../../images/icons/search--grey.svg);
+  background-image: url(../images/icons/search--grey.svg);
   background-size: 1.5rem;
   background-position: 1.25rem center;
   background-repeat: no-repeat;
@@ -2849,7 +2911,7 @@ button.close-menu {
   content: '';
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(../../images/icons/arrow-right.svg);
+  background-image: url(../images/icons/arrow-right.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1.5rem;
@@ -2857,7 +2919,7 @@ button.close-menu {
 }
 
 .sidebar__product:hover p.subtitle::after {
-  background-image: url(../../images/icons/arrow-right--orange.svg);
+  background-image: url(../images/icons/arrow-right--orange.svg);
 }
 
 .sidebar__product p.title {
@@ -2922,14 +2984,14 @@ button.close-menu {
   content: '';
   width: 1rem;
   height: 1rem;
-  background-image: url(../../images/icons/location.svg);
+  background-image: url(../images/icons/location.svg);
 }
 
 .main .subnav .city-selected::after {
   content: '';
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(../../images/icons/chevron.svg);
+  background-image: url(../images/icons/chevron.svg);
   transition: 0.3s transform ease;
 }
 
@@ -2972,21 +3034,21 @@ button.close-menu {
   content: '';
   width: 1rem;
   height: 1rem;
-  background-image: url(../../images/icons/location.svg);
+  background-image: url(../images/icons/location.svg);
 }
 
 .main .subnav .mail::before {
   content: '';
   width: 1rem;
   height: 1rem;
-  background-image: url(../../images/icons/sms.svg);
+  background-image: url(../images/icons/sms.svg);
 }
 
 .main .subnav .phone::before {
   content: '';
   width: 1rem;
   height: 1rem;
-  background-image: url(../../images/icons/call.svg);
+  background-image: url(../images/icons/call.svg);
 }
 
 .main .subnav .mail a {
@@ -3027,11 +3089,11 @@ button.close-menu {
 }
 
 .main .subnav .messengers .whatsapp {
-  background-image: url(../../images/icons/whatsapp--grey.svg);
+  background-image: url(../images/icons/whatsapp--grey.svg);
 }
 
 .main .subnav .messengers .telegram {
-  background-image: url(../../images/icons/telegram--grey.svg);
+  background-image: url(../images/icons/telegram--grey.svg);
 }
 
 .main .tabs {
@@ -3101,6 +3163,7 @@ button.close-menu {
   width: 100%;
   /* height: calc(108 / 16 * 1rem); */
   background: rgba(0, 0, 0, 0.8);
+  padding-top: ;
 }
 
 @media (max-width: 600px) {
@@ -3166,7 +3229,7 @@ button.close-menu {
   content: '';
   width: 1.25rem;
   height: 1.25rem;
-  background-image: url(../../images/icons/timer.svg);
+  background-image: url(../images/icons/timer.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -3277,7 +3340,7 @@ button.close-menu {
   content: '';
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(../../images/icons/share.svg);
+  background-image: url(../images/icons/share.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -3625,7 +3688,7 @@ button.close-menu {
   .product
   .product__description:hover
   .more::after {
-  background-image: url(../../images/icons/arrow-right--orange.svg);
+  background-image: url(../images/icons/arrow-right--orange.svg);
 }
 
 .main .catalog-category .products .product .product__description .type {
@@ -3654,7 +3717,7 @@ button.close-menu {
   content: '';
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(../../images/icons/arrow-right.svg);
+  background-image: url(../images/icons/arrow-right.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -3693,7 +3756,7 @@ button.close-menu {
 .main .catalog-category .paginator button.next {
   padding: 0.75rem 1rem;
   width: 2.5rem;
-  background-image: url(../../images/icons/chevron.svg);
+  background-image: url(../images/icons/chevron.svg);
   background-position: center;
   background-size: 1.5rem;
   background-repeat: no-repeat;
@@ -3755,7 +3818,7 @@ button.close-menu {
   content: '';
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(../../images/icons/chevron.svg);
+  background-image: url(../images/icons/chevron.svg);
   background-position: center;
   background-repeat: no-repeat;
   transition: 0.3 transform ease;
@@ -3798,7 +3861,7 @@ button.close-menu {
   border: 0.0625rem solid var(--grey-3);
   border-radius: 0.5rem;
   padding: 1.5rem 1.5rem 1.5rem 6.125rem;
-  background-image: url(../../images/icons/pdf.svg);
+  background-image: url(../images/icons/pdf.svg);
   background-size: 3.125rem 3.5rem;
   background-position: 1.5rem 1.5rem;
   background-repeat: no-repeat;
@@ -3836,7 +3899,7 @@ button.close-menu {
   content: '';
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(../../images/icons/arrow-right.svg);
+  background-image: url(../images/icons/arrow-right.svg);
   transition: 0.3s all ease;
   flex-shrink: 0;
 }
@@ -3847,7 +3910,7 @@ button.close-menu {
 
 .certificates__item a:hover .certificates__item-title::after {
   color: var(--orange);
-  background-image: url(../../images/icons/arrow-right--orange.svg);
+  background-image: url(../images/icons/arrow-right--orange.svg);
 }
 
 .certificates__item-description {
@@ -3892,7 +3955,7 @@ button.close-menu {
   content: '';
   width: 1rem;
   height: 1rem;
-  background-image: url('../../images/icons/download.svg');
+  background-image: url('../images/icons/download.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1rem;
@@ -3934,11 +3997,11 @@ button.close-menu {
 }
 
 .contacts .phone::before {
-  background-image: url(../../images/icons/call.svg);
+  background-image: url(../images/icons/call.svg);
 }
 
 .contacts .mail::before {
-  background-image: url(../../images/icons/sms.svg);
+  background-image: url(../images/icons/sms.svg);
 }
 
 .contacts .with-title {
@@ -4005,7 +4068,7 @@ button.close-menu {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../../images/icons/mail--open.svg);
+  background-image: url(../images/icons/mail--open.svg);
   background-size: 2.5rem;
   background-position: center;
   background-repeat: no-repeat;
@@ -4315,47 +4378,6 @@ button.close-menu {
   object-fit: cover;
 }
 
-/* @import url(./reset.css);
-@import url(./normalize.css);
-@import url(./colors.css);
-@import url(./fonts.css);
-@import url(./icons.css);
-@import url(./components/subnav.css);
-@import url(./components/header-top.css);
-@import url(./components/header.css);
-@import url(./components/partners.css);
-@import url(./components/products.css);
-@import url(./common.css);
-@import url(./components/about-company.css);
-@import url(./components/cards.css);
-@import url(./components/certificates.css);
-@import url(./components/accordion.css);
-@import url(./components/contact.css);
-@import url(./components/footer.css);
-@import url(./components/search-panel.css);
-@import url(./components/trust.css);
-@import url(./components/catalog-in-header.css);
-@import url(./components/page-information.css);
-@import url(./components/schemes.css);
-@import url(./components/tabs.css);
-@import url(./components/page-with-sidebar.css);
-@import url(./components/popup.css);
-@import url(./components/sidebar__product.css);
-@import url(./components/easy-slider.css);
-@import url(./components/mobile.css);
-@import url(./components/captcha.css);
-
-@import url(./pages/catalog-category.css);
-@import url(./pages/catalog-category-product.css);
-@import url(./pages/blog.css);
-@import url(./pages/blog-article.css);
-@import url(./pages/certificates.css);
-@import url(./pages/calculator.css);
-@import url(./pages/contacts.css); 
-@import url(./pages/page-404.css);
-@import url(./pages/delivery.css);
-@import url(./pages/project.css); */
-
 :root {
   --font-size: 16px;
   --desktop-width: 1608px;
@@ -4498,4 +4520,23 @@ button {
 
 [hidden] {
   display: none !important;
+}
+
+.checkbox.required,
+.captcha.required,
+.input.required {
+  outline: 2px solid tomato;
+  outline-offset: 3px;
+  position: relative;
+}
+
+.checkbox.required::after,
+.captcha.required::after,
+.input.required::after {
+  content: 'обязательное поле';
+  display: block;
+  color: tomato;
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: -1.2rem;
 }

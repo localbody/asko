@@ -16,11 +16,17 @@
 }
 
 .popup__body {
+  display: grid;
+  gap: 1.5rem;
   position: relative;
   background-color: var(--grey-4);
   padding: 2.5rem;
   max-width: calc(872 / 16 * 1rem);
   margin: 30vh auto;
+}
+
+.popup__body[data-popup='send-request-thanks'] {
+  margin: calc(50vh - 5rem) auto;
 }
 
 @media (max-width: 600px) {
@@ -58,7 +64,7 @@
 .popup__body .popup__header {
   display: flex;
   gap: 1.5rem;
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
 }
 
 .popup__body .popup__header::before {

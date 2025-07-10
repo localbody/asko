@@ -134,7 +134,7 @@
 .main .footer .links ul:first-child {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   column-gap: 3.75rem;
 }
 
