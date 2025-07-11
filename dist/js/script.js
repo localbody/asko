@@ -212,7 +212,7 @@ const onLoaded = () => {
   // end close-catalog-in-header
 
   //catalog-in-header
-  const COUNT_OF_CATALOG_ITEMS_TO_SHOW = 10
+  const COUNT_OF_CATALOG_ITEMS_TO_SHOW = 5
   const catalogInHeader = document.querySelector('.catalog-in-header .catalog')
   const listUL = catalogInHeader?.querySelectorAll('ul')
 
@@ -323,6 +323,94 @@ const onLoaded = () => {
     item.addEventListener('click', onClickAccordionItem)
   })
   // end accordion
+
+  // certificates-viewer
+
+  const viewerCertificates = document.querySelector('.viewer-certificates')
+
+  if (viewerCertificates) {
+    const onClickViewerCertificates = (event) => {
+      if (
+        event.target.matches('.viewer-certificates button.close') ||
+        event.target.matches('.viewer-certificates')
+      ) {
+        viewerCertificates.hidden = true
+      }
+    }
+
+    viewerCertificates.addEventListener('click', onClickViewerCertificates)
+
+    const setIndexImages = (value) => {
+      let indexImage = +viewerCertificates.dataset.indexImage
+      const countImages = +viewerCertificates.dataset.countImages
+
+      if (viewerCertificates.dataset.listImages) {
+        const arrayImages = viewerCertificates.dataset.listImages.split(',')
+
+        indexImage += +value
+
+        if (indexImage > countImages - 1) {
+          indexImage = 0
+        } else if (indexImage < 0) {
+          indexImage = countImages - 1
+        }
+
+        viewerCertificates.dataset.indexImage = indexImage
+
+        viewerCertificates.querySelector('.certificate-full img').src =
+          arrayImages[+indexImage]
+      }
+    }
+
+    const buttonPrevViewerCertificates =
+      viewerCertificates.querySelector('button.prev')
+
+    buttonPrevViewerCertificates.addEventListener('click', () =>
+      setIndexImages(-1),
+    )
+
+    const buttonNextViewerCertificates =
+      viewerCertificates.querySelector('button.next')
+
+    buttonNextViewerCertificates.addEventListener('click', () =>
+      setIndexImages(1),
+    )
+
+    const listCertificates = document.querySelectorAll(
+      '.certificates .certificate',
+    )
+
+    if (listCertificates) {
+      const openViewerCertificate = (event, listImages) => {
+        event.preventDefault()
+
+        const arrayImages = listImages.split(',')
+
+        viewerCertificates.querySelector('.certificate-full img').src =
+          arrayImages[0]
+
+        viewerCertificates.hidden = false
+
+        viewerCertificates.dataset.indexImage = 0
+        viewerCertificates.dataset.listImages = arrayImages
+        viewerCertificates.dataset.countImages = arrayImages.length
+
+        viewerCertificates.querySelector('button.prev').hidden =
+          arrayImages.length === 1
+        viewerCertificates.querySelector('button.next').hidden =
+          arrayImages.length === 1
+      }
+
+      const onClickCertificate = (event) => {
+        openViewerCertificate(event, event.currentTarget.dataset.images)
+      }
+
+      listCertificates.forEach((certificate) => {
+        certificate.addEventListener('click', onClickCertificate)
+      })
+    }
+  }
+  // END certificates-viewer
 }
 
 document.addEventListener('DOMContentLoaded', onLoaded)

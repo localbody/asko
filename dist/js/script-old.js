@@ -11,8 +11,15 @@ const onLoaded = () => {
   const onClickSendRequest = () => {
     //
     if (popupSendRequest) {
-      overlayMain.classList.toggle('hidden')
-      popupSendRequest.classList.toggle('hidden')
+      //  если открыто mobile-menu
+      if (
+        !document.querySelector('.mobile-menu').classList.contains('hidden')
+      ) {
+        popupSendRequest.classList.toggle('hidden')
+      } else {
+        overlayMain.classList.toggle('hidden')
+        popupSendRequest.classList.toggle('hidden')
+      }
     }
   }
 
@@ -25,15 +32,24 @@ const onLoaded = () => {
 
   // popup close
 
-  const popupButtonClose = document.querySelector('.popup__button-close')
+  const listPopupButtonClose = document.querySelectorAll('.popup__button-close')
 
-  if (popupButtonClose) {
+  if (listPopupButtonClose) {
     const onClickButtonPopupClose = (event) => {
-      event.target.closest('.popup').classList.toggle('hidden')
-      overlayMain.classList.toggle('hidden')
+      //  если открыто mobile-menu
+      if (
+        !document.querySelector('.mobile-menu').classList.contains('hidden')
+      ) {
+        event.target.closest('.popup').classList.toggle('hidden')
+      } else {
+        event.target.closest('.popup').classList.toggle('hidden')
+        overlayMain.classList.toggle('hidden')
+      }
     }
 
-    popupButtonClose.addEventListener('click', onClickButtonPopupClose)
+    listPopupButtonClose.forEach((popupButtonClose) => {
+      popupButtonClose.addEventListener('click', onClickButtonPopupClose)
+    })
   }
 
   // END popup close
@@ -68,38 +84,40 @@ const onLoaded = () => {
   // end mobile-menu submenu
 
   // phone-mask
-  const phoneInput = document.querySelector('.phone-with-mask')
+  const listPhoneInput = document.querySelectorAll('.phone-with-mask')
 
-  if (phoneInput) {
-    phoneInput.addEventListener('input', function (e) {
-      // Удаляем все символы, кроме цифр
-      let numbers = this.value.replace(/\D/g, '')
+  if (listPhoneInput) {
+    listPhoneInput.forEach((phoneInput) => {
+      phoneInput.addEventListener('input', function (e) {
+        // Удаляем все символы, кроме цифр
+        let numbers = this.value.replace(/\D/g, '')
 
-      // Удаляем ведущие символы, кроме первой 7
-      if (!numbers.startsWith('7')) {
-        numbers = '7' + numbers
-      }
+        // Удаляем ведущие символы, кроме первой 7
+        if (!numbers.startsWith('7')) {
+          numbers = '7' + numbers
+        }
 
-      // Ограничиваем длину до 11 цифр (7 + 10 цифр номера)
-      numbers = numbers.substring(0, 11)
+        // Ограничиваем длину до 11 цифр (7 + 10 цифр номера)
+        numbers = numbers.substring(0, 11)
 
-      // Форматируем строку
-      let formatted = '+7 '
+        // Форматируем строку
+        let formatted = '+7 '
 
-      if (numbers.length > 1) {
-        formatted += numbers.substring(1, 4)
-      }
-      if (numbers.length >= 4) {
-        formatted += '-' + numbers.substring(4, 7)
-      }
-      if (numbers.length >= 7) {
-        formatted += '-' + numbers.substring(7, 9)
-      }
-      if (numbers.length >= 9) {
-        formatted += '-' + numbers.substring(9, 11)
-      }
+        if (numbers.length > 1) {
+          formatted += numbers.substring(1, 4)
+        }
+        if (numbers.length >= 4) {
+          formatted += '-' + numbers.substring(4, 7)
+        }
+        if (numbers.length >= 7) {
+          formatted += '-' + numbers.substring(7, 9)
+        }
+        if (numbers.length >= 9) {
+          formatted += '-' + numbers.substring(9, 11)
+        }
 
-      this.value = formatted
+        this.value = formatted
+      })
     })
   }
   // end phone-mask

@@ -16,6 +16,14 @@
 .main .certificates .image {
   padding: 0.5rem;
   background-color: var(--grey-4);
+  width: 242px;
+  height: 342px;
+}
+
+.main .certificates .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .main .certificate {
@@ -56,4 +64,60 @@
   .main .certificates .page-with-sidebar__sidebar {
     display: none;
   }
+}
+
+.viewer-certificates {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.viewer-certificates button {
+  position: absolute;
+}
+
+.viewer-certificates button.close {
+  top: 1vh;
+  right: 10vh;
+  background-image: url(../../images/icons/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 3em;
+  width: 3em;
+  height: 3em;
+}
+
+.viewer-certificates button.prev,
+.viewer-certificates button.next {
+  top: 10%;
+  height: 80vh;
+  width: 30vw;
+  background-image: url(../../images/icons/arrow-right--orange.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 5em;
+}
+
+.viewer-certificates button.prev {
+  left: 1vh;
+  transform: rotate(180deg);
+}
+
+.viewer-certificates button.next {
+  right: 1vh;
+}
+
+.certificate-full {
+  margin: 2.5% auto 0 auto;
+  width: 65vh;
+  height: 90vh;
+  background-color: green;
+}
+
+.certificate-full img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: fill;
 }
