@@ -81,3 +81,7 @@
 .main .header .button {
   width: fit-content;
 }
+
+.main.index .header--index {
+  /* margin-top: -2.5rem; */
+}

@@ -216,16 +216,19 @@ const onLoaded = () => {
   const catalogInHeader = document.querySelector('.catalog-in-header .catalog')
   const listUL = catalogInHeader?.querySelectorAll('ul')
 
-  const buttonCatalogOpen = document.querySelector('.catalog-open')
+  const buttonCatalogOpen = document.querySelector(
+    '[data-action="catalog-show"]',
+  )
 
-  const onClickButtonCatalogOpen = () => {
+  const onHoverButtonCatalogOpen = () => {
+    console.log('hover')
     closePopup()
 
     document.querySelector('.overlay--main').classList.remove('hidden')
-    buttonCatalogOpen.closest('.popup-toggle').classList.toggle('open')
+    document.querySelector('.popup-catalog-show').classList.add('open')
   }
 
-  buttonCatalogOpen?.addEventListener('click', onClickButtonCatalogOpen)
+  buttonCatalogOpen?.addEventListener('mouseenter', onHoverButtonCatalogOpen)
 
   // свернем в каталоге строки, где больше 10 строк
   // если нет более 10 строк - скроем кнопку ЕЩЕ

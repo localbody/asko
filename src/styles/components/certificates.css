@@ -78,8 +78,8 @@
 }
 
 .viewer-certificates button.close {
-  top: 1vh;
-  right: 10vh;
+  top: 3%;
+  right: 3%;
   background-image: url(../../images/icons/close.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -100,24 +100,23 @@
 }
 
 .viewer-certificates button.prev {
-  left: 1vh;
+  left: 0%;
   transform: rotate(180deg);
 }
 
 .viewer-certificates button.next {
-  right: 1vh;
+  right: 0%;
 }
 
 .certificate-full {
-  margin: 2.5% auto 0 auto;
-  width: 65vh;
-  height: 90vh;
-  background-color: green;
+  margin: 5% auto 0 auto;
+  width: 80%;
+  height: 90%;
 }
 
 .certificate-full img {
   width: 100%;
   height: 100%;
   object-position: center;
-  object-fit: fill;
+  object-fit: contain;
 }

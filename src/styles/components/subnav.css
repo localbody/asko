@@ -156,7 +156,7 @@
   width: 1.5rem;
   height: 1.5rem;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
