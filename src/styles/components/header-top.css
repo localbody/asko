@@ -14,8 +14,8 @@
 }
 
 .header-top .logo {
-  width: calc(157 / 16 * 1rem);
-  height: calc(44 / 16 * 1rem);
+  /* width: calc(157 / 16 * 1rem); */
+  /* height: calc(44 / 16 * 1rem); */
 }
 
 .header-top nav ul {

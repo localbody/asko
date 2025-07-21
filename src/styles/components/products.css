@@ -1,6 +1,6 @@
 .container--products {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 0.5rem;
 }

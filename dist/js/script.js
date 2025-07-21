@@ -1,4 +1,29 @@
 const onLoaded = () => {
+  const scrollBtn = document.getElementById('scrollTopBtn')
+  const scrollFrom = 100
+
+  if (scrollBtn) {
+    // Показать кнопку, когда страница прокручена вниз на 100px
+    window.onscroll = function () {
+      if (
+        document.body.scrollTop > scrollFrom ||
+        document.documentElement.scrollTop > scrollFrom
+      ) {
+        scrollBtn.style.display = 'block'
+      } else {
+        scrollBtn.style.display = 'none'
+      }
+    }
+
+    // Функция прокрутки наверх при клике
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth', // плавная прокрутка
+      })
+    })
+  }
+
   const overlayMain = document.querySelector('.overlay--main')
 
   // send-request
@@ -17,7 +42,7 @@ const onLoaded = () => {
       ) {
         popupSendRequest.classList.toggle('hidden')
       } else {
-        overlayMain.classList.toggle('hidden')
+        overlayMain.classList.remove('hidden')
         popupSendRequest.classList.toggle('hidden')
       }
     }
@@ -43,7 +68,7 @@ const onLoaded = () => {
         event.target.closest('.popup').classList.toggle('hidden')
       } else {
         event.target.closest('.popup').classList.toggle('hidden')
-        overlayMain.classList.toggle('hidden')
+        overlayMain.classList.add('hidden')
       }
     }
 
@@ -329,26 +354,26 @@ const onLoaded = () => {
 
   // certificates-viewer
 
-  const viewerCertificates = document.querySelector('.viewer-certificates')
+  const viewer = document.querySelector('.viewer')
 
-  if (viewerCertificates) {
-    const onClickViewerCertificates = (event) => {
+  if (viewer) {
+    const onClickviewer = (event) => {
       if (
-        event.target.matches('.viewer-certificates button.close') ||
-        event.target.matches('.viewer-certificates')
+        event.target.matches('.viewer button.close') ||
+        event.target.matches('.viewer')
       ) {
-        viewerCertificates.hidden = true
+        viewer.hidden = true
       }
     }
 
-    viewerCertificates.addEventListener('click', onClickViewerCertificates)
+    viewer.addEventListener('click', onClickviewer)
 
     const setIndexImages = (value) => {
-      let indexImage = +viewerCertificates.dataset.indexImage
-      const countImages = +viewerCertificates.dataset.countImages
+      let indexImage = +viewer.dataset.indexImage
+      const countImages = +viewer.dataset.countImages
 
-      if (viewerCertificates.dataset.listImages) {
-        const arrayImages = viewerCertificates.dataset.listImages.split(',')
+      if (viewer.dataset.listImages) {
+        const arrayImages = viewer.dataset.listImages.split(',')
 
         indexImage += +value
 
@@ -358,58 +383,60 @@ const onLoaded = () => {
           indexImage = countImages - 1
         }
 
-        viewerCertificates.dataset.indexImage = indexImage
+        viewer.dataset.indexImage = indexImage
 
-        viewerCertificates.querySelector('.certificate-full img').src =
-          arrayImages[+indexImage]
+        viewer.querySelector('.image-full img').src = arrayImages[+indexImage]
       }
     }
 
-    const buttonPrevViewerCertificates =
-      viewerCertificates.querySelector('button.prev')
+    const buttonPrevViewer = viewer.querySelector('button.prev')
 
-    buttonPrevViewerCertificates.addEventListener('click', () =>
-      setIndexImages(-1),
-    )
+    buttonPrevViewer.addEventListener('click', () => setIndexImages(-1))
 
-    const buttonNextViewerCertificates =
-      viewerCertificates.querySelector('button.next')
+    const buttonNextViewer = viewer.querySelector('button.next')
 
-    buttonNextViewerCertificates.addEventListener('click', () =>
-      setIndexImages(1),
-    )
+    buttonNextViewer.addEventListener('click', () => setIndexImages(1))
+
+    const openViewer = (event, listImages) => {
+      event.preventDefault()
+
+      const arrayImages = listImages.split(',')
+
+      viewer.querySelector('.image-full img').src = arrayImages[0]
+
+      viewer.hidden = false
+
+      viewer.dataset.indexImage = 0
+      viewer.dataset.listImages = arrayImages
+      viewer.dataset.countImages = arrayImages.length
+
+      viewer.querySelector('button.prev').hidden = arrayImages.length === 1
+      viewer.querySelector('button.next').hidden = arrayImages.length === 1
+    }
 
     const listCertificates = document.querySelectorAll(
       '.certificates .certificate',
     )
 
     if (listCertificates) {
-      const openViewerCertificate = (event, listImages) => {
-        event.preventDefault()
-
-        const arrayImages = listImages.split(',')
-
-        viewerCertificates.querySelector('.certificate-full img').src =
-          arrayImages[0]
-
-        viewerCertificates.hidden = false
-
-        viewerCertificates.dataset.indexImage = 0
-        viewerCertificates.dataset.listImages = arrayImages
-        viewerCertificates.dataset.countImages = arrayImages.length
-
-        viewerCertificates.querySelector('button.prev').hidden =
-          arrayImages.length === 1
-        viewerCertificates.querySelector('button.next').hidden =
-          arrayImages.length === 1
-      }
-
       const onClickCertificate = (event) => {
-        openViewerCertificate(event, event.currentTarget.dataset.images)
+        openViewer(event, event.currentTarget.dataset.images)
       }
 
       listCertificates.forEach((certificate) => {
         certificate.addEventListener('click', onClickCertificate)
+      })
+    }
+
+    const listSchemes = document.querySelectorAll('.scheme__overlay')
+
+    if (listSchemes) {
+      const onClickScheme = (event) => {
+        openViewer(event, event.currentTarget.dataset.images)
+      }
+
+      listSchemes.forEach((scheme) => {
+        scheme.addEventListener('click', onClickScheme)
       })
     }
   }

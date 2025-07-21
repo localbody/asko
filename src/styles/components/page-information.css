@@ -41,10 +41,12 @@
   color: var(--grey-1);
 }
 
+.wp-block-table table tr,
 .page-information table tr {
   border-bottom: 0.0625rem solid var(--grey-3);
 }
 
+.wp-block-table table th,
 .page-information table th {
   font-size: 0.875rem;
   line-height: 1.5rem;
@@ -53,6 +55,7 @@
   padding: 1.25rem;
 }
 
+.wp-block-table table td,
 .page-information table td {
   color: var(--grey-1);
   font-size: 0.875rem;

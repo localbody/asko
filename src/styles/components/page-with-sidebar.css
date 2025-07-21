@@ -78,3 +78,7 @@
 .sidebar__item--noborder {
   border: none;
 }
+
+.page-with-sidebar .about-company {
+  gap: 2rem;
+}

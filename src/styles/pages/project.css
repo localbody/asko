@@ -63,8 +63,9 @@
   object-fit: contain;
 }
 
+.main .easy-slider,
 .main .project .easy-slider {
-  height: 428px;
+  /* height: 428px; */
   padding-bottom: 1.25rem;
 }
 

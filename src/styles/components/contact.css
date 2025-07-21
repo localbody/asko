@@ -57,12 +57,25 @@
   color: var(--black);
 }
 
+.main .contact .map {
+  width: 50%;
+}
+
+.main .contact .map iframe {
+  width: 100%;
+}
+
 .main .contact .map img {
   width: 100%;
 }
 
-@media (max-width: 600px) {
-  .main .contact .map img {
+.main .contact .map iframe {
+  max-height: 298px;
+}
+
+@media (max-width: 1200px) {
+  .main .contact .map {
+    width: 100%;
     margin-top: 1.5rem;
   }
 }

@@ -1,4 +1,8 @@
 .main .header {
+  position: relative;
+}
+
+.main .header--index {
   height: calc(822 / 16 * 1rem);
   position: relative;
   display: grid;
@@ -10,12 +14,12 @@
 }
 
 @media (max-width: 600px) {
-  .main .header {
+  .main .header--index {
     height: 460px;
   }
 }
 
-.main .header .overlay--header {
+.main .header--index .overlay--header {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -27,33 +31,33 @@
   opacity: 0.6;
 }
 
-.main .header .container {
+.main .header--index .container {
   position: relative;
   grid-auto-rows: max-content max-content;
 }
 
-.main .header .container.container--place-center > .wrapper {
+.main .header--index .container.container--place-center > .wrapper {
   position: relative;
   padding-right: calc(765 / 16 * 1rem);
 }
 
 @media (max-width: 1650px) {
-  .main .header .container.container--place-center > .wrapper {
+  .main .header--index .container.container--place-center > .wrapper {
     padding-right: 1rem;
     padding-left: 1rem;
   }
 
-  .main .header .container.container--place-center .catalog-open {
+  .main .header--index .container.container--place-center .catalog-open {
     margin-left: 1rem;
   }
 }
 
-.main .header h2 {
+.main .header--index h2 {
   color: var(--white);
   text-transform: uppercase;
 }
 
-.main .header .frames {
+.main .header--index .frames {
   margin-top: 2.5rem;
   display: flex;
   justify-content: space-between;
@@ -62,23 +66,23 @@
 }
 
 @media (max-width: 600px) {
-  .main .header .frames {
+  .main .header--index .frames {
     margin-top: 1rem;
     flex-wrap: wrap;
     gap: 1rem;
   }
 }
 
-.main .header .frame .title {
+.main .header--index .frame .title {
   color: var(--white);
   white-space: nowrap;
 }
 
-.main .header .frame .description {
+.main .header--index .frame .description {
   color: var(--white);
 }
 
-.main .header .button {
+.main .header--index .button {
   width: fit-content;
 }
 

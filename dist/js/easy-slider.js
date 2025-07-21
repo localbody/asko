@@ -5,14 +5,18 @@
 // })
 
 const onLoad = () => {
-  console.log('onLoad')
+  // console.log('onLoad')
 
   const easySliders = document.querySelectorAll('.easy-slider')
 
-  console.log(easySliders)
+  // console.log(easySliders)
 
   easySliders.forEach((item) => {
     new Swiper(item, {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
       pagination: {
         el: item.querySelector('.easy-slider__paginator'),
       },

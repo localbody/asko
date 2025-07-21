@@ -41,3 +41,18 @@
 .easy-slider .swiper-pagination-bullet-active {
   background-color: var(--orange);
 }
+
+.easy-slider-prev,
+.easy-slider-next {
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 2rem;
+  border-radius: 50%;
+  background-image: url(../../images/icons/arrow-right--orange.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 3rem;
+}
+
+.easy-slider-prev {
+  transform: rotate(180deg);
+}

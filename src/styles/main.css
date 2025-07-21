@@ -47,6 +47,7 @@ li {
 }
 
 @media (max-width: 600px) {
+  .wp-block-table,
   .container--scroll-x {
     overflow-x: scroll;
   }
@@ -164,4 +165,92 @@ button {
 .popup-catalog-show {
   position: absolute;
   inset: 0;
+  height: 0;
+}
+
+p:empty {
+  display: none;
+}
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 5em;
+  right: 5em;
+  display: none; /* Скрыта по умолчанию */
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  width: 4rem;
+  height: 4rem;
+
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+  opacity: 0.75;
+  background-image: url(../../images/icons/arrow-right--black.svg);
+  transform: rotate(-90deg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 3rem;
+}
+
+.viewer {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.viewer button {
+  position: absolute;
+}
+
+.viewer button.close {
+  top: 3%;
+  right: 3%;
+  background-image: url(../../images/icons/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 3em;
+  width: 3em;
+  height: 3em;
+}
+
+.viewer button.prev,
+.viewer button.next {
+  top: 10%;
+  height: 80vh;
+  width: 30vw;
+  background-image: url(../../images/icons/arrow-right--orange.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 5em;
+}
+
+.viewer button.prev {
+  left: 0%;
+  transform: rotate(180deg);
+}
+
+.viewer button.next {
+  right: 0%;
+}
+
+.image-full {
+  margin: 5% auto 0 auto;
+  width: 80%;
+  height: 90%;
+}
+
+.image-full img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: contain;
+}
+
+.wp-block-table {
+  margin: 0;
 }

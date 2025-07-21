@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  justify-content: space-around;
+  justify-content: flex-start;
   /* place-items: center; */
   /* grid-template-columns: repeat(4, 1fr); */
 }
@@ -21,13 +21,14 @@
 
 .main .cards .card {
   width: calc(396 / 16 * 1rem);
-  height: calc(462 / 16 * 1rem);
+  /* height: calc(462 / 16 * 1rem); */
   background-color: var(--grey-4);
   cursor: pointer;
   display: grid;
-  grid-template-rows: calc(268 / 16 * 1rem) 1fr;
+  /* grid-template-rows: calc(268 / 16 * 1rem) 1fr; */
   font-weight: 500;
   color: var(--black);
+  align-content: flex-start;
 }
 
 @media (max-width: 600px) {
@@ -41,7 +42,8 @@
 
 .main .cards .card .card__image {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
+  height: calc(268 / 16 * 1rem);
   overflow: hidden;
 }
 
