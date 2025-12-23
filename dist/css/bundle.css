@@ -4326,44 +4326,35 @@ button.close-menu {
 
 .lb-top {
     background-color: black;
+    color: white;
     margin-top: -2.5rem;
 }
 
 .lb-top__container {
-    padding-top: 13.75rem !important;
     height: 51.375rem;
     background-image: url(../../images/lb/lb-top.png);
-    background-position: 111%;
+    background-position: right;
     background-repeat: no-repeat;
-    background-color: #000000;
-    margin-top: -2.5rem;
-    color: white;
-    font-weight: 500;
-    display: grid;
-    grid-template-areas:
-        'h1 column-second'
-        'column-first column-second';
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr;
+    background-size: contain;
+    position: relative;
 }
-
-.lb-top h1 {
-    grid-area: h1;
-}
-
 
 .lb-top__column--first {
-    grid-area: column-first;
-    padding-right: 3.75rem;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 40%;
 }
 
 .lb-top h1 {
-    font-size: 3rem;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    font-size: 2.75rem;
     line-height: 3.375rem;
     font-weight: 500;
     margin: 0;
     letter-spacing: 0.01rem;
-    margin-bottom: 2.5rem;
 }
 
 .lb-top h1 span {
@@ -4409,21 +4400,10 @@ ul.lb-top__works li::before {
     gap: 1.25rem;
 }
 
-.lb-button {
-    padding: 1rem 3.5rem;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    text-transform: uppercase;
-    background-color: var(--orange);
-    border-radius: 0.375rem;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 .lb-top__column--second {
-    grid-area: column-second;
-    padding-top: 4rem;
+    position: absolute;
+    top: 34%;
+    left: 46%;
 }
 
 .lb-top__info {
@@ -4456,6 +4436,21 @@ ul.lb-top__works li::before {
     flex-shrink: 0;
 }
 
+/*  */
+
+.lb-button {
+    display: inline-block;
+    padding: 1rem 3.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    background-color: var(--orange);
+    border-radius: 0.375rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .lb-content {
     padding: 2.5rem 0 0 0;
     display: grid;
@@ -4463,9 +4458,13 @@ ul.lb-top__works li::before {
 }
 
 .lb-content__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: nowrap;
     gap: 1.5rem;
+}
+
+.lb-content__wrapper>* {
+    width: 50%;
 }
 
 .lb-content h2 {
@@ -4473,6 +4472,7 @@ ul.lb-top__works li::before {
     font-size: 1.25rem;
     line-height: 1.75rem;
     font-weight: 500;
+
 }
 
 .lb-content__text {
@@ -4492,10 +4492,10 @@ ul.lb-top__works li::before {
 
 .lb-steps {
     background-color: var(--grey-4);
-    padding: 5rem 9.75rem;
+    padding: 5rem 0;
 }
 
-.lb-steps .container {
+.lb-steps__container {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1.5rem;
@@ -4588,10 +4588,11 @@ ul.lb-top__works li::before {
     background-color: white;
 }
 
-.lb-input__wrapper input[type="text"]::placeholder {
+.lb-steps__contact .lb-input__wrapper input[type="text"]::placeholder {
     font-size: 0.875rem;
     line-height: 1.5rem;
     font-weight: 400;
+    color: var(--grey-1);
 }
 
 .lb-input__wrapper input[type="checkbox"] {
@@ -4758,8 +4759,8 @@ ul.lb-top__works li::before {
     background-color: transparent;
 }
 
-.lb-input__wrapper input[type="text"],
-.lb-input__wrapper input[type="text"]::placeholder {
+.lb-bottom__contact .lb-input__wrapper input[type="text"],
+.lb-bottom__contact .lb-input__wrapper input[type="text"]::placeholder {
     color: white;
 }
 
@@ -4773,34 +4774,46 @@ ul.lb-top__works li::before {
 
 
 @media (max-width: 1608px) {
-    .lb-top h1 {
-        text-align: center;
-        padding-bottom: 35vw;
+
+    .lb-top {
+        background: linear-gradient(180deg, rgba(49, 49, 49, 0) 0%, rgba(27, 27, 27, 0.8) 10.58%, #191919 63.62%);
     }
 
     .lb-top__container {
-        padding-top: 2rem !important;
-        grid-template-areas:
-            'h1'
-            'column-first'
-            'column-second';
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        height: initial;
-        padding-bottom: 2rem !important;
-        grid-template-columns: 1fr;
         background-image: url(../../images/lb/lb-top--mobile.png);
         background-position: center -15vw;
-        background-size: contain;
+        background-size: 100vw;
+        height: initial;
+        padding-bottom: 2rem !important;
     }
 
-    .lb-top__container:after {
-        background: linear-gradient(180deg, rgba(49, 49, 49, 0) 0%, rgba(27, 27, 27, 0.8) 10.58%, #191919 63.62%);
+    .lb-top h1 {
+        position: initial;
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 45vw;
+    }
 
+    .lb-top__column--first,
+    .lb-top__column--second {
+        position: initial;
+        width: 100%;
     }
 
     .lb-top__column--first {
-        padding-top: 2rem;
+        display: grid;
+        place-content: center;
+    }
+
+    .lb-top__info,
+    .lb-top__buttons,
+    .lb-top__works {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .lb-top__buttons {
+        margin-bottom: 2rem;
     }
 
     .lb-top__description p {
@@ -4809,11 +4822,76 @@ ul.lb-top__works li::before {
 }
 
 
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+    .lb-content__wrapper>* {
+        width: 100%;
+    }
 
-@media (max-width: 800px) {}
+    .lb-content__wrapper {
+        flex-wrap: wrap;
+    }
 
-@media (max-width: 600px) {}
+    .lb-content__text {
+        order: 2;
+    }
+
+    .lb-steps__container {
+        grid-template-columns: 1fr;
+    }
+
+    .lb-why__blocks {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .lb-bottom {
+        background-image: url(../../images/lb/lb-bottom--mobile.png);
+        background-position: center bottom;
+        padding-bottom: 110vw;
+    }
+
+    .lb-bottom h2 {
+        text-align: left;
+        padding: 3rem 0 1.5rem 0;
+    }
+
+    .lb-bottom h3 {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .lb-bottom .lb-input__wrapper,
+    .lb-bottom .lb-button__wrapper {
+        width: 100%;
+    }
+
+    .lb-bottom__contact,
+    .lb-bottom__container {
+        height: inherit;
+    }
+
+    .lb-bottom__contact {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .lb-steps ol {
+        flex-wrap: nowrap;
+        height: inherit;
+    }
+
+    .lb-steps ol li {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .lb-why__blocks {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {}
 
 @media (max-width: 360px) {}
 .page-404 {
