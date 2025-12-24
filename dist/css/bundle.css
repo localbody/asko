@@ -4818,6 +4818,7 @@ ul.lb-top__works li::before {
 
     .lb-top__description p {
         margin-bottom: 2rem;
+        text-align: center;
     }
 }
 
@@ -4883,17 +4884,70 @@ ul.lb-top__works li::before {
     .lb-steps ol li {
         width: 100%;
     }
+
+    .lb-top__container {
+        background-position: center -7vw;
+    }
+
+    .lb-top h1 {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+
+    .lb-top__works {
+        margin-bottom: 1rem;
+    }
+
+    .lb-button {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media (max-width: 600px) {
     .lb-why__blocks {
         grid-template-columns: 1fr;
     }
+
+    .lb-top__works {
+        column-gap: 1.5rem;
+        row-gap: 0.5rem;
+    }
+
+    ul.lb-top__works li {
+        font-size: 1rem;
+
+    }
+
+    .lb-top__description p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
 
-@media (max-width: 360px) {}
+    .lb-top__works {
+        margin-bottom: 0.5rem;
+    }
+
+    .lb-top__container {
+        background-position: center -10vw;
+    }
+
+    .lb-top h1 {
+        padding-top: 1rem;
+        padding-bottom: 40vw;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .lb-top h1 {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+}
 .page-404 {
   display: grid;
   gap: 2.5rem;
