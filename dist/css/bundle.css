@@ -407,7 +407,8 @@ template {
 :root {
   --black: #000000;
   --white: #ffffff;
-  --orange: #f16100;
+  /* --orange: #f16100; */
+  --orange: #0077d7;
   --orange-dark: #e14400;
   --grey-1: #6c7275;
   --grey-2: #9f9f9f;
@@ -4332,7 +4333,7 @@ button.close-menu {
 
 .lb-top__container {
     height: 51.375rem;
-    background-image: url(../../images/lb/lb-top.png);
+    /* background-image: url(../../images/lb/lb-top.png); */
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -4381,7 +4382,7 @@ ul.lb-top__works li::before {
     content: '';
     width: 1.5625rem;
     height: 1.5625rem;
-    background-image: url(../../images/check.svg);
+    background-image: url(../../images/icons/check--round.svg);
     background-size: 1.0625rem;
     background-position: center;
     background-repeat: no-repeat;
@@ -4429,7 +4430,7 @@ ul.lb-top__works li::before {
     content: '';
     width: 1.5625rem;
     height: 1.5625rem;
-    background-image: url(../../images/check.svg);
+    background-image: url(../../images/icons/check--round.svg);
     background-position: center;
     background-size: 1.0625rem;
     background-repeat: no-repeat;
@@ -4478,6 +4479,7 @@ ul.lb-top__works li::before {
 .lb-content__text {
     display: grid;
     row-gap: 1.5rem;
+    grid-template-rows: auto 1fr;
 }
 
 .lb-content__text p {
@@ -4629,7 +4631,7 @@ ul.lb-top__works li::before {
 }
 
 .lb-input__wrapper input[type="checkbox"]:checked+.label--checkbox::before {
-    background-image: url(../../images/icons/check.svg);
+    background-image: url(../../images/icons/icons/check--round.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 85%;
