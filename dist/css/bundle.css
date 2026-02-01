@@ -4328,15 +4328,14 @@ button.close-menu {
 .lb-top {
     background-color: black;
     color: white;
-    margin-top: -2.5rem;
+    margin-top: -1.5rem;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .lb-top__container {
     height: 51.375rem;
-    /* background-image: url(../../images/lb/lb-top.png); */
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
     position: relative;
 }
 
@@ -4631,7 +4630,7 @@ ul.lb-top__works li::before {
 }
 
 .lb-input__wrapper input[type="checkbox"]:checked+.label--checkbox::before {
-    background-image: url(../../images/icons/icons/check--round.svg);
+    background-image: url(../../images/icons/check.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 85%;
@@ -4782,9 +4781,8 @@ ul.lb-top__works li::before {
     }
 
     .lb-top__container {
-        background-image: url(../../images/lb/lb-top--mobile.png);
-        background-position: center -15vw;
-        background-size: 100vw;
+        background-position: left;
+        background-size: cover;
         height: initial;
         padding-bottom: 2rem !important;
     }
@@ -4887,10 +4885,6 @@ ul.lb-top__works li::before {
         width: 100%;
     }
 
-    .lb-top__container {
-        background-position: center -7vw;
-    }
-
     .lb-top h1 {
         font-size: 1.75rem;
         line-height: 2rem;
@@ -4931,10 +4925,6 @@ ul.lb-top__works li::before {
 
     .lb-top__works {
         margin-bottom: 0.5rem;
-    }
-
-    .lb-top__container {
-        background-position: center -10vw;
     }
 
     .lb-top h1 {
@@ -5157,6 +5147,7 @@ li {
 }
 
 @media (max-width: 600px) {
+
   .wp-block-table,
   .container--scroll-x {
     overflow-x: scroll;
@@ -5269,7 +5260,8 @@ button {
   color: tomato;
   font-size: 0.75rem;
   position: absolute;
-  bottom: -1.2rem;
+  top: -1.2rem;
+  right: 0;
 }
 
 .popup-catalog-show {
@@ -5286,7 +5278,8 @@ p:empty {
   position: fixed;
   bottom: 5em;
   right: 5em;
-  display: none; /* Скрыта по умолчанию */
+  display: none;
+  /* Скрыта по умолчанию */
   background-color: var(--orange);
   color: white;
   border: none;

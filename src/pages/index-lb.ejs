@@ -21,10 +21,24 @@
                 <%- include('../templates/header-top') %>
         </div>
 
+        <div class="container">
+            <div class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+                <sp itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="/"
+                        itemprop="item"><span itemprop="name">Главная</span></a></sp>
+                <sp itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="/services/"
+                        itemprop="item">
+                        <span itemprop="name">Услуги</span></a>
+                </sp>
+                <sp itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                    <sp itemprop="name"><span class="current-page">Интерактивный видеопол</span></sp>
+                </sp>
+            </div>
+        </div>
 
-        <div class="lb-top">
+        <div class="lb-top"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../images/lb/lb-top.jpg)">
 
-            <div class="lb-top__container container" style="background-image: url(../images/lb/lb-top.png)">
+            <div class="lb-top__container container">
 
                 <h1>Полный цикл работ<br />по уличным <span>LED-билбордам</span></h1>
 
@@ -227,7 +241,7 @@
                         <label for="">Ваш телефон</label>
                         <input class="phone-with-mask" type="text" placeholder="+7 ___ - ___ - __">
                     </div>
-                    <div class="lb-input__wrapper">
+                    <div class="lb-input__wrapper checkbox required">
                         <input type="checkbox" id="lb-steps-confirm">
                         <label class="label--checkbox" for="lb-steps-confirm">
                             <span>

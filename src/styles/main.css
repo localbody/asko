@@ -47,6 +47,7 @@ li {
 }
 
 @media (max-width: 600px) {
+
   .wp-block-table,
   .container--scroll-x {
     overflow-x: scroll;
@@ -159,7 +160,8 @@ button {
   color: tomato;
   font-size: 0.75rem;
   position: absolute;
-  bottom: -1.2rem;
+  top: -1.2rem;
+  right: 0;
 }
 
 .popup-catalog-show {
@@ -176,7 +178,8 @@ p:empty {
   position: fixed;
   bottom: 5em;
   right: 5em;
-  display: none; /* Скрыта по умолчанию */
+  display: none;
+  /* Скрыта по умолчанию */
   background-color: var(--orange);
   color: white;
   border: none;
