@@ -50,17 +50,17 @@
 }
 
 .main .about-company .circle--location {
-  background-image: url(../../images/icons/location--white.svg);
+  background-image: url(../images/icons/location--white.svg);
 }
 
 .main .about-company .circle--star {
-  background-image: url(../../images/icons/star--white.svg);
+  background-image: url(../images/icons/star--white.svg);
 }
 
 .main .about-company .circle--color-swatch {
-  background-image: url(../../images/icons/color-swatch--white.svg);
+  background-image: url(../images/icons/color-swatch--white.svg);
 }
 
 .main .about-company .circle--medal {
-  background-image: url(../../images/icons/medal--white.svg);
+  background-image: url(../images/icons/medal--white.svg);
 }

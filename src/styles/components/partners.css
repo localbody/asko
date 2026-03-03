@@ -29,13 +29,13 @@
 }
 
 .main .partners .slider-button-prev {
-  background-image: url(../../images/icons/arrow-right.svg);
+  background-image: url(../images/icons/arrow-right.svg);
   transform: rotate(180deg);
   left: 0;
 }
 
 .main .partners .slider-button-next {
-  background-image: url(../../images/icons/arrow-right.svg);
+  background-image: url(../images/icons/arrow-right.svg);
 
   right: 0;
 }

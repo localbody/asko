@@ -5,9 +5,12 @@
 .main .header--index {
   height: calc(822 / 16 * 1rem);
   position: relative;
+  overflow: hidden;
   display: grid;
   align-items: center;
-  background-image: url(../../images/header.png);
+  /* background-image: url(../images/header.png); */
+  background-image: url(../video/bg-video.mp4);
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,30 +22,43 @@
   }
 }
 
+.main .header--index video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  z-index: 1;
+}
+
 .main .header--index .overlay--header {
   position: absolute;
+  z-index: 2;
   height: 100%;
   width: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 29%,
-    rgba(102, 102, 102, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(0, 0, 0, 1) 29%,
+      rgba(102, 102, 102, 0) 100%);
   opacity: 0.6;
 }
 
 .main .header--index .container {
   position: relative;
+  z-index: 3;
   grid-auto-rows: max-content max-content;
 }
 
-.main .header--index .container.container--place-center > .wrapper {
+.main .header--index .container.container--place-center>.wrapper {
   position: relative;
   padding-right: calc(765 / 16 * 1rem);
 }
 
 @media (max-width: 1650px) {
-  .main .header--index .container.container--place-center > .wrapper {
+  .main .header--index .container.container--place-center>.wrapper {
     padding-right: 1rem;
     padding-left: 1rem;
   }

@@ -97,7 +97,7 @@
   content: '';
   width: 1.25rem;
   height: 1.25rem;
-  background-image: url(../../images/icons/timer.svg);
+  background-image: url(../images/icons/timer.svg);
 
   background-position: center;
   background-repeat: no-repeat;
@@ -179,13 +179,13 @@
   padding: 0.625rem 0;
 }
 
-.blog-article__author > .wrapper {
+.blog-article__author>.wrapper {
   display: flex;
   align-items: center;
   gap: 0.75rem;
 }
 
-.blog-article__author > .wrapper .inner {
+.blog-article__author>.wrapper .inner {
   display: grid;
   gap: 0.25rem;
   font-size: 0.875rem;
@@ -193,7 +193,7 @@
   color: var(--grey-1);
 }
 
-.blog-article__author > .inner b {
+.blog-article__author>.inner b {
   font-weight: 500;
 }
 
@@ -209,7 +209,7 @@
   content: '';
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(../../images/icons/share.svg);
+  background-image: url(../images/icons/share.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

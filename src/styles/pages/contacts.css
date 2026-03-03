@@ -33,7 +33,7 @@
   content: '';
   width: 1rem;
   height: 1rem;
-  background-image: url('../../images/icons/download.svg');
+  background-image: url('../images/icons/download.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1rem;
@@ -55,6 +55,7 @@
 }
 
 @media (max-width: 600px) {
+
   .contacts .phone,
   .contacts .mail {
     font-size: 1rem;
@@ -75,11 +76,11 @@
 }
 
 .contacts .phone::before {
-  background-image: url(../../images/icons/call.svg);
+  background-image: url(../images/icons/call.svg);
 }
 
 .contacts .mail::before {
-  background-image: url(../../images/icons/sms.svg);
+  background-image: url(../images/icons/sms.svg);
 }
 
 .contacts .with-title {
@@ -146,7 +147,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../../images/icons/mail--open.svg);
+  background-image: url(../images/icons/mail--open.svg);
   background-size: 2.5rem;
   background-position: center;
   background-repeat: no-repeat;

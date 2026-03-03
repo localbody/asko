@@ -48,7 +48,7 @@
   content: '';
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url('../../images/icons/add.svg');
+  background-image: url('../images/icons/add.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1.5rem;
@@ -65,13 +65,15 @@
 }
 
 .main .footer .messengers .viber {
-  background-image: url(../../images/icons/viber.svg);
+  background-image: url(../images/icons/viber.svg);
 }
+
 .main .footer .messengers .telegram {
-  background-image: url(../../images/icons/telegram.svg);
+  background-image: url(../images/icons/telegram.svg);
 }
+
 .main .footer .messengers .whatsapp {
-  background-image: url(../../images/icons/whatsapp.svg);
+  background-image: url(../images/icons/whatsapp.svg);
 }
 
 .main .footer a.phone {

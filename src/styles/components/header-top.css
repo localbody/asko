@@ -7,7 +7,7 @@
   display: flex;
 }
 
-.header-top > .container {
+.header-top>.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,7 +35,7 @@
 .header-top .search {
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(../../images/icons/search--grey.svg);
+  background-image: url(../images/icons/search--grey.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

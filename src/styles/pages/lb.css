@@ -2,7 +2,7 @@
     background-color: black;
     color: white;
     margin-top: -1.5rem;
-    background-position: right;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -56,7 +56,7 @@ ul.lb-top__works li::before {
     content: '';
     width: 1.5625rem;
     height: 1.5625rem;
-    background-image: url(../../images/icons/check--round.svg);
+    background-image: url(../images/icons/check--round.svg);
     background-size: 1.0625rem;
     background-position: center;
     background-repeat: no-repeat;
@@ -104,7 +104,7 @@ ul.lb-top__works li::before {
     content: '';
     width: 1.5625rem;
     height: 1.5625rem;
-    background-image: url(../../images/icons/check--round.svg);
+    background-image: url(../images/icons/check--round.svg);
     background-position: center;
     background-size: 1.0625rem;
     background-repeat: no-repeat;
@@ -305,7 +305,7 @@ ul.lb-top__works li::before {
 }
 
 .lb-input__wrapper input[type="checkbox"]:checked+.label--checkbox::before {
-    background-image: url(../../images/icons/check.svg);
+    background-image: url(../images/icons/check.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 85%;
@@ -383,7 +383,7 @@ ul.lb-top__works li::before {
 .lb-bottom {
     background-color: #000000;
     color: white;
-    background-image: url(../../images/lb/lb-bottom.png);
+    background-image: url(../images/lb/lb-bottom.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -519,7 +519,7 @@ ul.lb-top__works li::before {
     }
 
     .lb-bottom {
-        background-image: url(../../images/lb/lb-bottom--mobile.png);
+        background-image: url(../images/lb/lb-bottom--mobile.png);
         background-position: center bottom;
         padding-bottom: 110vw;
     }

@@ -39,7 +39,7 @@
 .main .wrapper--search .search-panel .wrapper {
   background: var(--grey-4);
   border-radius: 0.5rem;
-  background-image: url(../../images/icons/search--grey.svg);
+  background-image: url(../images/icons/search--grey.svg);
   background-size: 1.5rem;
   background-position: 1.25rem center;
   background-repeat: no-repeat;

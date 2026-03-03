@@ -5,6 +5,7 @@
 }
 
 @media (max-width: 600px) {
+
   .container--tabs,
   .container--divider {
     display: none;
@@ -30,7 +31,7 @@
 }
 
 @media (max-width: 600px) {
-  .header-top > .container {
+  .header-top>.container {
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 10fr;
@@ -45,7 +46,7 @@
 .mobile .burger {
   width: 2.5rem;
   height: 2.5rem;
-  background-image: url(../../images/icons/burger.svg);
+  background-image: url(../images/icons/burger.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -86,7 +87,7 @@
 
   .mobile .logo img {
     width: 106px;
-    height: 1rem;
+    /* height: 1rem; */
   }
 }
 
@@ -114,18 +115,20 @@
 
 @media (max-width: 600px) {
   .mobile .search {
-    background-image: url(../../images/icons/search--mobile.svg);
+    background-image: url(../images/icons/search--mobile.svg);
   }
 }
 
 .mobile .call {
-  background-image: url(../../images/icons/call--mobile.svg);
+  background-image: url(../images/icons/call--mobile.svg);
 }
+
 .mobile .whatsapp {
-  background-image: url(../../images/icons/whatsapp--grey.svg);
+  background-image: url(../images/icons/whatsapp--grey.svg);
 }
+
 .mobile .telegram {
-  background-image: url(../../images/icons/telegram--grey.svg);
+  background-image: url(../images/icons/telegram--grey.svg);
 }
 
 .mobile-menu {
@@ -151,18 +154,18 @@ button.close-menu {
   width: 1.5rem;
   height: 1.5rem;
   float: right;
-  background-image: url(../../images/icons/close.svg);
+  background-image: url(../images/icons/close.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1.5rem;
 }
 
-.mobile-menu > ul {
+.mobile-menu>ul {
   display: grid;
   gap: 1rem;
 }
 
-.mobile-menu > ul > li:not(:first-child) {
+.mobile-menu>ul>li:not(:first-child) {
   border-bottom: 1px solid var(--grey-3);
   padding-bottom: 1rem;
 }
@@ -179,7 +182,7 @@ button.close-menu {
   content: '';
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(../../images/icons/chevron.svg);
+  background-image: url(../images/icons/chevron.svg);
   background-position: center right;
   background-repeat: no-repeat;
   background-size: 1.5rem;
@@ -243,7 +246,7 @@ button.close-menu {
   content: '';
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(../../images/icons/chevron.svg);
+  background-image: url(../images/icons/chevron.svg);
   background-position: center;
   background-repeat: no-repeat;
   transform: rotate(0deg);
@@ -281,14 +284,14 @@ button.close-menu {
   content: '';
   width: 1rem;
   height: 1rem;
-  background-image: url(../../images/icons/sms.svg);
+  background-image: url(../images/icons/sms.svg);
 }
 
 .mobile-menu .phone::before {
   content: '';
   width: 1rem;
   height: 1rem;
-  background-image: url(../../images/icons/call.svg);
+  background-image: url(../images/icons/call.svg);
 }
 
 .mobile-menu .mail a {
@@ -317,11 +320,11 @@ button.close-menu {
 }
 
 .mobile-menu .messengers .whatsapp {
-  background-image: url(../../images/icons/whatsapp--grey.svg);
+  background-image: url(../images/icons/whatsapp--grey.svg);
 }
 
 .mobile-menu .messengers .telegram {
-  background-image: url(../../images/icons/telegram--grey.svg);
+  background-image: url(../images/icons/telegram--grey.svg);
 }
 
 /*  */

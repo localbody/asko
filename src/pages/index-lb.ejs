@@ -1,362 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/bundle.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <button id="scrollTopBtn" title="Наверх"></button>
     <div class="main index">
-        <div class="overlay--main hidden"></div>
-        <div class="row row--top">
-            <!-- subnav -->
-            <%- include('../templates/subnav') %>
+      <div class="overlay--main hidden"></div>
+      <div class="row row--top">
+        <!-- subnav -->
+        <%- include('../templates/subnav') %>
 
-                <!-- header-top -->
-                <%- include('../templates/header-top') %>
+        <!-- header-top -->
+        <%- include('../templates/header-top') %>
+      </div>
+
+      <div class="container">
+        <div
+          class="breadcrumbs"
+          itemscope=""
+          itemtype="https://schema.org/BreadcrumbList"
+        >
+          <sp
+            itemprop="itemListElement"
+            itemscope=""
+            itemtype="https://schema.org/ListItem"
+            ><a href="/" itemprop="item"
+              ><span itemprop="name">Главная</span></a
+            ></sp
+          >
+          <sp
+            itemprop="itemListElement"
+            itemscope=""
+            itemtype="https://schema.org/ListItem"
+            ><a href="/services/" itemprop="item">
+              <span itemprop="name">Услуги</span></a
+            >
+          </sp>
+          <sp
+            itemprop="itemListElement"
+            itemscope=""
+            itemtype="https://schema.org/ListItem"
+          >
+            <sp itemprop="name"
+              ><span class="current-page">Интерактивный видеопол</span></sp
+            >
+          </sp>
+        </div>
+      </div>
+
+      <div
+        class="lb-top"
+        style="
+          background-image:
+            linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+            url(../images/lb/lb-top.jpg);
+        "
+      >
+        <div class="lb-top__container container">
+          <h1>Полный цикл работ<br />по уличным <span>LED-билбордам</span></h1>
+
+          <div class="lb-top__column lb-top__column--first">
+            <div class="lb-top__description">
+              <ul class="lb-top__works">
+                <li>проектирование</li>
+                <li>поставка</li>
+                <li>монтаж</li>
+                <li>сервис</li>
+              </ul>
+              <p>
+                Берём на себя всё — от расчёта конструкции и электрики до ввода
+                в эксплуатацию и многолетнего обслуживания
+              </p>
+              <div class="lb-top__buttons">
+                <a href="" class="lb-top__button lb-button"
+                  >рассчитать проект</a
+                >
+                <a href="" class="lb-top__button lb-button">контакты</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="lb-top__column lb-top__column--second">
+            <ul class="lb-top__info">
+              <li>Членство в СРО</li>
+              <li>Работаем на всей территории РФ</li>
+              <li>Готовы к участию в тендерах</li>
+              <li>37 проектов с 2018 года</li>
+              <li>Участвуем в гос. заказах 44-ФЗ и 220-ФЗ</li>
+              <li>Собственное производство</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lb-content container">
+        <div class="lb-content__wrapper">
+          <h2>
+            Технологии распознавания движений в системах интерактивных
+            видеополов
+          </h2>
+          <div class="lb-content__text">
+            <p>
+              Современные реактивные проекционные поверхности функционируют
+              благодаря высокоточным технологиям отслеживания движений
+              пользователей. Основу таких систем составляют инфракрасные камеры
+              с частотой кадров до 120 Гц, обеспечивающие минимальную задержку
+              реакции в 10-15 мс. Распознавание активности на чувствительном
+              полу происходит через несколько ключевых технологий: 1. Оптическое
+              отслеживание - система из 2-4 камер фиксирует силуэты людей и
+              преобразует их в цифровые данные. Алгоритмы компьютерного зрения
+              выделяют контуры фигур даже при слабом освещении (от 50 люкс). 2.
+              Сенсоры давления - размещенные под поверхностью датчики
+              регистрируют вес и положение человека с точностью до 5 см. Матрицы
+              из 1000+ сенсоров создают детальную карту перемещений. 3.
+              Технология ToF (Time-of-Flight) - лазерные импульсы определяют
+              расстояние до объектов с миллиметровой точностью, формируя
+              трехмерную модель пространства над проекционной поверхностью.
+            </p>
+          </div>
         </div>
 
-        <div class="container">
-            <div class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList">
-                <sp itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="/"
-                        itemprop="item"><span itemprop="name">Главная</span></a></sp>
-                <sp itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="/services/"
-                        itemprop="item">
-                        <span itemprop="name">Услуги</span></a>
-                </sp>
-                <sp itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-                    <sp itemprop="name"><span class="current-page">Интерактивный видеопол</span></sp>
-                </sp>
-            </div>
+        <div class="lb-content__wrapper">
+          <div class="lb-content__text">
+            <h2>Комплексное внедрение от "Астра"</h2>
+
+            <p>
+              Компания "Астра" применяет комбинированные решения, где алгоритмы
+              машинного обучения анализируют данные с различных источников. Наши
+              проекционные системы распознают до 15 одновременных касаний и
+              способны отслеживать до 20 человек на площади 30 м².
+              Проектирование реактивной поверхности начинается с анализа
+              помещения и задач заказчика. Инженеры "Астры" создают цифровую
+              модель пространства, подбирают оптимальное расположение датчиков и
+              проекторов с учетом особенностей освещения и потоков посетителей.
+              Монтаж включает установку высокоточной проекционной техники с
+              разрешением до 4K и яркостью до 10000 люмен, настройку
+              многоуровневой системы отслеживания и калибровку всех компонентов.
+              Программная часть адаптируется под конкретные сценарии
+              использования. Обслуживание предусматривает регулярную диагностику
+              точности отклика (не реже раза в квартал), обновление программных
+              алгоритмов распознавания и техническую поддержку. Для получения
+              точной оценки стоимости проекта необходимо детальное ознакомление
+              с вашими требованиями и особенностями помещения. Специалисты
+              компании "Астра" готовы разработать проектное решение и
+              предоставить расчет после изучения всех параметров вашего объекта.
+            </p>
+          </div>
+          <div class="lb-content__image">
+            <img
+              src="https://astrascreen.ru/wp-content/uploads/2026/01/молниезащита2-min.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="lb-content__wrapper">
+          <div class="lb-content__image">
+            <img
+              src="https://astrascreen.ru/wp-content/uploads/2026/01/экраны-для-помещений.гл-min.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="lb-content__text">
+            <h2>Системах интерактивных видеополов</h2>
+            <p>
+              Проекционная система для динамического пола превращает обычную
+              поверхность в захватывающее пространство с реагирующим на движение
+              контентом.&nbsp;Компания "Астра"&nbsp;предлагает полный комплекс
+              решений по созданию динамических проекционных поверхностей - от
+              концептуального проектирования до долгосрочного технического
+              обслуживания. Технология проекционного пола с отслеживанием
+              движения позволяет посетителям взаимодействовать с цифровым
+              контентом непосредственно под ногами. Эта система становится
+              мощным маркетинговым инструментом, привлекая внимание посетителей
+              в торговых центрах, музеях, выставочных залах и корпоративных
+              пространствах.
+            </p>
+          </div>
+        </div>
+        <div class="lb-content__wrapper">
+          <div class="lb-content__text">
+            <p></p>
+            <figure class="wp-block-table">
+              <table class="has-fixed-layout">
+                <tbody>
+                  <tr>
+                    <th>Материал</th>
+                    <th>Влагостойкость</th>
+                    <th>Шумоизоляция (дБ)</th>
+                    <th>Вес (кг/м²)</th>
+                    <th>Средняя цена (руб/м²)</th>
+                  </tr>
+                  <tr>
+                    <td>Минеральное волокно</td>
+                    <td>Низкая</td>
+                    <td>25–30</td>
+                    <td>3.5–4.5</td>
+                    <td>450–600</td>
+                  </tr>
+                  <tr>
+                    <td>ПВХ</td>
+                    <td>Высокая</td>
+                    <td>15–20</td>
+                    <td>1.8–2.2</td>
+                    <td>300–400</td>
+                  </tr>
+                  <tr>
+                    <td>Металл</td>
+                    <td>Средняя</td>
+                    <td>10–15</td>
+                    <td>2.5–3.5</td>
+                    <td>700–900</td>
+                  </tr>
+                </tbody>
+              </table>
+            </figure>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lb-content container">
+        <div class="lb-content__wrapper">
+          <h2>
+            Полный цикл работ по уличным LED-билбордам: профессиональное решение
+            для вашего бизнеса
+          </h2>
+          <div class="lb-content__text">
+            <p>
+              Ваша реклама заслуживает максимального внимания — и мы знаем, как
+              этого добиться. Наша компания предлагает комплексное обслуживание
+              уличных LED-билбордов «под ключ»: от проектирования до
+              эксплуатации. Мы берём на себя все этапы, гарантируя безупречный
+              результат на каждом из них.
+            </p>
+            <p>
+              Ваша реклама заслуживает максимального внимания — и мы знаем, как
+              этого добиться. Наша компания предлагает комплексное обслуживание
+              уличных LED-билбордов «под ключ»: от проектирования до
+              эксплуатации. Мы берём на себя все этапы, гарантируя безупречный
+              результат на каждом из них.
+            </p>
+          </div>
         </div>
 
-        <div class="lb-top"
-            style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../images/lb/lb-top.jpg)">
-
-            <div class="lb-top__container container">
-
-                <h1>Полный цикл работ<br />по уличным <span>LED-билбордам</span></h1>
-
-                <div class="lb-top__column lb-top__column--first">
-                    <div class="lb-top__description">
-                        <ul class="lb-top__works">
-                            <li>проектирование</li>
-                            <li>поставка</li>
-                            <li>монтаж</li>
-                            <li>сервис</li>
-                        </ul>
-                        <p>Берём на себя всё — от расчёта конструкции и электрики до ввода в эксплуатацию и многолетнего
-                            обслуживания</p>
-                        <div class="lb-top__buttons">
-                            <a href="" class="lb-top__button lb-button">рассчитать проект</a>
-                            <a href="" class="lb-top__button lb-button">контакты</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lb-top__column lb-top__column--second">
-                    <ul class="lb-top__info">
-                        <li>Членство в СРО</li>
-                        <li>Работаем на всей территории РФ</li>
-                        <li>Готовы к участию в тендерах</li>
-                        <li>37 проектов с 2018 года</li>
-                        <li>Участвуем в гос. заказах 44-ФЗ и 220-ФЗ</li>
-                        <li>Собственное производство</li>
-                    </ul>
-                </div>
-
-            </div>
+        <div class="lb-content__wrapper">
+          <div class="lb-content__text">
+            <p>
+              Ваша реклама заслуживает максимального внимания — и мы знаем, как
+              этого добиться. Наша компания предлагает комплексное обслуживание
+              уличных LED-билбордов «под ключ»: от проектирования до
+              эксплуатации. Мы берём на себя все этапы, гарантируя безупречный
+              результат на каждом из них.
+            </p>
+            <p>
+              Ваша реклама заслуживает максимального внимания — и мы знаем, как
+              этого добиться. Наша компания предлагает комплексное обслуживание
+              уличных LED-билбордов «под ключ»: от проектирования до
+              эксплуатации. Мы берём на себя все этапы, гарантируя безупречный
+              результат на каждом из них.
+            </p>
+            <p>
+              Ваша реклама заслуживает максимального внимания — и мы знаем, как
+              этого добиться. Наша компания предлагает комплексное обслуживание
+              уличных LED-билбордов «под ключ»: от проектирования до
+              эксплуатации. Мы берём на себя все этапы, гарантируя безупречный
+              результат на каждом из них.
+            </p>
+            <p>
+              Ваша реклама заслуживает максимального внимания — и мы знаем, как
+              этого добиться. Наша компания предлагает комплексное обслуживание
+              уличных LED-билбордов «под ключ»: от проектирования до
+              эксплуатации. Мы берём на себя все этапы, гарантируя безупречный
+              результат на каждом из них.
+            </p>
+          </div>
+          <div class="lb-content__image">
+            <img src="./images/lb/lb-content.jpg" alt="" />
+          </div>
         </div>
+      </div>
 
-        <div class="lb-content container">
+      <div class="lb-steps">
+        <div class="lb-steps__container container">
+          <div class="lb-steps__wrapper">
+            <h2>Этапы работ</h2>
 
-            <div class="lb-content__wrapper">
+            <ol class="lb-steps__items">
+              <li>Консультация и выезд</li>
+              <li>Проектирование и визуализация</li>
+              <li>Участие в тендерах</li>
+              <li>Производство металлоконструкций</li>
+              <li>Поставка, монтаж и пусконаладка</li>
+              <li>Сервисное обслуживание</li>
+            </ol>
+          </div>
 
-                <h2>Технологии распознавания движений в системах интерактивных видеополов</h2>
-                <div class="lb-content__text">
-                    <p>Современные реактивные проекционные поверхности функционируют благодаря высокоточным технологиям
-                        отслеживания движений пользователей. Основу таких систем составляют инфракрасные камеры с
-                        частотой кадров до 120 Гц, обеспечивающие минимальную задержку реакции в 10-15 мс.
-                        Распознавание активности на чувствительном полу происходит через несколько ключевых технологий:
-                        1. Оптическое отслеживание - система из 2-4 камер фиксирует силуэты людей и преобразует их в
-                        цифровые данные. Алгоритмы компьютерного зрения выделяют контуры фигур даже при слабом освещении
-                        (от 50 люкс).
-                        2. Сенсоры давления - размещенные под поверхностью датчики регистрируют вес и положение человека
-                        с точностью до 5 см. Матрицы из 1000+ сенсоров создают детальную карту перемещений.
-                        3. Технология ToF (Time-of-Flight) - лазерные импульсы определяют расстояние до объектов с
-                        миллиметровой точностью, формируя трехмерную модель пространства над проекционной поверхностью.
-                    </p>
-                </div>
+          <div class="lb-steps__contact">
+            <div class="lb-input__wrapper">
+              <label for="">Ваше имя</label>
+              <input type="text" placeholder="Имя" />
+            </div>
+            <div class="lb-input__wrapper">
+              <label for="">Ваш телефон</label>
+              <input
+                class="phone-with-mask"
+                type="text"
+                placeholder="+7 ___ - ___ - __"
+              />
+            </div>
+            <div class="lb-input__wrapper checkbox required">
+              <input type="checkbox" id="lb-steps-confirm" />
+              <label class="label--checkbox" for="lb-steps-confirm">
+                <span>
+                  Даю согласие на обработку моих персональных данных в
+                  соответствии с условиями документов, с которыми я ознакомлен:
+                  <a href="">Политика конфиденциальности</a>,
+                  <a href="">Пользовательское соглашение</a>
+                </span>
+              </label>
             </div>
 
-            <div class="lb-content__wrapper">
-                <div class="lb-content__text">
-                    <h2>Комплексное внедрение от "Астра"</h2>
-
-                    <p>Компания "Астра" применяет комбинированные решения, где алгоритмы машинного обучения анализируют
-                        данные с различных источников. Наши проекционные системы распознают до 15 одновременных касаний
-                        и способны отслеживать до 20 человек на площади 30 м².
-                        Проектирование реактивной поверхности начинается с анализа помещения и задач заказчика. Инженеры
-                        "Астры" создают цифровую модель пространства, подбирают оптимальное расположение датчиков и
-                        проекторов с учетом особенностей освещения и потоков посетителей.
-                        Монтаж включает установку высокоточной проекционной техники с разрешением до 4K и яркостью до
-                        10000 люмен, настройку многоуровневой системы отслеживания и калибровку всех компонентов.
-                        Программная часть адаптируется под конкретные сценарии использования.
-                        Обслуживание предусматривает регулярную диагностику точности отклика (не реже раза в квартал),
-                        обновление программных алгоритмов распознавания и техническую поддержку.
-                        Для получения точной оценки стоимости проекта необходимо детальное ознакомление с вашими
-                        требованиями и особенностями помещения. Специалисты компании "Астра" готовы разработать
-                        проектное решение и предоставить расчет после изучения всех параметров вашего объекта.
-                    </p>
-                </div>
-                <div class="lb-content__image">
-                    <img src="https://astrascreen.ru/wp-content/uploads/2026/01/молниезащита2-min.jpg" alt="">
-                </div>
+            <div class="lb-button__wrapper">
+              <button class="lb-button">ПОлучить консультацию</button>
             </div>
-            <div class="lb-content__wrapper">
-                <div class="lb-content__image">
-                    <img src="https://astrascreen.ru/wp-content/uploads/2026/01/экраны-для-помещений.гл-min.jpg" alt="">
-                </div>
-
-                <div class="lb-content__text">
-                    <h2>Системах интерактивных видеополов</h2>
-                    <p>Проекционная система для динамического пола превращает обычную поверхность в захватывающее
-                        пространство с реагирующим на движение контентом.&nbsp;Компания "Астра"&nbsp;предлагает полный
-                        комплекс решений по созданию динамических проекционных поверхностей - от концептуального
-                        проектирования до долгосрочного технического обслуживания.
-
-                        Технология проекционного пола с отслеживанием движения позволяет посетителям взаимодействовать с
-                        цифровым контентом непосредственно под ногами. Эта система становится мощным маркетинговым
-                        инструментом, привлекая внимание посетителей в торговых центрах, музеях, выставочных залах и
-                        корпоративных пространствах.
-                    </p>
-                </div>
-            </div>
-            <div class="lb-content__wrapper">
-                <div class="lb-content__text">
-                    <p></p>
-                    <figure class="wp-block-table">
-                        <table class="has-fixed-layout">
-                            <tbody>
-                                <tr>
-                                    <th>Материал</th>
-                                    <th>Влагостойкость</th>
-                                    <th>Шумоизоляция (дБ)</th>
-                                    <th>Вес (кг/м²)</th>
-                                    <th>Средняя цена (руб/м²)</th>
-                                </tr>
-                                <tr>
-                                    <td>Минеральное волокно</td>
-                                    <td>Низкая</td>
-                                    <td>25–30</td>
-                                    <td>3.5–4.5</td>
-                                    <td>450–600</td>
-                                </tr>
-                                <tr>
-                                    <td>ПВХ</td>
-                                    <td>Высокая</td>
-                                    <td>15–20</td>
-                                    <td>1.8–2.2</td>
-                                    <td>300–400</td>
-                                </tr>
-                                <tr>
-                                    <td>Металл</td>
-                                    <td>Средняя</td>
-                                    <td>10–15</td>
-                                    <td>2.5–3.5</td>
-                                    <td>700–900</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </figure>
-                    <p></p>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="lb-content container">
+      <div class="lb-why container">
+        <h2>Почему с нами надёжно</h2>
 
-            <div class="lb-content__wrapper">
-                <h2>Полный цикл работ по уличным LED-билбордам: профессиональное решение для вашего бизнеса</h2>
-                <div class="lb-content__text">
-                    <p>Ваша реклама заслуживает максимального внимания — и мы знаем, как этого добиться. Наша компания
-                        предлагает комплексное обслуживание уличных LED-билбордов «под ключ»: от проектирования до
-                        эксплуатации. Мы берём на себя все этапы, гарантируя безупречный результат на каждом из них.</p>
-                    <p>Ваша реклама заслуживает максимального внимания — и мы знаем, как этого добиться. Наша компания
-                        предлагает комплексное обслуживание уличных LED-билбордов «под ключ»: от проектирования до
-                        эксплуатации. Мы берём на себя все этапы, гарантируя безупречный результат на каждом из них.</p>
-
-                </div>
+        <div class="lb-why__blocks">
+          <div class="lb-why__block">
+            <span class="lb-why__block-title">БЕСПЛАТНЫЕ КОНСУЛЬТАЦИИ</span>
+            <span class="lb-why__block-subtitle"
+              >Осуществляем консультации для определения актуальных
+              потребностей</span
+            >
+            <div class="lb-why__block-image">
+              <img src="../images/lb/chat.svg" alt="" />
             </div>
-
-            <div class="lb-content__wrapper">
-                <div class="lb-content__text">
-                    <p>Ваша реклама заслуживает максимального внимания — и мы знаем, как этого добиться. Наша компания
-                        предлагает комплексное обслуживание уличных LED-билбордов «под ключ»: от проектирования до
-                        эксплуатации. Мы берём на себя все этапы, гарантируя безупречный результат на каждом из них.</p>
-                    <p>Ваша реклама заслуживает максимального внимания — и мы знаем, как этого добиться. Наша компания
-                        предлагает комплексное обслуживание уличных LED-билбордов «под ключ»: от проектирования до
-                        эксплуатации. Мы берём на себя все этапы, гарантируя безупречный результат на каждом из них.</p>
-                    <p>Ваша реклама заслуживает максимального внимания — и мы знаем, как этого добиться. Наша компания
-                        предлагает комплексное обслуживание уличных LED-билбордов «под ключ»: от проектирования до
-                        эксплуатации. Мы берём на себя все этапы, гарантируя безупречный результат на каждом из них.</p>
-                    <p>Ваша реклама заслуживает максимального внимания — и мы знаем, как этого добиться. Наша компания
-                        предлагает комплексное обслуживание уличных LED-билбордов «под ключ»: от проектирования до
-                        эксплуатации. Мы берём на себя все этапы, гарантируя безупречный результат на каждом из них.</p>
-                </div>
-                <div class="lb-content__image">
-                    <img src="./images/lb/lb-content.jpg" alt="">
-                </div>
+          </div>
+          <div class="lb-why__block">
+            <span class="lb-why__block-title">РАБОТАЕМ В ВАШЕМ РЕГИОНЕ</span>
+            <span class="lb-why__block-subtitle"
+              >Наши специалисты работают на территории Новороссии, Крыма, юга
+              России</span
+            >
+            <div class="lb-why__block-image">
+              <img src="../images/lb/location.svg" alt="" />
             </div>
+          </div>
+          <div class="lb-why__block">
+            <span class="lb-why__block-title">ПОД КЛЮЧ</span>
+            <span class="lb-why__block-subtitle"
+              >Выполним все работ по проектированию, поставкам, монтажу и
+              пуско-наладке</span
+            >
+            <div class="lb-why__block-image">
+              <img src="../images/lb/setting.svg" alt="" />
+            </div>
+          </div>
+          <div class="lb-why__block">
+            <span class="lb-why__block-title">ЛИЦЕНЗИИ И РАЗРЕШЕНИЯ</span>
+            <span class="lb-why__block-subtitle"
+              >Состоим в СРО и имеем необходимые лицензии</span
+            >
+            <div class="lb-why__block-image">
+              <img src="../images/lb/medal.svg" alt="" />
+            </div>
+          </div>
+          <div class="lb-why__block">
+            <span class="lb-why__block-title">СОБСТВЕННОЕ ПРОИЗВОДСТВО</span>
+            <span class="lb-why__block-subtitle"
+              >Самостоятельно производим сборку оборудования из импортных
+              комплектующих и произведенных нами металлоконструкций</span
+            >
+            <div class="lb-why__block-image">
+              <img src="../images/lb/task.svg" alt="" />
+            </div>
+          </div>
+          <div class="lb-why__block">
+            <span class="lb-why__block-title">С 2018 ГОДА НА РЫНКЕ</span>
+            <span class="lb-why__block-subtitle"
+              >Выполнили более 370 проектов</span
+            >
+            <div class="lb-why__block-image">
+              <img src="../images/lb/ranking.svg" alt="" />
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="lb-steps">
+      <div class="lb-bottom">
+        <div class="lb-bottom__container container">
+          <h2>Обсудим ваш проект LED-билборда</h2>
+          <div class="lb-bottom__contact">
+            <h3>
+              В течение 1 рабочего дня подготовим предварительный расчёт и
+              рекомендации по конфигурации экрана
+            </h3>
 
-            <div class="lb-steps__container container">
-
-                <div class="lb-steps__wrapper">
-                    <h2>Этапы работ</h2>
-
-                    <ol class="lb-steps__items">
-                        <li>Консультация и выезд</li>
-                        <li>Проектирование и визуализация</li>
-                        <li>Участие в тендерах</li>
-                        <li>Производство металлоконструкций</li>
-                        <li>Поставка, монтаж и пусконаладка</li>
-                        <li>Сервисное обслуживание</li>
-                    </ol>
-                </div>
-
-                <div class="lb-steps__contact">
-                    <div class="lb-input__wrapper">
-                        <label for="">Ваше имя</label>
-                        <input type="text" placeholder="Имя">
-                    </div>
-                    <div class="lb-input__wrapper">
-                        <label for="">Ваш телефон</label>
-                        <input class="phone-with-mask" type="text" placeholder="+7 ___ - ___ - __">
-                    </div>
-                    <div class="lb-input__wrapper checkbox required">
-                        <input type="checkbox" id="lb-steps-confirm">
-                        <label class="label--checkbox" for="lb-steps-confirm">
-                            <span>
-                                Даю согласие на обработку моих персональных данных в соответствии с условиями
-                                документов, с
-                                которыми я ознакомлен: <a href="">Политика конфиденциальности</a>, <a
-                                    href="">Пользовательское соглашение</a>
-                            </span>
-                        </label>
-                    </div>
-
-                    <div class="lb-button__wrapper">
-                        <button class="lb-button">ПОлучить консультацию</button>
-                    </div>
-                </div>
+            <div class="lb-input__wrapper">
+              <label for="">Ваше имя</label>
+              <input type="text" placeholder="Имя" />
+            </div>
+            <div class="lb-input__wrapper">
+              <label for="">Ваш телефон</label>
+              <input
+                class="phone-with-mask"
+                type="text"
+                placeholder="+7 ___ - ___ - __"
+              />
+            </div>
+            <div class="lb-input__wrapper">
+              <input type="checkbox" id="lb-bottom-confirm" />
+              <label class="label--checkbox" for="lb-bottom-confirm">
+                <span>
+                  Даю согласие на обработку моих персональных данных в
+                  соответствии с условиями документов, с которыми я ознакомлен:
+                  <a href="">Политика конфиденциальности</a>,
+                  <a href="">Пользовательское соглашение</a>
+                </span>
+              </label>
             </div>
 
-        </div>
-
-        <div class="lb-why container">
-            <h2>Почему с нами надёжно</h2>
-
-            <div class="lb-why__blocks">
-                <div class="lb-why__block">
-                    <span class="lb-why__block-title">БЕСПЛАТНЫЕ КОНСУЛЬТАЦИИ</span>
-                    <span class="lb-why__block-subtitle">Осуществляем консультации для определения актуальных
-                        потребностей</span>
-                    <div class="lb-why__block-image">
-                        <img src="../../images/lb/chat.svg" alt="">
-                    </div>
-                </div>
-                <div class="lb-why__block">
-                    <span class="lb-why__block-title">РАБОТАЕМ В ВАШЕМ РЕГИОНЕ</span>
-                    <span class="lb-why__block-subtitle">Наши специалисты работают на территории Новороссии, Крыма, юга
-                        России</span>
-                    <div class="lb-why__block-image">
-                        <img src="../../images/lb/location.svg" alt="">
-                    </div>
-                </div>
-                <div class="lb-why__block">
-                    <span class="lb-why__block-title">ПОД КЛЮЧ</span>
-                    <span class="lb-why__block-subtitle">Выполним все работ по проектированию, поставкам, монтажу и
-                        пуско-наладке</span>
-                    <div class="lb-why__block-image">
-                        <img src="../../images/lb/setting.svg" alt="">
-                    </div>
-                </div>
-                <div class="lb-why__block">
-                    <span class="lb-why__block-title">ЛИЦЕНЗИИ И РАЗРЕШЕНИЯ</span>
-                    <span class="lb-why__block-subtitle">Состоим в СРО и имеем необходимые лицензии</span>
-                    <div class="lb-why__block-image">
-                        <img src="../../images/lb/medal.svg" alt="">
-                    </div>
-                </div>
-                <div class="lb-why__block">
-                    <span class="lb-why__block-title">СОБСТВЕННОЕ ПРОИЗВОДСТВО</span>
-                    <span class="lb-why__block-subtitle">Самостоятельно производим сборку оборудования из импортных
-                        комплектующих и произведенных нами металлоконструкций</span>
-                    <div class="lb-why__block-image">
-                        <img src="../../images/lb/task.svg" alt="">
-                    </div>
-                </div>
-                <div class="lb-why__block">
-                    <span class="lb-why__block-title">С 2018 ГОДА НА РЫНКЕ</span>
-                    <span class="lb-why__block-subtitle">Выполнили более 370 проектов</span>
-                    <div class="lb-why__block-image">
-                        <img src="../../images/lb/ranking.svg" alt="">
-                    </div>
-                </div>
+            <div class="lb-button__wrapper">
+              <button class="lb-button">ПОлучить консультацию</button>
             </div>
-
+          </div>
         </div>
+      </div>
 
-        <div class="lb-bottom">
-
-            <div class="lb-bottom__container container">
-                <h2>Обсудим ваш проект LED-билборда</h2>
-                <div class="lb-bottom__contact">
-                    <h3>В течение 1 рабочего дня подготовим предварительный расчёт и рекомендации по конфигурации экрана
-                    </h3>
-
-                    <div class="lb-input__wrapper">
-                        <label for="">Ваше имя</label>
-                        <input type="text" placeholder="Имя">
-                    </div>
-                    <div class="lb-input__wrapper">
-                        <label for="">Ваш телефон</label>
-                        <input class="phone-with-mask" type="text" placeholder="+7 ___ - ___ - __">
-                    </div>
-                    <div class="lb-input__wrapper">
-                        <input type="checkbox" id="lb-bottom-confirm">
-                        <label class="label--checkbox" for="lb-bottom-confirm">
-                            <span>
-                                Даю согласие на обработку моих персональных данных в соответствии с условиями
-                                документов, с
-                                которыми я ознакомлен: <a href="">Политика конфиденциальности</a>, <a
-                                    href="">Пользовательское соглашение</a>
-                            </span>
-                        </label>
-                    </div>
-
-                    <div class="lb-button__wrapper">
-                        <button class="lb-button">ПОлучить консультацию</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- footer -->
-        <%- include('../templates/footer') %>
+      <!-- footer -->
+      <%- include('../templates/footer') %>
     </div>
 
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/slider-partners.js"></script>
     <script src="./js/script.js"></script>
-</body>
-
+  </body>
 </html>

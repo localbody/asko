@@ -56,14 +56,14 @@
   content: '';
   width: 1rem;
   height: 1rem;
-  background-image: url(../../images/icons/location.svg);
+  background-image: url(../images/icons/location.svg);
 }
 
 .main .subnav .city-selected::after {
   content: '';
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(../../images/icons/chevron.svg);
+  background-image: url(../images/icons/chevron.svg);
   transition: 0.3s transform ease;
 }
 
@@ -106,21 +106,21 @@
   content: '';
   width: 1rem;
   height: 1rem;
-  background-image: url(../../images/icons/location.svg);
+  background-image: url(../images/icons/location.svg);
 }
 
 .main .subnav .mail::before {
   content: '';
   width: 1rem;
   height: 1rem;
-  background-image: url(../../images/icons/sms.svg);
+  background-image: url(../images/icons/sms.svg);
 }
 
 .main .subnav .phone::before {
   content: '';
   width: 1rem;
   height: 1rem;
-  background-image: url(../../images/icons/call.svg);
+  background-image: url(../images/icons/call.svg);
 }
 
 .main .subnav .mail a {
@@ -161,9 +161,9 @@
 }
 
 .main .subnav .messengers .whatsapp {
-  background-image: url(../../images/icons/whatsapp--grey.svg);
+  background-image: url(../images/icons/whatsapp--grey.svg);
 }
 
 .main .subnav .messengers .telegram {
-  background-image: url(../../images/icons/telegram--grey.svg);
+  background-image: url(../images/icons/telegram--grey.svg);
 }

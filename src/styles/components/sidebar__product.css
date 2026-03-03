@@ -40,7 +40,7 @@
   content: '';
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url(../../images/icons/arrow-right.svg);
+  background-image: url(../images/icons/arrow-right.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1.5rem;
@@ -48,7 +48,7 @@
 }
 
 .sidebar__product:hover p.subtitle::after {
-  background-image: url(../../images/icons/arrow-right--orange.svg);
+  background-image: url(../images/icons/arrow-right--orange.svg);
 }
 
 .sidebar__product p.title {

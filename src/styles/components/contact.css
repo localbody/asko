@@ -45,12 +45,13 @@
   background-color: var(--grey-4);
   border-radius: 100%;
 }
+
 .main .contact .address .mail::before {
-  background-image: url(../../images/icons/sms.svg);
+  background-image: url(../images/icons/sms.svg);
 }
 
 .main .contact .address .phone::before {
-  background-image: url(../../images/icons/call.svg);
+  background-image: url(../images/icons/call.svg);
 }
 
 .main .contact .address .mail a {

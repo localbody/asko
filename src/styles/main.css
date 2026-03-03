@@ -192,7 +192,7 @@ p:empty {
   transition: opacity 0.3s ease;
   z-index: 1000;
   opacity: 0.75;
-  background-image: url(../../images/icons/arrow-right--black.svg);
+  background-image: url(../images/icons/arrow-right--black.svg);
   transform: rotate(-90deg);
   background-position: center;
   background-repeat: no-repeat;
@@ -213,7 +213,7 @@ p:empty {
 .viewer button.close {
   top: 3%;
   right: 3%;
-  background-image: url(../../images/icons/close.svg);
+  background-image: url(../images/icons/close.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 3em;
@@ -226,7 +226,7 @@ p:empty {
   top: 10%;
   height: 80vh;
   width: 30vw;
-  background-image: url(../../images/icons/arrow-right--orange.svg);
+  background-image: url(../images/icons/arrow-right--orange.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 5em;
